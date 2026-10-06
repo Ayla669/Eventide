@@ -1,3 +1,5 @@
+![Eventide Banner](eventide_banner.png)
+
 # Eventide
 
 A Mindustry mod adding a new planet, Izanami, with its own technology, resources, creatures and factions.
