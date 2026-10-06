@@ -20,10 +20,10 @@ But Izanami is not truly dead.
 ## Overview
 
 - A completely new planet: Izanami.
-- Custom items, liquids, blocks, turrets, units and enemies.
+- New items, liquids, blocks, turrets, units and enemies.
 - A unique technological progression built around Izanami's resources.
-- A custom campaign with sectors made specifically for the planet.
-- Custom lore and research records revealing the history of the planet.
+- A new campaign with sectors made specifically for the planet.
+- Lore and research revealing the history of the planet.
 - A unique power system where electronic machines consume different amounts of energy depending on their function and complexity.
 
 ## Mechanics
