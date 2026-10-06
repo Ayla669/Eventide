@@ -1,4 +1,5 @@
 ![Eventide Banner](eventide_banner.png)
+[Eventide Discord Server](https://discord.gg/tUsg6tjQdY
 
 # Eventide
 
@@ -86,4 +87,4 @@ Eventide is available in multiple languages!
 
 Want to follow the development, report bugs, suggest ideas or simply talk about Eventide?
 
-[Join the Eventide Discord](https://discord.gg/WmnXCd4CA)
+[Join the Eventide Discord](https://discord.gg/tUsg6tjQdY
