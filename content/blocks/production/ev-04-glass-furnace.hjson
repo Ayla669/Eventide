@@ -1,0 +1,93 @@
+type: GenericCrafter
+name: Glass Furnace
+description: Mixes sand and molten metals into an extremely durable glass.
+size: 2
+liquidCapacity: 20
+craftTime: 180
+squareSprite: false
+consumes: {
+  items: [
+    ev-dark-sand/10
+  ]
+  liquids: [
+  slag/0.1
+  ]
+}
+
+ignoreLiquidFullness: true
+
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.09
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 12
+  colorFrom: fca67b
+  colorTo: c27954
+  sizeFrom: 0.95
+  sizeTo: 0.2
+  lifetime: 30
+  cone: 360
+  length: 6
+  baseLength: 8
+  interp: pow2Out
+  sizeInterp: pow2
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: slag
+  padLeft: 1
+  padTop: 1
+  padBottom: 1
+  padRight: 1
+}
+    {
+      type: DrawRegion
+      suffix: -spinner
+      spinSprite: true
+      rotateSpeed: 9
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+outputItems: [
+  ev-dark-glass/10
+]
+
+category: crafting
+
+research: {
+  parent: ev-03-silicon-casting
+  objectives: [
+    ev-iron
+    ev-dark-rock
+    ev-silicon
+    ev-03-silicon-casting
+  ]
+}
+
+requirements: [
+  ev-iron/200
+  ev-dark-rock/250
+  ev-silicon/150
+]
+
+researchCost: [
+  ev-iron/2000
+  ev-dark-rock/2500
+  ev-silicon/1500
+]
+
+
+itemCapacity: 20

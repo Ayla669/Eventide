@@ -1,0 +1,85 @@
+type: legs
+name: Aracnacana
+description: A nymph of the Aranicidae family. It is fast but poses almost no threat on its own. However, it can become a major problem in large numbers, damages structures in contact.
+accel: 1.5
+health: 500
+armor: 0
+hitSize: 8
+canDrown: true
+legCount: 6
+legExtension: -2
+lockLegBase: true
+legContinuousMove: true
+legLength: 2
+legSpeed: 1
+legForwardScl: 2
+legMoveSpace: 2
+legPairOffset: 2
+legBaseOffset: 2
+legSplashDamage: 10
+allowLegStep: false
+legPhysicsLayer: false
+crushDamage: 10
+treadPullOffset: 5
+stepSound: walkerStepSmall
+stepSoundVolume: 0.7
+stepShake: 0
+hovering: false
+speed: 1.5
+outlineRadius: 0
+deathSound: ev-monster-die2
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-swarm-blood
+    amount: 30
+  }
+]
+
+weapons: [
+    {
+      top: false
+      x: 0
+      name: ev-aranicidae-nymph-weapon
+      recoil: 0.4
+      shootCone: 45
+        y: 0
+        reload: 60
+        rotate: false
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 1
+          shotDelay: 60
+        }
+        shootSound: ev-monster-hit
+        shootSoundVolume: 0.7
+        bullet: {
+          type: BasicBulletType
+          speed: 5
+          lifetime: 2
+          pierce: false
+          damage: 20
+          pierce: true
+          pierceCap: 2
+          width: 0.1
+          height: 0.1
+          sprite: ev-aranicidae-nymph-bullet
+          color: 69C976
+  hitColor: 69C976
+  hitEffect: hitBulletColor
+        }
+    }
+    ]
+    
+    research: {
+  parent: ev-citheronia
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+    shownPlanets: [izanami]

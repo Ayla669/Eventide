@@ -1,0 +1,21 @@
+type: Duct
+name: Dark Duct
+description: Transports items using negative pressure.
+category: distribution
+alwaysUnlocked: false
+research: {
+  parent: ev-core-dark
+  objectives: [
+   ev-dark-rock
+  ]
+}
+speed: 5
+health: 45
+bridgeReplacement: ev-04-dark-duct-bridge
+requirements: [
+  ev-dark-rock/1
+]
+junctionReplacement: ev-02-dark-junction
+researchCost: [
+  ev-dark-rock/10
+]

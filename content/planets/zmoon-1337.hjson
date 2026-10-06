@@ -1,0 +1,63 @@
+// Izanami asteroid-ring body 1337
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Rybek crystal asteroid (dark green)
+// Ring position: radius 3.8945, phase 131.648 degrees.
+
+name: zmoon-1337
+localizedName: "Izanami Moon 1337"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-1337
+    divisions: 3
+    seed: 99469
+    radius: 0.0055
+    color1: 1b382b
+    color2: 08150f
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 3.8945
+orbitSpacing: 0.05
+orbitOffset: 131.648
+radius: 0.0055
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

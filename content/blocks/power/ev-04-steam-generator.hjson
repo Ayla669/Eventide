@@ -1,0 +1,131 @@
+type: ConsumeGenerator
+name: Steam Generator
+description: Produces power boilling water.
+size: 2
+health: 330
+category: power
+requirements: [
+  ev-iron/400
+  ev-dark-rock/200
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-03-burning-generator
+  objectives: [
+    ev-iron
+    ev-dark-rock
+    ev-charcoal
+    ev-liq-contamined-water
+  ]
+}
+researchCost: [
+  ev-iron/4000
+  ev-dark-rock/2000
+]
+itemDuration: 60
+powerProduction: 12
+generateEffectRange: 0
+
+outlineRadius: 0
+
+generateEffect: {
+  type: RadialEffect
+  rotationSpacing: 0
+  amount: 1
+  lengthOffset: 0
+  effect: {
+    type: ParticleEffect
+    baseRotation: 0
+    length: 4
+    baseLength: 6
+    particles: 6
+    useRotation: false
+    sizeFrom: 1
+    sizeTo: 0.1
+    lifetime: 240
+    cone: 1
+    layer: 80
+    colorFrom: ffffff00
+    colorTo: ffffff88
+    interp: pow2
+    sizeInterp: pow3In
+  }
+}
+
+ambientSound: loopExtract
+ambientSoundVolume: 0.01
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-contamined-water
+  padLeft: 1
+  padTop: 5
+  padBottom: 5
+  padRight: 13
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-contamined-water
+  padLeft: 5
+  padTop: 13
+  padBottom: 1
+  padRight: 5
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-contamined-water
+  padLeft: 13
+  padTop: 5
+  padBottom: 5
+  padRight: 1
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-contamined-water
+  padLeft: 5
+  padTop: 1
+  padBottom: 13
+  padRight: 5
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner
+      spinSprite: true
+      rotateSpeed: 12
+      x: 0
+      y: 0
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPistons
+      suffix: -part1
+      angleOffset: 0
+      sinMag: 2
+      sinScl: 2
+    }
+   ]
+  }
+
+consumes: {
+  itemFlammable: {}
+  liquid: ev-liq-contamined-water/0.3
+}
+hasLiquids: true
+liquidCapacity: 30
+
+shownPlanets: [
+izanami
+]

@@ -1,0 +1,62 @@
+// Izanami asteroid-ring body 0741
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Ring position: radius 2.9556, phase 19.282 degrees.
+
+name: zmoon-0741
+localizedName: "Izanami Moon 0741"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-0741
+    divisions: 3
+    seed: 77417
+    radius: 0.0090
+    color1: 44484a
+    color2: 1a1d1f
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 2.9556
+orbitSpacing: 0.05
+orbitOffset: 19.282
+radius: 0.0090
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

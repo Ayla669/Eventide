@@ -1,0 +1,23 @@
+type: Wall
+name: Dark Rock Wall
+description: Protects structures from incoming damage.
+size: 1
+health: 250
+squareSprite: false
+requirements: [
+  ev-dark-rock/6
+]
+research: {
+  parent: ev-core-dark
+  objectives: [
+   ev-dark-rock
+  ]
+}
+category: defense
+researchCost: [
+  ev-dark-rock/60
+]
+
+shownPlanets: [
+izanami
+]

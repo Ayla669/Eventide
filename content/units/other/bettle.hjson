@@ -1,0 +1,275 @@
+name: Bettle
+type: missile
+description: Born to love. Trained to explode.
+
+template: MissileUnitType
+speed: 6.5
+maxRange: 6
+lifetime: 220
+
+hitSize: 8
+health: 25
+
+outlineColor: 252525
+outlineRadius: 0
+
+engineColor: FF0000
+trailColor: FF0000
+engineSize: 0
+engineOffset: 0
+engineLayer: 0
+trailLength: 0
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-swarm-blood
+    amount: 60
+  }
+]
+
+rotateSpeed: 0.45
+missileAccelTime: 15
+
+lowAltitude: true
+
+targetAir: true
+targetUnderBlocks: false
+targetGround: true
+
+fogRadius: 6
+
+loopSound: ev-bettle-fly
+loopSoundVolume: 0.45
+deathSound: ev-monster-die1
+
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+
+    shootOnDeath: true
+
+    bullet: {
+      type: ExplosionBulletType
+
+      damage: 66
+      splashDamage: 66
+      splashDamageRadius: 12
+
+      hitColor: FF0000
+
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+
+      fragBullets: 15
+      fragSpread: 30
+      fragRandomSpread: 20
+
+      fragVelocityMin: 0.8
+      fragVelocityMax: 1.2
+       }
+      }
+     ]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    x: -3
+    y: 0
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-bottom-left
+          particles: 1
+          length: 0
+          spin: 15
+          lifetime: 2
+          sizeFrom: 2
+          sizeTo: 2
+          baseRotation: 210
+          lightOpacity: 0
+        }
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-bottom-left
+          particles: 1
+          length: 0
+          spin: -15
+          lifetime: 2
+          sizeFrom: 2
+          sizeTo: 2
+          baseRotation: 240
+          startDelay: 1
+          lightOpacity: 0
+        }
+      ]
+    }
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    x: 3
+    y: 0
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-bottom-right
+          particles: 1
+          length: 0
+          spin: -15
+          lifetime: 2
+          sizeFrom: 2
+          sizeTo: 2
+          baseRotation: -30
+          lightOpacity: 0
+        }
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-bottom-right
+          particles: 1
+          length: 0
+          spin: 15
+          lifetime: 2
+          sizeFrom: 2
+          sizeTo: 2
+          baseRotation: -60
+          startDelay: 1
+          lightOpacity: 0
+        }
+      ]
+    }
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    x: -3.5
+    y: 3
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 90.5
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-top-left
+          particles: 1
+          length: 0
+          spin: 10
+          lifetime: 2
+          sizeFrom: 4
+          sizeTo: 4
+          baseRotation: 180
+          lightOpacity: 0
+        }
+        {
+          type: ParticleEffect
+          layer: 90.5
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-top-left
+          particles: 1
+          length: 0
+          spin: -10
+          lifetime: 2
+          sizeFrom: 4
+          sizeTo: 4
+          baseRotation: 200
+          startDelay: 1
+          lightOpacity: 0
+        }
+      ]
+    }
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    x: 3.5
+    y: 3
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 90.5
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-top-right
+          particles: 1
+          length: 0
+          spin: -10
+          lifetime: 2
+          sizeFrom: 4
+          sizeTo: 4
+          baseRotation: 0
+          lightOpacity: 0
+        }
+        {
+          type: ParticleEffect
+          layer: 90.5
+          followParent: true
+          rotWithParent: true
+          region: eventide-wing-top-right
+          particles: 1
+          length: 0
+          spin: 10
+          lifetime: 2
+          sizeFrom: 4
+          sizeTo: 4
+          baseRotation: -20
+          startDelay: 1
+          lightOpacity: 0
+        }
+      ]
+    }
+  }
+]
+
+
+research: {
+  parent: ev-aragog
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+
+shownPlanets: [ 
+izanami
+]

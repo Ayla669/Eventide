@@ -1,0 +1,12 @@
+type: RainWeather
+name: Contamined Rain
+color: 63FFBB
+liquid: ev-liq-contamined-water
+padding: 15
+sizeMax: 40
+sizeMin: 25
+density: 350
+sound: rain
+soundVol: 0.3
+yspeed: 5
+xspeed: 6.5

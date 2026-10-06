@@ -1,0 +1,14 @@
+name: Iron
+description: "Iron found in the soil of Izanami. It has low conductivity but is highly resistant. Used in a variety of construction projects and item manufacturing, it can also serve as ammunition."
+hardness: 1.5
+cost: 1.5
+conductivity: 0.5
+alwaysUnlocked: false
+color: 475757
+research: {
+  parent: ev-dark-soil
+  objectives: [ 
+    ev-dark-soil
+  ]
+}
+shownPlanets: [izanami]

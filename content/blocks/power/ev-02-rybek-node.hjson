@@ -1,0 +1,38 @@
+type: BeamNode
+name: Rybek Node
+health: 40
+fogRadius: 2
+range: 25
+size: 1
+squareSprite: false
+category: power
+hasPower: true
+consumesPower: true
+outputsPower: true
+
+consumes: {
+  power: 0.6
+}
+requirements: [
+  ev-iron/30
+  ev-gold/20
+  ev-rybek-crystals/50
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-01-iron-node
+  objectives: [
+    ev-gold
+    ev-rybek-crystals
+  ]
+}
+researchCost: [
+  ev-iron/300
+  ev-gold/200
+  ev-rybek-crystals/500
+]
+laserColor1: 79DA86FF
+laserColor2: 6DFF80FF
+
+outlineRadius: 0

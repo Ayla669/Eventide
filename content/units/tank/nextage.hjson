@@ -1,0 +1,90 @@
+type: tank
+name: Nextage
+description: THE TOP ONE FROM BRAZUKA BABY!
+hitSize: 225
+crushDamage: 10000
+treadPullOffset: 6
+singleTarget: false
+omniMovement: false
+faceTarget: false
+health: 900000
+armor: 1200
+speed: 15
+rotateSpeed: 1.92
+itemCapacity: 0
+outlineRadius: 0
+tankMoveVolume: 1.65
+tankMoveSound: nextage1
+treadRects: [
+  {
+    x: -74
+    y: -112
+    height: 36
+    width: 43
+  }
+  {
+    x: -90
+    y: -6
+    height: 36
+    width: 20
+  }
+  {
+    x: -78
+    y: 71
+    height: 40
+    width: 43
+  }
+]
+weapons: [
+    {
+      top: true
+      x: 0
+      name: nextage-weapon1
+      range: 100
+      recoil: 1
+      shootCone: 45
+      shootEffect: none
+        y: 0
+        reload: 300
+        rotate: true
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 1
+          shotDelay: 120
+        }
+        shootSound: nextage2
+        shootSoundVolume: 0.7
+        bullet: {
+      instantDisappear: true
+      collides: false
+      damage: 0
+    }
+    }
+    
+        {
+      top: true
+      x: 0
+      name: nextage-weapon2
+      range: 100
+      recoil: 1
+      shootCone: 45
+      shootEffect: none
+        y: 0
+        reload: 300
+        rotate: true
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 1
+          shotDelay: 60
+        }
+        shootSound: nextage3
+        shootSoundVolume: 0.7
+        bullet: {
+      instantDisappear: true
+      collides: false
+      damage: 0
+    }
+    }
+    ]

@@ -1,0 +1,14 @@
+name: Charcoal
+description: "Charcoal formed from the incinerated plant life on the surface of Izanami."
+hardness: 1
+flammability: 1.2
+cost: 0.5
+alwaysUnlocked: false
+color: 262626
+research: {
+  parent: ev-dark-soil
+  objectives: [ 
+    ev-dark-soil
+  ]
+}
+shownPlanets: [izanami]

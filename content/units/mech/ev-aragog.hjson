@@ -1,0 +1,79 @@
+type: legs
+name: Aragog
+description: An adolescent Aranicidae that grew up to become a swarm fighter, launching explosive beetles at enemies
+accel: 0.1
+health: 1500
+armor: 0
+hitSize: 16
+canDrown: true
+legCount: 6
+legLength: 20
+legGroupSize: 1
+lockLegBase: true
+legContinuousMove: true
+legExtension: 3
+legBaseOffset: 1
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 1
+legForwardScl: 1
+legMoveSpace: 1
+legSpeed: 0.17
+legSplashDamage: 35
+allowLegStep: false
+legPhysicsLayer: false
+crushDamage: 30
+treadPullOffset: 5
+stepSound: walkerStep
+stepSoundVolume: 0.7
+stepShake: 0.1
+hovering: false
+speed: 0.6
+outlineRadius: 0
+deathSound: ev-monster-die4
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-swarm-blood
+    amount: 60
+  }
+]
+
+weapons: [
+    {
+      top: true
+      x: 0
+      name: ev-aragog-weapon
+      recoil: 1
+      shootCone: 45
+        y: 0
+        reload: 120
+        rotate: true
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 3
+          shotDelay: 60
+        }
+        shootSound: ev-aragog-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+      instantDisappear: true
+      collides: false
+      damage: 0
+      spawnUnit: bettle
+    }
+    }
+    ]
+    
+    research: {
+  parent: ev-aranicidae-nymph
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+    shownPlanets: [izanami]

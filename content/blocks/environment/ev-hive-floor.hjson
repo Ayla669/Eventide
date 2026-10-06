@@ -1,0 +1,4 @@
+type: Floor
+name: Hive Floor
+playerUnmineable: true
+variants: 3

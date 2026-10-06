@@ -1,0 +1,75 @@
+type: consumeGenerator
+name: Burning Generator
+description: Burn charcoal to produce power.
+size: 2
+health: 150
+category: power
+itemDuration: 30
+powerProduction: 4
+generateEffectRange: 0
+generateEffect: {
+  type: RadialEffect
+  rotationSpacing: 90
+  amount: 4
+  lengthOffset: 4
+  effect: {
+    type: ParticleEffect
+    baseRotation: 60
+    length: 3
+    baseLength: 4
+    particles: 6
+    useRotation: false
+    sizeFrom: 1
+    sizeTo: 0.1
+    lifetime: 240
+    cone: 1
+    layer: 80
+    colorFrom: ffffff00
+    colorTo: ffffff88
+    interp: pow2
+    sizeInterp: pow3In
+  }
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+} 
+
+ambientSound: loopExtract
+ambientSoundVolume: 0.01
+squareSprite: false
+consumes: {
+  itemFlammable: {}
+}
+requirements: [
+  ev-iron/250
+  ev-dark-rock/50
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-01-iron-node
+  objectives: [
+    ev-iron
+    ev-dark-rock
+    ev-charcoal
+  ]
+}
+researchCost: [
+  ev-iron/2500
+  ev-dark-rock/500
+]
+shownPlanets: [izanami
+]

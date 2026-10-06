@@ -1,0 +1,6 @@
+name: Hive Vent
+type: SteamVent
+blendGroup: ev-hive-floor
+parent: ev-hive-floor
+effect: ventSteam
+effectColor: E5D9C0

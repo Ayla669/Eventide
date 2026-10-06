@@ -1,0 +1,15 @@
+name: Rybek Crystals
+description: "Crystals with various properties that were scattered across the surface of Izanami following the collision with Kagutsuchi. They are required for almost all construction on Izanami. Unfortunately, in their raw state, they are extremely limited in utility and must be refined for better applications."
+hardness: 3
+cost: 1.5
+charge: 3
+radioactivity: 2
+alwaysUnlocked: false
+color: 009C47
+research: {
+  parent: ev-dark-soil
+  objectives: [ 
+    ev-dark-soil
+  ]
+}
+shownPlanets: [izanami]

@@ -1,0 +1,11 @@
+name: Swarm Blood
+boilPoint: 0.5
+color: D9FFDB
+heatCapacity: 0.35
+gasColor: D9FFDB
+alwaysUnlocked: false
+type: cellLiquid
+capPuddles: false
+blockReactive: false
+spreadDamage: 0
+viscosity: 0.2

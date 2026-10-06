@@ -1,0 +1,19 @@
+type: OverflowGate
+name: Dark Overflow Controller
+description: Outputs items to the sides if the front path is blocked.
+category: distribution
+research: {
+  parent: ev-05-duct-sorter
+  objectives: [
+   ev-dark-rock
+   ev-05-duct-sorter
+  ]
+}
+requirements: [
+  ev-dark-rock/3
+  ev-iron/3
+]
+researchCost: [
+  ev-dark-rock/30
+  ev-iron/30
+]

@@ -1,0 +1,14 @@
+name: Silicon
+description: "Silicon in Izanami is an essential component for constructions of all levels and for the manufacture of advanced items and units."
+hardness: 1
+cost: 1.5
+alwaysUnlocked: false
+color: 79799D
+research: {
+  parent: ev-graphite
+  objectives: [ 
+    ev-graphite
+    ev-iron
+  ]
+}
+shownPlanets: [izanami]

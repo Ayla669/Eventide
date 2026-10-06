@@ -1,0 +1,23 @@
+type: GenericCrafter
+name: Essence Room
+
+description: WIP
+size: 2
+craftTime: 60
+squareSprite: false
+consumes: {
+}
+ignoreLiquidFullness: true
+ambientSound: none
+ambientSoundVolume: 0.1
+
+ambientSoundVolume: 0.09
+outputItems: [
+  ev-swarm-essence/2
+]
+
+category: crafting
+
+requirements: [
+]
+itemCapacity: 100

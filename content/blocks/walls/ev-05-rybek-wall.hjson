@@ -1,0 +1,54 @@
+type: PowerTurret
+name: Rybek Wall
+description: Protects structures from incoming damage. Slows and deals damage to nearby enemies, applying the Gamma effect.
+size: 1
+health: 750
+squareSprite: false
+requirements: [
+  ev-rybek-crystals/24
+]
+research: {
+  parent: ev-03-iron-wall
+  objectives: [
+   ev-rybek-crystals
+   ev-04-large-iron-wall
+  ]
+}
+category: defense
+researchCost: [
+  ev-rybek-crystals/240
+]
+
+shownPlanets: [
+izanami
+]
+
+reload: 60
+rotateSpeed: 0
+smokeEffect: none
+shootX: 0
+shootY: 0
+shootCone: 360
+shootSound: none
+recoil: 0
+range: 12
+shootType: {
+  instantDisappear: true
+  damage: 0
+  splashDamage: 1
+  splashDamageRadius: 24
+  status: ev-status-gamma
+  statusDuration: 90
+  despawnEffect: none
+  hitEffect: none
+  shootEffect: {
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 8
+    strokeFrom: 2
+    strokeTo: 0
+    color: 55AC60FF
+  }
+}
+consumes: { }
+rotate: false

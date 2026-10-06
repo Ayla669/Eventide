@@ -1,0 +1,19 @@
+type: Sorter
+name: Duct Sorter
+description: If an input item matches the selection, it passes forward. If not, it is outputted to the sides.
+category: distribution
+research: {
+  parent: ev-03-dark-router
+  objectives: [
+   ev-dark-rock
+   ev-01-dark-duct
+  ]
+}
+requirements: [
+  ev-dark-rock/3
+  ev-iron/3
+]
+researchCost: [
+  ev-dark-rock/30
+  ev-iron/30
+]

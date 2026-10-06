@@ -1,0 +1,24 @@
+type: Wall
+name: Large Dark Rock Wall
+description: Protects structures from incoming damage.
+size: 2
+health: 1000
+squareSprite: false
+requirements: [
+  ev-dark-rock/24
+]
+research: {
+  parent: ev-01-def-dark-rock-wall
+  objectives: [
+   ev-dark-rock
+   ev-01-def-dark-rock-wall
+  ]
+  }
+category: defense
+researchCost: [
+  ev-dark-rock/240
+]
+
+shownPlanets: [
+izanami
+]

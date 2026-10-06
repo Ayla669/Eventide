@@ -1,0 +1,62 @@
+// Izanami asteroid-ring body 0962
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Ring position: radius 3.4719, phase 35.366 degrees.
+
+name: zmoon-0962
+localizedName: "Izanami Moon 0962"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-0962
+    divisions: 3
+    seed: 85594
+    radius: 0.0091
+    color1: 44484a
+    color2: 1a1d1f
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 3.4719
+orbitSpacing: 0.05
+orbitOffset: 35.366
+radius: 0.0091
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

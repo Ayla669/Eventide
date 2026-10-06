@@ -1,0 +1,8 @@
+name: Swarm Essence
+description: WIP
+hardness: 0
+flammability: 0
+cost: 0.1
+alwaysUnlocked: false
+color: 93F398
+shownPlanets: [izanami]

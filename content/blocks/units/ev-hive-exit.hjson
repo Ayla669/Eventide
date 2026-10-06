@@ -1,0 +1,29 @@
+type: UnitFactory
+name: ev-hive-exit
+
+size: 3
+health: 750
+squareSprite: false
+outlineRadius: 0
+requirements: [
+]
+
+plans: [
+  {
+    unit: ev-citheronia
+    time: 30000
+    requirements: [
+    ev-swarm-essence/100
+    ]
+  }
+    {
+    unit: ev-aranicidae-nymph
+    time: 60000
+    requirements: [
+    ev-swarm-essence/100
+    ev-dark-fungi-fiber/50
+    ]
+  }
+]
+
+category: units

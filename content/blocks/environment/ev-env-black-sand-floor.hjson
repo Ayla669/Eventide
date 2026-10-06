@@ -1,0 +1,5 @@
+type: Floor
+name: Dark Sand
+itemDrop: ev-dark-sand
+playerUnmineable: false
+variants: 3

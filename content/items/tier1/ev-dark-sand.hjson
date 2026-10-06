@@ -1,0 +1,8 @@
+name: Dark Sand
+description: "Dark sand from the surface of Izanami. Used in the manufacture of basic materials."
+hardness: 1
+cost: 0.5
+alwaysUnlocked: false
+color: 1E195D
+research: ev-core-dark
+shownPlanets: [izanami]

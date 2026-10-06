@@ -1,0 +1,24 @@
+type: Wall
+name: Large Iron Wall
+description: Protects structures from incoming damage.
+size: 2
+health: 2000
+squareSprite: false
+requirements: [
+  ev-iron/24
+]
+research: {
+  parent: ev-03-iron-wall
+  objectives: [
+   ev-iron
+   ev-03-iron-wall
+  ]
+}
+category: defense
+researchCost: [
+  ev-iron/240
+]
+
+shownPlanets: [
+izanami
+]

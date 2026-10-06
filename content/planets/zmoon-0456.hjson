@@ -1,0 +1,62 @@
+// Izanami asteroid-ring body 0456
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Ring position: radius 2.4471, phase 243.574 degrees.
+
+name: zmoon-0456
+localizedName: "Izanami Moon 0456"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-0456
+    divisions: 3
+    seed: 66872
+    radius: 0.0091
+    color1: 31383d
+    color2: 151a1d
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 2.4471
+orbitSpacing: 0.05
+orbitOffset: 243.574
+radius: 0.0091
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

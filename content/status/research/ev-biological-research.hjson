@@ -1,0 +1,12 @@
+name: Biological Research
+research: {
+  parent: ev-research
+  objectives: [
+  ev-dark-rock
+  ]
+}
+alwaysUnlocked: false
+outlineRadius: 0
+shownPlanets: [
+izanami
+]

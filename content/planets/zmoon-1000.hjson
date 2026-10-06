@@ -1,0 +1,62 @@
+// Izanami asteroid-ring body 1000
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Ring position: radius 3.1853, phase 80.819 degrees.
+
+name: zmoon-1000
+localizedName: "Izanami Moon 1000"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-1000
+    divisions: 3
+    seed: 87000
+    radius: 0.0100
+    color1: 34404a
+    color2: 131a20
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 3.1853
+orbitSpacing: 0.05
+orbitOffset: 80.819
+radius: 0.0100
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

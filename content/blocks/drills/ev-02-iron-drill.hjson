@@ -1,0 +1,63 @@
+type: Drill
+
+name: ev-02-iron-drill
+localizedName: "Iron Drill"
+description: "A good drill designed for extracting resources faster."
+
+size: 2
+
+tier: 3
+drillTime: 160
+squareSprite: false
+
+research: {
+  parent: ev-01-dark-drill
+  objectives: [
+   ev-graphite
+   ev-01-dark-drill
+  ]
+}
+
+requirements: [
+  ev-dark-rock/80
+  ev-iron/150
+  ev-graphite/50
+]
+
+category: production
+alwaysUnlocked: false
+drawTeamOverlay: true
+researchCost: [
+  ev-dark-rock/800
+  ev-iron/1500
+  ev-graphite/500
+]
+
+shownPlanets: [
+izanami
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: itemRegion
+      suffix: -item
+    }
+
+    {
+      type: DrawDefault
+    }
+
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotate: true
+    }
+
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

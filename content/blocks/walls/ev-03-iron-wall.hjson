@@ -1,0 +1,24 @@
+type: Wall
+name: Iron Wall
+description: Protects structures from incoming damage.
+size: 1
+health: 500
+squareSprite: false
+requirements: [
+  ev-iron/6
+]
+research: {
+  parent: ev-01-def-dark-rock-wall
+  objectives: [
+   ev-iron
+   ev-02-def-large-dark-rock-wall
+  ]
+}
+category: defense
+researchCost: [
+  ev-iron/60
+]
+
+shownPlanets: [
+izanami
+]

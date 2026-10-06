@@ -1,0 +1,24 @@
+type: Wall
+name: Weak Soil Wall
+description: It's quicker and cheaper to build than a regular wall, but on the other hand, it's much more fragile.
+size: 1
+health: 150
+squareSprite: false
+requirements: [
+  ev-dark-soil/4
+]
+research: {
+  parent: ev-01-def-dark-rock-wall
+  objectives: [
+   ev-dark-soil
+   
+  ]
+}
+category: defense
+researchCost: [
+  ev-dark-soil/40
+]
+
+shownPlanets: [
+izanami
+]

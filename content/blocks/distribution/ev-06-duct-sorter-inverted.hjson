@@ -1,0 +1,20 @@
+type: Sorter
+invert: true
+name: Inverted Duct Sorter
+description: Works like a Duct Sorter but outputs selected items to the sides instead of straight on.
+category: distribution
+research: {
+  parent: ev-05-duct-sorter
+  objectives: [
+   ev-dark-rock
+   ev-05-duct-sorter
+  ]
+}
+requirements: [
+  ev-dark-rock/3
+  ev-iron/3
+]
+researchCost: [
+  ev-dark-rock/30
+  ev-iron/30
+]

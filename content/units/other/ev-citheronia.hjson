@@ -1,0 +1,73 @@
+type: crawl
+name: Citheronia
+description: An Aranicidae larva, the initial stage of this species' life cycle, and the definitive stage where the Aranicidae decides whether to undergo metamorphosis or continue as a caterpillar.
+health: 1000
+speed: 0.5
+segments: 5
+segmentScl: 1
+segmentPhase: 1
+segmentMag: 1
+rotateSpeed: 4
+omniMovement: false
+drawBody: false
+drawCell: true
+outlineRadius: 0
+armor: 100
+hitSize: 4
+canDrown: true
+crushDamage: 5
+deathSound: ev-monster-die1
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-swarm-blood
+    amount: 30
+  }
+]
+
+weapons: [
+  {
+    shootOnDeath: true
+    targetUnderBlocks: false
+
+    reload: 24
+    shootCone: 180
+
+    x: 0
+    shootY: 0
+    mirror: false
+
+    bullet: {
+      collidesTiles: false
+      collides: false
+      speed: 0
+
+      splashDamageRadius: 44
+      splashDamage: 80
+      
+      liquid: ev-liq-contamined-water
+  liquidAmount: 20
+
+      instantDisappear: true
+      killShooter: true
+
+      hittable: false
+      collidesAir: true
+      backColor: 7CFF6B
+  frontColor: C8FFC0
+    }
+  }
+]
+
+research: {
+  parent: ev-biological-research
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+
+shownPlanets: [izanami]

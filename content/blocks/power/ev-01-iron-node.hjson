@@ -1,0 +1,36 @@
+type: BeamNode
+name: Iron Node
+health: 40
+fogRadius: 2
+range: 10
+size: 1
+squareSprite: false
+category: power
+hasPower: true
+consumesPower: true
+outputsPower: true
+
+consumes: {
+  power: 2.2
+}
+requirements: [
+  ev-iron/25
+  ev-dark-rock/15
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-core-dark
+  objectives: [
+    ev-iron
+    ev-dark-rock
+  ]
+}
+researchCost: [
+  ev-iron/250
+  ev-dark-rock/150
+]
+laserColor1: 83C0E4FF
+laserColor2: 84D2FFFF
+
+outlineRadius: 0

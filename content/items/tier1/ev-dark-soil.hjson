@@ -1,0 +1,9 @@
+name: Dark Soil
+description: "Izanami blackened soil. Used in very basic constructions, but also rich in a wide variety of minerals."
+hardness: 1
+cost: 0.5
+alwaysUnlocked: false
+color: 1E195D
+research: ev-core-dark
+shownPlanets: [izanami]
+

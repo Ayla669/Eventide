@@ -1,0 +1,23 @@
+name: Planetary Research Result
+research: {
+  parent: ev-planetary-research
+  objectives: [
+    ev-dark-rock
+    ev-charcoal
+    ev-iron
+    ev-dark-glass
+    ev-graphite
+    ev-silicon
+    ev-gold
+    ev-lead
+    ev-rybek-crystals
+    ev-dark-sand
+    ev-dark-soil
+  ]
+}
+alwaysUnlocked: false
+outlineRadius: 0
+databaseCategory: lore-research
+shownPlanets: [
+izanami
+]

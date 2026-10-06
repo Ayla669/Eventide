@@ -1,0 +1,62 @@
+// Izanami asteroid-ring body 0904
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Ring position: radius 2.9998, phase 208.476 degrees.
+
+name: zmoon-0904
+localizedName: "Izanami Moon 0904"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-0904
+    divisions: 3
+    seed: 83448
+    radius: 0.0085
+    color1: 3a3f43
+    color2: 171b1f
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 2.9998
+orbitSpacing: 0.05
+orbitOffset: 208.476
+radius: 0.0085
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

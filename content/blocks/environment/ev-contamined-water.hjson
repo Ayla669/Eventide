@@ -1,0 +1,14 @@
+type: Floor
+name: Contamined Water
+
+speedMultiplier: 0.2
+variants: 0
+
+liquidDrop: ev-liq-contamined-water
+liquidMultiplier: 1.5
+
+isLiquid: true
+
+cacheLayer: water
+albedo: 0.9
+supportsOverlay: true

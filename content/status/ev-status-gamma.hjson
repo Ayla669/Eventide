@@ -1,0 +1,20 @@
+damage: 16
+speedMultiplier: 0.1
+shownPlanets: [
+izanami
+]
+effect: {
+    type: ParticleEffect
+    region: eventide-radio
+    lifetime: 30
+    sizeInterp: slope
+    length: 10
+    baseLength: 4
+    sizeFrom: 1
+    sizeTo: 3
+    colorFrom: 67FF7D8C
+    colorTo: 67FF7D8C
+    layer: 61.7
+    spin: 2
+    baseRotation: 32.5
+}

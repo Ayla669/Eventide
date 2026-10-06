@@ -1,0 +1,83 @@
+type: GenericCrafter
+name: Soil Filter
+
+description: Filters Izanami soil to extract minerals in small quantities.
+size: 2
+craftTime: 180
+squareSprite: false
+consumes: {
+  items: [
+    ev-dark-soil/25
+  ]
+  liquids: [
+    ev-liq-contamined-water/0.3
+  ]
+}
+ignoreLiquidFullness: true
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.1
+researchCost: [
+  ev-iron/400
+  ev-dark-rock/800
+]
+
+ambientSoundVolume: 0.09
+craftEffect: {
+type: ParticleEffect
+    particles: 6
+    colorFrom: 1B83C8
+    colorTo: 66C1FF
+    sizeFrom: 0.50
+    sizeTo: 0.1
+    lifetime: 60
+    cone: 360
+    length: 3
+    baseLength: 4
+    interp: pow2Out
+    sizeInterp: pow2
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-liq-contamined-water
+      padLeft: 5
+      padTop: 5
+      padBottom: 5
+      padRight: 5
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner
+      spinSprite: true
+      rotateSpeed: 9
+    }
+  ]
+}
+outputItems: [
+  ev-iron/10
+  ev-gold/3
+  ev-lead/8
+  ev-rybek-crystals/1
+]
+
+category: crafting
+research: {
+  parent: ev-core-dark
+  objectives: [
+   ev-dark-rock
+  ]
+}
+requirements: [
+  ev-iron/40
+  ev-dark-rock/80
+]
+itemCapacity: 100

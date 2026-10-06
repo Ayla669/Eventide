@@ -1,0 +1,126 @@
+type: crawl
+name: Arthropleura
+description: A young swarm queen, she has developed an extremely resilient carapace and thick skin capable of withstanding radiation. She constantly generates new soldiers to fight for her.
+
+immunities: [
+burning,
+melting,
+ev-status-gamma
+]
+health: 25000
+speed: 0.25
+segments: 5
+segmentScl: 1
+segmentPhase: 1
+segmentMag: 1
+rotateSpeed: 4
+omniMovement: false
+drawBody: false
+drawCell: true
+outlineRadius: 0
+armor: 15000
+hitSize: 32
+canDrown: true
+crushDamage: 250
+deathSound: ev-arthropleura-die
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-liquid-rybek
+    amount: 180
+  }
+]
+
+weapons: [
+    {
+      top: true
+      x: 0
+      name: ev-arthropleura-weapon1
+      range: 100
+      recoil: 1
+      shootCone: 45
+      shootEffect: none
+        y: 0
+        reload: 180
+        rotate: true
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 6
+          shotDelay: 120
+        }
+        shootSound: ev-monster-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+      instantDisappear: true
+      collides: false
+      damage: 0
+      spawnUnit: ev-citheronia
+    }
+    }
+    
+        {
+      top: true
+      x: 0
+      name: ev-arthropleura-weapon2
+      range: 100
+      recoil: 1
+      shootCone: 45
+      shootEffect: none
+        y: 0
+        reload: 300
+        rotate: true
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 3
+          shotDelay: 60
+        }
+        shootSound: ev-monster-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+      instantDisappear: true
+      collides: false
+      damage: 0
+      spawnUnit: ev-gauromydas
+    }
+    }
+
+        {
+      top: true
+      x: 0
+      name: ev-arthropleura-weapon3
+      range: 100
+      recoil: 1
+      shootCone: 45
+        y: 0
+        reload: 60
+        rotate: true
+        mirror: false
+        alternate: false
+        shoot: {
+          shots: 8
+          shotDelay: 60
+        }
+        shootSound: ev-monster-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+      instantDisappear: true
+      collides: false
+      damage: 0
+      spawnUnit: ev-aranicidae-nymph
+    }
+    }
+    ]
+    
+    research: {
+  parent: ev-attakus
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+shownPlanets: [izanami]

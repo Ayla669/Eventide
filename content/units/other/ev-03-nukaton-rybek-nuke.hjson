@@ -1,0 +1,64 @@
+name: ev-missile-rybek
+type: missile
+template: MissileUnitType
+
+speed: 3.8
+maxRange: 6
+lifetime: 360
+
+hitSize: 9
+health: 180
+
+outlineColor: 252525
+
+engineColor: 65FF65
+trailColor: 32D632
+engineSize: 3
+engineOffset: 4
+engineLayer: 110
+trailLength: 20
+
+rotateSpeed: 0.28
+missileAccelTime: 45
+
+lowAltitude: true
+
+targetAir: false
+targetUnderBlocks: false
+targetGround: true
+
+fogRadius: 7
+
+loopSound: loopMissileTrail
+loopSoundVolume: 0.6
+deathSound: explosionNuclearSmall
+
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+
+    shootOnDeath: true
+
+    bullet: {
+  type: ExplosionBulletType
+
+  damage: 500
+  splashDamage: 500
+  splashDamageRadius: 40
+
+  hitColor: 45FF45
+
+  hitEffect: massiveExplosion
+  despawnEffect: massiveExplosion
+
+  lightning: 8
+  lightningDamage: 80
+  lightningLength: 12
+  lightningLengthRand: 8
+
+  lightningColor: 45FF45
+}
+}
+]

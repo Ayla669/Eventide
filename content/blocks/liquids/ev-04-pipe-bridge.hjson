@@ -1,0 +1,27 @@
+type: LiquidBridge
+name: Aqueduct Bridge
+description: Used for crossing multiple distribution lines or terrain to connect Aqueducts.
+fadeIn: false
+moveArrows: false
+arrowSpacing: 6
+range: 10
+hasPower: false
+category: liquid
+requirements: [
+  ev-dark-rock/12
+  ev-iron/6
+]
+research: {
+  parent: ev-01-dark-pipe
+  objectives: [
+    ev-01-dark-pipe
+  ]
+}
+researchCost: [
+  ev-dark-rock/120
+  ev-iron/60
+]
+
+shownPlanets: [
+izanami
+]

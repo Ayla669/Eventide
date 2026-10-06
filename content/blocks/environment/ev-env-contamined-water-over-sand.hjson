@@ -1,0 +1,10 @@
+type: Floor
+name: Contamined Water Over Sand
+
+variants: 3
+
+liquidDrop: ev-liq-contamined-water
+liquidMultiplier: 1
+isLiquid: true
+
+cacheLayer: water

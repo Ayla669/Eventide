@@ -1,0 +1,163 @@
+type: ItemTurret
+name: Gear
+description: Rapidly blasts bullets at enemies.
+
+size: 3
+squareSprite: false
+health: 300
+
+reload: 120
+range: 600
+
+outlineRadius: 0
+coolantMultiplier: 2.5
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+
+shoot: {
+  firstShotDelay: 120
+  shots: 30
+  shotDelay: 10
+}
+
+velocityRnd: 0.21
+ammoPerShot: 2
+
+recoil: 1.5
+recoilTime: 12
+cooldownTime: 35
+
+drawer: {
+  type: DrawTurret
+  basePrefix: base-
+}
+
+category: turret
+
+research: {
+  parent: ev-core-dark
+  objectives: [
+    ev-dark-rock
+    ev-iron
+  ]
+}
+
+researchCost: [
+  ev-dark-rock/2000
+  ev-iron/1000
+]
+
+requirements: [
+  ev-dark-rock/200
+  ev-iron/100
+]
+
+chargeSound: ev-gear-loading
+shootSound: ev-gear-shoot
+
+smokeEffect: [
+  {
+    type: ParticleEffect
+    particles: 3
+    lifetime: 18
+    length: 5
+    cone: 35
+    sizeFrom: 2.2
+    sizeTo: 0
+    colorFrom: 8a8a8a
+    colorTo: 353535
+    offsetX: 0
+    offsetY: 0
+  }
+]
+
+ammoUseEffect: casing1
+ammoEjectBack: 0
+
+ammoTypes: {
+
+  ev-graphite: {
+    frontColor: ffffff
+    backColor: 4e4277
+    trailColor: 4e4277
+
+    type: BasicBulletType
+
+    speed: 5
+    width: 15
+    height: 15
+    lifetime: 80
+
+    damage: 50
+
+    pierce: false
+
+    hitEffect: flakExplosion
+
+    status: unmoving
+    statusDuration: 30
+
+    reloadMultiplier: 0.5
+
+    inaccuracy: 5
+
+    ammoMultiplier: 2
+  }
+
+  ev-lead: {
+    frontColor: ffffff
+    backColor: 4e4277
+    trailColor: 4e4277
+
+    type: BasicBulletType
+
+    speed: 10
+    width: 10
+    height: 10
+    lifetime: 80
+
+    damage: 80
+
+    pierce: true
+    pierceCap: 3
+
+    hitEffect: flakExplosion
+
+    inaccuracy: 3
+
+    ammoMultiplier: 2
+  }
+
+  ev-iron: {
+    frontColor: ffffff
+    backColor: 4e4277
+    trailColor: 4e4277
+
+    type: BasicBulletType
+
+    speed: 20
+    width: 10
+    height: 10
+    lifetime: 80
+
+    damage: 60
+
+    pierce: false
+
+    hitEffect: flakExplosion
+    
+    reloadMultiplier: 2
+
+    inaccuracy: 1
+
+    ammoMultiplier: 2
+  }
+}
+
+rotate: false
+shownPlanets: [izanami]

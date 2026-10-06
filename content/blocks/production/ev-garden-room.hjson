@@ -1,0 +1,23 @@
+type: GenericCrafter
+name: Garden Room
+
+description: WIP
+size: 2
+craftTime: 120
+squareSprite: false
+consumes: {
+}
+ignoreLiquidFullness: true
+ambientSound: none
+ambientSoundVolume: 0.1
+
+ambientSoundVolume: 0.09
+outputItems: [
+  ev-dark-fungi-fiber/4
+]
+
+category: crafting
+
+requirements: [
+]
+itemCapacity: 100

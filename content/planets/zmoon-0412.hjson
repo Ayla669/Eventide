@@ -1,0 +1,63 @@
+// Izanami asteroid-ring body 0412
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Rybek crystal asteroid (dark green)
+// Ring position: radius 2.3646, phase 182.726 degrees.
+
+name: zmoon-0412
+localizedName: "Izanami Moon 0412"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-0412
+    divisions: 3
+    seed: 65244
+    radius: 0.0043
+    color1: 173026
+    color2: 07130e
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 2.3646
+orbitSpacing: 0.05
+orbitOffset: 182.726
+radius: 0.0043
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

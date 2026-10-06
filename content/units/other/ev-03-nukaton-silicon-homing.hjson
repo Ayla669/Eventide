@@ -1,0 +1,85 @@
+name: ev-missile-silicon
+type: missile
+template: MissileUnitType
+
+speed: 4.6
+maxRange: 6
+lifetime: 330
+
+hitSize: 8
+health: 100
+
+outlineColor: 252525
+engineColor: 9EDCFF
+trailColor: 9EDCFF
+engineSize: 2.5
+engineOffset: 4
+engineLayer: 110
+trailLength: 16
+
+rotateSpeed: 0.3
+missileAccelTime: 40
+
+lowAltitude: true
+
+targetAir: false
+targetUnderBlocks: false
+fogRadius: 6
+
+loopSound: loopMissileTrail
+loopSoundVolume: 0.5
+deathSound: explosionMissile
+
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+
+    shootOnDeath: true
+
+    bullet: {
+      type: ExplosionBulletType
+
+      damage: 200
+      splashDamage: 200
+      splashDamageRadius: 25
+
+      hitColor: 9EDCFF
+
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+
+      fragBullets: 10
+      fragSpread: 45
+      fragRandomSpread: 15
+
+      fragBullet: {
+        type: MissileBulletType
+
+        speed: 4
+        damage: 100
+
+        lifetime: 180
+
+        width: 6
+        height: 8
+
+        homingPower: 0.15
+        homingDelay: 5
+        homingRange: 160
+
+        splashDamage: 100
+        splashDamageRadius: 15
+
+        hitColor: 9EDCFF
+        trailColor: 9EDCFF
+        backColor: 9EDCFF
+        frontColor: FFFFFF
+
+        hitEffect: hitBulletColor
+        despawnEffect: blastExplosion
+      }
+    }
+  }
+]

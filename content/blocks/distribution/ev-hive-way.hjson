@@ -1,0 +1,9 @@
+type: Duct
+name: Hive Way
+description: Transports items trough tunnels.
+category: distribution
+speed: 10
+health: 100
+outlineRadius: 0
+requirements: [
+]

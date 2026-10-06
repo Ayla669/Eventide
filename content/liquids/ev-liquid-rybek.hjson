@@ -1,0 +1,27 @@
+name: Liquid Rybek
+description: Produced by mixing Rybek fragments with contaminated water, this extremely hot and viscous liquid is up to ten times more radioactive and dangerous than Rybek in its raw form. It can damage machinery and harm living beings in the process. It can contaminate an area for a certain period if disposed of incorrectly.
+effect: ev-status-gamma
+boilPoint: 0.5
+color: 00DE1E
+heatCapacity: 0.35
+gasColor: 00DE1E
+alwaysUnlocked: false
+shownPlanets: [
+izanami
+]
+temperature: 2
+charge: 30
+radioactivity: 20
+heatCapacity: 1
+type: cellLiquid
+explosiveness: 0
+capPuddles: false
+blockReactive: true
+spreadDamage: 25
+viscosity: 0.99
+research: {
+  parent: ev-liq-contamined-water
+  objectives: [
+    ev-05-razryarost
+  ]
+}

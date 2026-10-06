@@ -1,0 +1,8 @@
+name: Dark Rock
+description: "A dark rock from the charred surface of Izanami. Used in construction and the manufacture of basic materials."
+hardness: 1
+cost: 0.5
+alwaysUnlocked: false
+color: 1E194D
+research: ev-core-dark
+shownPlanets: [izanami]

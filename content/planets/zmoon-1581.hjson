@@ -1,0 +1,62 @@
+// Izanami asteroid-ring body 1581
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Ring position: radius 4.6588, phase 141.29 degrees.
+
+name: zmoon-1581
+localizedName: "Izanami Moon 1581"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-1581
+    divisions: 3
+    seed: 108497
+    radius: 0.0089
+    color1: 2e3539
+    color2: 121619
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 4.6588
+orbitSpacing: 0.05
+orbitOffset: 141.29
+radius: 0.0089
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

@@ -1,0 +1,52 @@
+type: Pump
+name: Dark Pump
+description: Slowly pumps water.
+size: 1
+category: liquid
+squareSprite: false
+research: {
+  parent: ev-core-dark
+  objectives: [
+   ev-dark-rock
+   ev-iron
+  ]
+}
+requirements: [
+  ev-dark-rock/50
+  ev-iron/25
+]
+pumpAmount: 0.8
+researchCost: [
+   ev-dark-rock/500
+   ev-iron/250
+   ]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-liq-contamined-water
+      padLeft: 5
+      padTop: 5
+      padBottom: 5
+      padRight: 5
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      spinSprite: true
+      rotateSpeed: 9
+    }
+  ]
+}
+
+shownPlanets: [
+izanami
+]

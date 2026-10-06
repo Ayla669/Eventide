@@ -1,0 +1,21 @@
+description: "The beginning after the end...
+-Discover what you can about Izanami.
+-Research new technologies and protect yourself against the swarm."
+
+name: Rebirth
+planet: izanami
+sector: 0
+
+research: {
+  parent: ev-core-dark
+}
+
+alwaysUnlocked: true
+
+difficulty: 3
+
+captureWave: 50
+
+outline: false
+
+shownPlanets: [izanami]

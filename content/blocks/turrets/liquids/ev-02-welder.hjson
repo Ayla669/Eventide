@@ -1,0 +1,144 @@
+type: ContinuousLiquidTurret
+name: Welder
+description: Fires a dual beam—energized and heated with slag.
+size: 3
+category: turret
+outlineRadius: 0
+liquidConsumed: 0.05
+targetInterval: 5
+targetUnderBlocks: false
+range: 180
+targetAir: false
+squareSprite: false
+
+hasPower: true
+
+consumes: {
+  power: 23
+}
+
+allowGas: true
+allowLiquid: true
+amount: 360
+
+shootY: 5
+loopSound: ev-welder-shoot
+shootSound: none
+loopSoundVolume: 0.6
+research: {
+   parent: ev-01-gear
+   objectives: [
+      ev-dark-rock
+      ev-iron
+      ev-silicon
+      ev-rybek-crystals
+      ev-gold
+      ev-03-burning-generator
+   ]
+}
+researchCost: [
+      ev-dark-rock/2500
+      ev-iron/1500
+      ev-silicon/1500
+      ev-rybek-crystals/500
+      ev-gold/500
+      ]
+
+requirements: [
+      ev-dark-rock/250
+      ev-iron/150
+      ev-silicon/150
+      ev-rybek-crystals/50
+      ev-gold/50
+]
+
+
+drawer: {
+  type: drawTurret
+  basePrefix: base-
+  drawTurret: false
+  top: none
+  parts: [
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -down-0
+      under: true
+      progress: warmup
+    },
+    {
+      type: RegionPart
+      suffix: -liquid
+      under: true
+    },
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -1
+      under: false
+      progress: warmup
+    },
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -3
+      under: false
+      progress: warmup
+      moveX: -1
+    },
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -4
+      under: false
+      progress: warmup
+      moveX: 1
+    }
+  ]
+}
+ammoTypes: {
+  slag: {
+    width: 1.7
+    drawFlare: false
+    hitColor: FFC280CC
+    type: ContinuousFlameBulletType
+    damage: 33
+    length: 180
+    knockback: 0
+    pierceCap: 3
+    despawnEffect: smokeCloud
+    colors: [
+    FF860080
+    FF9A29B3
+    FFAA4CCC
+    FFC280
+    lightColor: FFC280CC
+    ]
+  }
+  ev-liquid-rybek: {
+    width: 1.7
+    drawFlare: false
+    hitColor: 00DE1ECC
+    type: ContinuousFlameBulletType
+    damage: 120
+    length: 120
+    status: ev-status-gamma
+    statusDuration: 30
+    knockback: 0
+    pierceCap: 3
+    despawnEffect: smokeCloud
+    colors: [
+    71FF8680
+    71FF86B3
+    71FF86CC
+    71FF86
+    lightColor: 71FF86CC
+    ]
+  }
+}
+liquidCapacity: 250
+ignoreLiquidFullness: false
+rotate: false
+shownPlanets: [
+  izanami
+  ]

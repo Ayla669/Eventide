@@ -1,0 +1,193 @@
+name: Izanami
+alwaysUnlocked: true
+accessible: true
+visible: true
+
+parent: sun
+solarSystem: sun
+
+radius: 1.28
+orbitRadius: 75
+orbitSpacing: 1
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+
+drawOrbit: true
+tidalLock: true
+sectorSize: 2.9
+
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+allowWaves: true
+
+iconColor: 424B99
+hasAtmosphere: true
+atmosphereColor: 5E96C7
+bloom: false
+
+showRtsAIRule: true
+prebuildBase: false
+clearSectorOnLose: true
+defaultCore: ev-core-dark
+enemyCoreSpawnReplace: false
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: [
+  "ev-charcoal",
+  "ev-dark-glass",
+  "ev-dark-rock",
+  "ev-dark-sand",
+  "ev-dark-soil",
+  "ev-gold",
+  "ev-graphite",
+  "ev-iron",
+  "ev-lead",
+  "ev-silicon",
+  "ev-rybek-crystals",
+]
+liquidWhitelist: [
+  "ev-contamined-water",
+  "slag"
+  ]
+
+//aparencia//
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: izanami
+    divisions: 6
+    seed: 94
+    radius: 1.30
+
+    color1: 11132F
+    color2: 25245C
+
+    octaves: 3
+    persistence: 0.6
+    scale: 4
+    mag: 0.35
+  }
+  
+    {
+    type: NoiseMesh
+    planet: izanami
+    divisions: 6
+    seed: 65
+    radius: 1.30
+
+    color1: 262626
+    color2: 26262600
+
+    octaves: 3
+    persistence: 0.6
+    scale: 5
+    mag: 0.35
+  }
+  
+    {
+    type: NoiseMesh
+    planet: izanami
+    divisions: 6
+    seed: 278
+    radius: 1.28
+
+    color1: 00FFBB
+    color2: 00FFBB00
+
+    octaves: 3
+    persistence: 0.6
+    scale: 6
+    mag: 0.35
+  }
+  
+        {
+    type: NoiseMesh
+    planet: izanami
+    divisions: 4
+    seed: 129
+    radius: 1.28
+
+    color1: 2E5C6B
+    color2: 223D54
+
+    octaves: 3
+    persistence: 0.6
+    scale: 8
+    mag: 0.35
+  }
+  
+      {
+    type: NoiseMesh
+    planet: izanami
+    divisions: 4
+    seed: 686
+    radius: 1.28
+
+    color1: FF6C00
+    color2: FF781A
+
+    octaves: 3
+    persistence: 0.6
+    scale: 8
+    mag: 0.35
+  }
+]
+
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    planet: izanami
+    speed: 1.21
+    radius: 0.10
+    divisions: 6
+    color: 8FB8D625
+    octaves: 3
+    persistence: 0.3
+    scl: 1
+    thresh: 0.6
+  }
+  {
+    type: HexSkyMesh
+    planet: izanami
+    speed: 1.01
+    radius: 0.11
+    divisions: 6
+    color: 8FB8D625
+    octaves: 3
+    persistence: 0.4
+    scl: 0.9
+    thresh: 0.6
+  }
+  {
+    type: HexSkyMesh
+    planet: izanami
+    speed: 0.891
+    radius: 0.091
+    divisions: 6
+    color: 8FB8D625
+    octaves: 3
+    persistence: 0.5
+    scl: 1.1
+    thresh: 0.6
+  }
+]
+
+generator: {
+  octaves: 4
+  persistence: 0.52
+  scale: 12
+mag: 1.5
+thresh: 1.0
+  min: 220
+  max: 600
+  radMin: 220
+  radMax: 600
+}

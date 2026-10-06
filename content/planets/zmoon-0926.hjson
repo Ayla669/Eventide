@@ -1,0 +1,63 @@
+// Izanami asteroid-ring body 0926
+// Z-prefix keeps this body after Izanami in alphabetical content loading.
+// Rybek crystal asteroid (dark green)
+// Ring position: radius 2.9416, phase 233.982 degrees.
+
+name: zmoon-0926
+localizedName: "Izanami Moon 0926"
+
+alwaysUnlocked: false
+accessible: false
+visible: true
+
+mesh: [
+  {
+    type: NoiseMesh
+    planet: zmoon-0926
+    divisions: 3
+    seed: 84262
+    radius: 0.0049
+    color1: 203b2d
+    color2: 0a1710
+    octaves: 2.5
+    persistence: 0.75
+    scale: 5
+    mag: 0.7
+  }
+]
+
+orbitRadius: 2.9416
+orbitSpacing: 0.05
+orbitOffset: 233.982
+radius: 0.0049
+
+drawOrbit: false
+tidalLock: true
+
+parent: izanami
+solarSystem: sun
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+hasAtmosphere: false
+bloom: false
+
+minZoom: 1
+maxZoom: 3
+
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+startSector: 0
+allowWaves: false
+prebuildBase: false
+clearSectorOnLose: true
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: []
+

@@ -1,0 +1,80 @@
+type: Drill
+
+name: ev-03-multi-drill
+localizedName: "Multi Drill"
+description: "An advanced drill designed for extracting hard resources from the soil."
+
+size: 3
+
+tier: 4
+drillTime: 60
+squareSprite: false
+
+hasPower: true
+consumesPower: true
+outputsPower: true
+
+consumes: {
+  power: 2.5
+}
+
+research: {
+  parent: ev-02-iron-drill
+  objectives: [
+   ev-gold
+   ev-02-iron-drill
+   ev-silicon
+   ev-03-burning-generator
+  ]
+}
+
+requirements: [
+  ev-dark-rock/100
+  ev-iron/250
+  ev-gold/50
+  ev-silicon/50
+]
+
+category: production
+alwaysUnlocked: false
+researchCost: [
+  ev-dark-rock/1000
+  ev-iron/2500
+  ev-gold/500
+  ev-silicon/500
+]
+
+drawRim: false
+
+outlineRadius: 0
+
+shownPlanets: [
+
+izanami
+
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: itemRegion
+      suffix: -item
+    }
+
+    {
+      type: DrawDefault
+    }
+
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotate: true
+    }
+
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

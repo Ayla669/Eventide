@@ -1,0 +1,22 @@
+type: Router
+name: Dark Router
+description: Made from Dark Rock. Distributes input items from ducts to three directions equally. 
+size: 1
+speed: 5
+health: 110
+itemCapacity: 3
+requirements: [
+  ev-dark-rock/3
+]
+squareSprite: false
+category: distribution
+research: {
+  parent: ev-01-dark-duct
+  objectives: [
+   ev-dark-rock
+   ev-01-dark-duct
+  ]
+}
+researchCost: [
+  ev-dark-rock/30
+]

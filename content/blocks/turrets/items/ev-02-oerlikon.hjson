@@ -1,0 +1,167 @@
+type: ItemTurret
+name: Oerlikon
+description: An anti-aircraft turret. It fires fragmentation rounds at targets.
+
+size: 3
+squareSprite: false
+health: 450
+
+hasPower: true
+consumes: {
+  power: 22
+}
+
+targetAir: true
+targetUnderBlocks: false
+targetGround: false
+
+reload: 30
+range: 800
+
+outlineRadius: 0
+coolantMultiplier: 2.5
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+
+shoot: {
+  firstShotDelay: 30
+  shots: 30
+  shotDelay: 10
+}
+
+velocityRnd: 0.20
+ammoPerShot: 2
+
+recoil: 1.5
+recoilTime: 12
+cooldownTime: 35
+
+drawer: {
+  type: DrawTurret
+  basePrefix: base-
+}
+
+category: turret
+
+research: {
+  parent: ev-01-gear
+  objectives: [
+    ev-dark-rock
+    ev-iron
+    ev-01-gear
+    ev-gold
+    ev-silicon
+    ev-dark-glass
+  ]
+}
+
+researchCost: [
+  ev-dark-rock/2000
+  ev-iron/1000
+  ev-gold/500
+]
+
+requirements: [
+  ev-dark-rock/200
+  ev-iron/100
+  ev-gold/50
+]
+
+chargeSound: ev-gear-loading
+shootSound: ev-gear-shoot
+
+smokeEffect: [
+  {
+    type: ParticleEffect
+    particles: 3
+    lifetime: 18
+    length: 5
+    cone: 35
+    sizeFrom: 2.2
+    sizeTo: 0
+    colorFrom: 8a8a8a
+    colorTo: 353535
+    offsetX: 0
+    offsetY: 0
+  }
+]
+
+ammoUseEffect: casing1
+ammoEjectBack: 0
+
+ammoTypes: {
+
+  ev-dark-glass: {
+    frontColor: ffffff
+    backColor: 4e4277
+    trailColor: 4e4277
+    inaccuracy: 5
+    speed: 30
+
+    fragBullet: {
+        type: BasicBulletType
+
+        speed: 30
+        damage: 50
+
+        lifetime: 10
+
+        width: 4
+        height: 10
+        hitSize: 4
+
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: true
+
+        collidesAir: true
+        collidesGround: false
+
+        hitColor: DFFFFF
+        backColor: DFFFFF
+        trailColor: DFFFFF
+        frontColor: FFFFFF
+        }
+       }
+     
+     ev-silicon: {
+    frontColor: DFFFFF
+    backColor: DFFFFF
+    trailColor: DFFFFF
+    inaccuracy: 5
+
+        type: MissileBulletType
+
+        speed: 30
+        damage: 50
+
+        lifetime: 60
+
+        width: 6
+        height: 8
+
+        homingPower: 0.15
+        homingDelay: 5
+        homingRange: 160
+
+        splashDamage: 100
+        splashDamageRadius: 15
+
+        hitColor: DFFFFF
+        trailColor: DFFFFF
+        backColor: DFFFFF
+        frontColor: FFFFFF
+
+        hitEffect: hitBulletColor
+        despawnEffect: blastExplosion
+      
+    }
+}
+
+rotate: false
+shownPlanets: [izanami]

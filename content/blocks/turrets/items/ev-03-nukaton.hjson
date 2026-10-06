@@ -1,0 +1,211 @@
+type: ItemTurret
+predictTarget: false
+name: Nukaton
+description: Launches extremely powerful guided missiles.
+size: 3
+squareSprite: false
+health: 1500
+armor: 10
+
+hasPower: true
+consumes: {
+  power: 62
+}
+
+coolant: {
+  type: ConsumeLiquid
+  liquid: ev-liq-contamined-water
+  amount: 0.25
+}
+coolantMultiplier: 2.5
+fogRadiusMultiplier: 0.45
+
+shootSound: shootScathe
+
+requirements: [
+  ev-dark-rock/450
+  ev-iron/350
+  ev-gold/200
+  ev-rybek-crystals/200
+  ev-silicon/100
+  ev-graphite/50
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-02-welder
+  objectives: [
+    ev-02-welder
+    ev-rybek-crystals
+    ev-gold
+    ev-03-burning-generator
+  ]
+}
+
+category: turret
+recoil: 1.5
+outlineRadius: 0
+
+targetAir: false
+targetUnderBlocks: false
+targetGround: true
+
+shootCone: 1
+rotateSpeed: 0.75
+minWarmup: 0.20
+newTargetInterval: 60
+unitSort: strongest
+shootWarmupSpeed: 0.02
+
+shoot: {
+  firstShotDelay: 300
+  shots: 4
+  shotDelay: 60
+}
+
+range: 800
+shootY: 0
+shake: 4
+
+ammoPerShot: 15
+maxAmmo: 60
+
+ammoTypes: {
+  ev-silicon: {
+    type: BulletType
+    instantDisappear: true
+    spawnUnit: ev-03-nukaton-silicon-homing
+  }
+
+  ev-dark-glass: {
+    type: BulletType
+    instantDisappear: true
+    spawnUnit: ev-03-nukaton-glass-frag
+  }
+
+  ev-rybek-crystals: {
+    type: BulletType
+    instantDisappear: true
+    spawnUnit: ev-03-nukaton-rybek-nuke
+  }
+}
+
+drawer: {
+  type: drawTurret
+  basePrefix: base-
+  drawTurret: false
+  top: none
+
+  ammoParts: {
+    ev-silicon: [
+      {
+        type: RegionPart
+        suffix: -missile-silicon
+        y: -2
+        layerOffset: -0.01
+        outline: false
+
+        progress: {
+          type: reload
+          interp: pow2In
+        }
+
+        colorTo: ffffff00
+        color: ffffffff
+
+        moves: [
+          {
+            type: PartMove
+            progress: warmup
+            y: 3
+          }
+        ]
+      }
+    ]
+
+    ev-dark-glass: [
+      {
+        type: RegionPart
+        suffix: -missile-glass
+        y: -2
+        layerOffset: -0.01
+        outline: false
+
+        progress: {
+          type: reload
+          interp: pow2In
+        }
+
+        colorTo: ffffff00
+        color: ffffffff
+
+        moves: [
+          {
+            type: PartMove
+            progress: warmup
+            y: 3
+          }
+        ]
+      }
+    ]
+
+    ev-rybek-crystals: [
+      {
+        type: RegionPart
+        suffix: -missile-rybek
+        y: -2
+        layerOffset: -0.01
+        outline: false
+
+        progress: {
+          type: reload
+          interp: pow2In
+        }
+
+        colorTo: ffffff00
+        color: ffffffff
+
+        moves: [
+          {
+            type: PartMove
+            progress: warmup
+            y: 3
+          }
+        ]
+      }
+    ]
+  }
+  
+  parts: [
+  
+  
+      {
+      type: RegionPart
+      suffix: -down-1
+      progress: warmup
+    }
+
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -wing-1
+      under: true
+      progress: warmup
+      moveX: 1
+    }
+
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -wing-2
+      under: true
+      progress: warmup
+      moveX: -1
+    }
+  ]
+}
+
+shownPlanets: [izanami
+]
+
+rotate: false

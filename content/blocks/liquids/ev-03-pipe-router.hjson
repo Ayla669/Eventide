@@ -1,0 +1,29 @@
+type: LiquidRouter
+name: Pipe Router
+description: Distributes inputted liquids to three outputs equally.
+size: 1
+solid: false
+underBullets: true
+health: 45
+liquidCapacity: 75
+category: liquid
+squareSprite: false
+requirements: [
+  ev-dark-rock/10
+  ev-iron/5
+]
+
+research: {
+  parent: ev-01-dark-pipe
+  objectives: [
+    ev-01-dark-pipe
+  ]
+}
+researchCost: [
+  ev-dark-rock/100
+  ev-iron/50
+]
+
+shownPlanets: [
+izanami
+]

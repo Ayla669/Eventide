@@ -1,0 +1,89 @@
+name: ev-missile-glass
+type: missile
+
+template: MissileUnitType
+speed: 6.5
+maxRange: 6
+lifetime: 240
+
+hitSize: 7
+health: 70
+
+outlineColor: 252525
+
+engineColor: DFFFFF
+trailColor: DFFFFF
+engineSize: 2.5
+engineOffset: 4
+engineLayer: 110
+trailLength: 14
+
+rotateSpeed: 0.45
+missileAccelTime: 15
+
+lowAltitude: true
+
+targetAir: false
+targetUnderBlocks: false
+targetGround: true
+
+fogRadius: 6
+
+loopSound: loopMissileTrail
+loopSoundVolume: 0.45
+deathSound: explosionGlass
+
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+
+    shootOnDeath: true
+
+    bullet: {
+      type: ExplosionBulletType
+
+      damage: 300
+      splashDamage: 300
+      splashDamageRadius: 18
+
+      hitColor: DFFFFF
+
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+
+      fragBullets: 15
+      fragSpread: 30
+      fragRandomSpread: 20
+
+      fragVelocityMin: 0.8
+      fragVelocityMax: 1.2
+
+      fragBullet: {
+        type: BasicBulletType
+
+        speed: 7
+        damage: 150
+
+        lifetime: 45
+
+        width: 4
+        height: 10
+        hitSize: 4
+
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: true
+
+        collidesAir: false
+        collidesGround: true
+
+        hitColor: DFFFFF
+        backColor: DFFFFF
+        trailColor: DFFFFF
+        frontColor: FFFFFF
+        }
+       }
+      }
+     ]

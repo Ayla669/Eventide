@@ -1,0 +1,9 @@
+name: Rock Vent
+type: SteamVent
+blendGroup: ev-env-rock-floor
+parent: ev-env-rock-floor
+effect: ventSteam
+effectColor: E6E6E6
+attributes: {
+   heat: 0.11111111
+}

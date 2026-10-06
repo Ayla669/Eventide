@@ -1,0 +1,91 @@
+type: crawl
+name: Attakus
+description: A citheronia that chose to remain in its larval form, following the path of royalty. This creature is preparing to give birth to hundreds of new larvae, though it is still very young.
+health: 3000
+speed: 0.3
+segments: 5
+segmentScl: 1
+segmentPhase: 1
+segmentMag: 1
+rotateSpeed: 4
+omniMovement: false
+drawBody: false
+drawCell: true
+outlineRadius: 0
+armor: 500
+hitSize: 8
+canDrown: true
+crushDamage: 25
+deathSound: ev-monster-die3
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-swarm-blood
+    amount: 60
+  }
+]
+
+weapons: [
+  {
+    shootOnDeath: true
+    targetUnderBlocks: false
+
+    reload: 24
+    shootCone: 180
+
+    x: 0
+    shootY: 0
+    mirror: false
+    
+
+    bullet: {
+  collidesTiles: false
+  collides: false
+  speed: 0
+
+  splashDamageRadius: 150
+  splashDamage: 5000
+
+  fragBullets: 15
+  fragSpread: 360
+  fragRandomSpread: 360
+
+  fragBullet: {
+    collidesTiles: false
+    collides: false
+    speed: 0
+
+    spawnUnit: ev-citheronia
+
+    instantDisappear: true
+    hittable: false
+    collidesAir: false
+    collidesGround: false
+  }
+
+  liquid: ev-liq-contamined-water
+  liquidAmount: 20
+
+  instantDisappear: true
+  killShooter: true
+
+  hittable: false
+  collidesAir: true
+
+  backColor: 7CFF6B
+  frontColor: C8FFC0
+}
+}
+]
+
+research: {
+  parent: ev-citheronia
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+shownPlanets: [izanami]

@@ -1,0 +1,24 @@
+type: LiquidJunction
+name: Pipe Junction
+description: Used for crossing two aqueducts.
+solid: false
+category: liquid
+squareSprite: false
+requirements: [
+  ev-dark-rock/8
+  ev-iron/4
+]
+research: {
+  parent: ev-01-dark-pipe
+  objectives: [
+    ev-01-dark-pipe
+  ]
+}
+researchCost: [
+  ev-dark-rock/80
+  ev-iron/40
+]
+
+shownPlanets: [
+izanami
+]

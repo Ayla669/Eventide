@@ -1,0 +1,8 @@
+shownPlanets: [serpulo, erekir, izanami
+]
+research: {
+  parent: ev-liq-contamined-water
+  objectives: [
+    ev-03-silicon-casting
+  ]
+}

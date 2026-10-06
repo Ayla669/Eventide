@@ -1,0 +1,15 @@
+name: Gold
+description: "Raw gold found in the dark soil of Izanami. Used for basic construction and electronic components (can be refined for use in advanced construction)."
+hardness: 2
+conductivity: 2
+cost: 1
+charge: 0.5
+alwaysUnlocked: false
+color: E3A929
+research: {
+  parent: ev-dark-soil
+  objectives: [ 
+    ev-dark-soil
+  ]
+}
+shownPlanets: [izanami]

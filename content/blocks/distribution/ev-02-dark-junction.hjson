@@ -1,0 +1,21 @@
+type: Junction
+name: Dark Junction
+description: Allows for crossing two ducts. 
+health: 65
+size: 1
+speed: 5
+requirements: [
+  ev-dark-rock/2
+]
+squareSprite: false
+category: distribution
+research: {
+  parent: ev-01-dark-duct
+  objectives: [
+   ev-dark-rock
+   ev-01-dark-duct
+  ]
+}
+researchCost: [
+  ev-dark-rock/20
+]

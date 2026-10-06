@@ -1,0 +1,14 @@
+name: Dark Glass
+description: "Dark glass made from dark sand and lead. Used in the manufacture of units and structures, and also used as ammunition."
+hardness: 1
+cost: 1
+alwaysUnlocked: false
+color: 3E00D1
+research: {
+  parent: ev-lead
+  objectives: [ 
+    ev-lead
+    ev-dark-sand
+  ]
+}
+shownPlanets: [izanami]

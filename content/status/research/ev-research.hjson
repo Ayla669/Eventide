@@ -1,0 +1,12 @@
+name: Research
+research: {
+  parent: ev-core-dark
+  objectives: [
+  ev-dark-rock
+  ]
+}
+alwaysUnlocked: false
+outlineRadius: 0
+shownPlanets: [
+izanami
+]

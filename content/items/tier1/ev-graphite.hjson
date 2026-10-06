@@ -1,0 +1,14 @@
+name: Graphite
+description: "Graphite manufactured from Izanami charcoal. A durable, low-conductivity material used in construction and reactors, yet strong enough to serve as ammunition."
+hardness: 1
+cost: 1
+Conductivity: 0.5
+alwaysUnlocked: false
+color: 474757
+research: {
+  parent: ev-charcoal
+  objectives: [ 
+    ev-charcoal
+  ]
+}
+shownPlanets: [izanami]

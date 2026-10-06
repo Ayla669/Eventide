@@ -1,0 +1,13 @@
+name: Lead
+description: "Lead, a durable material found in the soil of Izanami. It can be used in construction, reactors, the crafting of other items, and even as ammunition."
+hardness: 1
+cost: 1
+alwaysUnlocked: false
+color: 79799D
+research: {
+  parent: ev-dark-soil
+  objectives: [ 
+    ev-dark-soil
+  ]
+}
+shownPlanets: [izanami]
