@@ -1,0 +1,126 @@
+type: ItemTurret
+name: Flamethrower
+description: Fires a beam of intense heat in the direction it is facing, burning any enemies that pass through it.
+size: 2
+range: 64
+shootWarmupSpeed: 0.08
+minWarmup: 0.9
+warmupMaintainTime: 60
+shootEffect: none
+shootSound: none
+shootSoundVolume: 0.5
+outlineRadius: 0
+recoil: 0
+squareSprite: true
+researchCostMultiplier: 0.5
+loopSound: beamLustre
+loopSoundVolume: 0.8
+shootCone: 360
+smokeEffect: [
+  {
+    type: ParticleEffect
+    particles: 6
+    lifetime: 24
+    length: 6
+    cone: 160
+    sizeFrom: 2.2
+    sizeTo: 0
+    colorFrom: 8a8a8a
+    colorTo: 353535
+    offsetX: 0
+    offsetY: 0
+  }
+]
+
+rotate: true
+consumes: {
+  power: 0.1
+}
+shoot: {
+  type: ShootBarrel
+  firstShotDelay: 1
+  shots: 3
+  shotDelay: 1
+  barrels: [
+    0, 0, 0
+  ]
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: ev-flamethrower-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -body
+      under: true
+      heatProgress: recoil
+      heatColor: f3767666
+    }
+    {
+      type: RegionPart
+      suffix: -part1
+      progress: warmup
+      moveX: -2.5
+      moveY: 0
+    }
+    {
+      type: RegionPart
+      suffix: -part2
+      progress: warmup
+      moveX: 2.5
+      moveY: 0
+    }
+  ]
+}
+shootX: 0
+shootY: 0
+rotateSpeed: 0
+
+ammoTypes: {
+  ev-a08-charcoal: {
+  	type: ContinuousFlameBulletType
+	ammoMultiplier: 1
+  	shake: 0.1
+  	drawFlare: false
+  	damageInterval: 1
+  	damage: 5
+  	length: 84
+  	incendChance: 1
+  	incendSpread: 0
+  	incendAmount: 0
+  	width: 4
+  	splashDamagePierce: true
+  	makeFire: true
+  	status: melting
+  	statusDuration: 120
+  	hitEffect: flakExplosion
+	colors: [
+	b85a2e55, b85a2eaa, e07b39, ffffff
+	]
+  }
+}
+category: turret
+research: {
+  parent: ev-trt-a01-gear
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+    {
+      type: OnSector
+      preset: 19s-02-brood
+    }
+  ]
+}
+
+researchCost: [
+  ev-a01-dark-rock/600
+  ev-a04-iron/300
+  ev-a08-charcoal/100
+]
+
+requirements: [
+  ev-a01-dark-rock/200
+  ev-a04-iron/100
+]

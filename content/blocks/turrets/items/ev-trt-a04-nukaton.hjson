@@ -1,0 +1,222 @@
+type: ItemTurret
+predictTarget: false
+name: Nukaton
+description: Launches extremely powerful guided missiles.
+size: 3
+squareSprite: false
+health: 1500
+armor: 10
+
+hasPower: true
+consumes: {
+  power: 42
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+
+coolantMultiplier: 1
+fogRadiusMultiplier: 0.75
+
+shootSound: shootScathe
+
+requirements: [
+  ev-a01-dark-rock/675
+  ev-a04-iron/525
+  ev-a06-gold/300
+  ev-a07-rybek-crystals/300
+  ev-a10-silicon/150
+  ev-a09-graphite/75
+]
+
+researchCost: [
+  ev-a01-dark-rock/2025
+  ev-a04-iron/1575
+  ev-a06-gold/900
+  ev-a07-rybek-crystals/900
+  ev-a10-silicon/450
+  ev-a09-graphite/225
+]
+
+research: {
+  parent: ev-trt-a03-welder
+  objectives: [
+    ev-trt-a03-welder
+    ev-a07-rybek-crystals
+    ev-a06-gold
+    ev-pow-gen-a01-burning-generator
+  ]
+}
+
+category: turret
+recoil: 1.5
+outlineRadius: 0
+
+targetAir: false
+targetUnderBlocks: false
+targetGround: true
+
+shootCone: 1
+rotateSpeed: 0.75
+minWarmup: 0.20
+newTargetInterval: 60
+unitSort: strongest
+shootWarmupSpeed: 0.02
+reload:600
+
+shoot: {
+  firstShotDelay: 300
+  shots: 4
+  shotDelay: 30
+}
+
+range: 800
+shootY: 0
+shake: 4
+
+ammoPerShot: 15
+maxAmmo: 60
+
+ammoTypes: {
+  ev-a10-silicon: {
+    type: BulletType
+    instantDisappear: true
+    spawnUnit: ev-trt-a04-nukaton-silicon-homing
+  }
+
+  ev-a11-dark-glass: {
+    type: BulletType
+    instantDisappear: true
+    spawnUnit: ev-trt-a04-nukaton-glass-frag
+  }
+
+  ev-a07-rybek-crystals: {
+    type: BulletType
+    instantDisappear: true
+    spawnUnit: ev-trt-a04-nukaton-rybek-nuke
+  }
+}
+
+drawer: {
+  type: drawTurret
+  basePrefix: ev-bas-a01-base-
+  drawTurret: false
+  top: none
+
+  ammoParts: {
+    ev-a10-silicon: [
+      {
+        type: RegionPart
+        suffix: -missile-silicon
+        y: -2
+        layerOffset: -0.01
+        outline: false
+
+        progress: {
+          type: reload
+          interp: pow2In
+        }
+
+        colorTo: ffffff00
+        color: ffffffff
+
+        moves: [
+          {
+            type: PartMove
+            progress: warmup
+            y: 3
+          }
+        ]
+      }
+    ]
+
+    ev-a11-dark-glass: [
+      {
+        type: RegionPart
+        suffix: -missile-glass
+        y: -2
+        layerOffset: -0.01
+        outline: false
+
+        progress: {
+          type: reload
+          interp: pow2In
+        }
+
+        colorTo: ffffff00
+        color: ffffffff
+
+        moves: [
+          {
+            type: PartMove
+            progress: warmup
+            y: 3
+          }
+        ]
+      }
+    ]
+
+    ev-a07-rybek-crystals: [
+      {
+        type: RegionPart
+        suffix: -missile-rybek
+        y: -2
+        layerOffset: -0.01
+        outline: false
+
+        progress: {
+          type: reload
+          interp: pow2In
+        }
+
+        colorTo: ffffff00
+        color: ffffffff
+
+        moves: [
+          {
+            type: PartMove
+            progress: warmup
+            y: 3
+          }
+        ]
+      }
+    ]
+  }
+  
+  parts: [
+  
+  
+      {
+      type: RegionPart
+      suffix: -down-1
+      progress: warmup
+    }
+
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -wing-1
+      under: true
+      progress: warmup
+      moveX: 1
+    }
+
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -wing-2
+      under: true
+      progress: warmup
+      moveX: -1
+    }
+  ]
+}
+
+shownPlanets: [izanami
+]
+
+rotate: false

@@ -1,0 +1,82 @@
+type: AttributeCrafter
+attribute: thermogen
+name: Thermogen Condenser
+description: Extracts thermogen from geysers, an explosive, extremely hot gas originating from the depths of the planet.
+size: 3
+shake: 3
+hasLiquids: true
+squareSprite: false
+outputLiquid: ev-gas-01-thermogen/0.2
+displayEfficiencyScale: 1
+baseEfficiency: 0
+displayEfficiency: true
+minEfficiency: 0.1
+squareSprite: false
+category: crafting
+requirements: [
+  ev-a04-iron/200
+  ev-a01-dark-rock/100
+  ev-a05-lead/200
+]
+research: {
+  parent: ev-factorys
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+researchCost: [
+  ev-a04-iron/600
+  ev-a01-dark-rock/300
+  ev-a05-lead/600
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner1
+      spinSprite: true
+      rotateSpeed: 10
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner2
+      spinSprite: true
+      rotateSpeed: -10
+    }
+    {
+      type: DrawPistons
+      suffix: -piston
+      angleOffset: 45
+      sinMag: 4.5
+      sinScl: 4.5
+    }
+  ]
+}
+ambientSound: loopHum
+ambientSoundVolume: 0.05
+liquidCapacity: 60
+shownPlanets: [
+izanami
+]

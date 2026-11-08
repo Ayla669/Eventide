@@ -1,0 +1,25 @@
+name: Badlands
+planet: izanami
+sector: 80
+fog: true
+
+research: {
+  parent: 19s-01-rebirth
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+
+
+alwaysUnlocked: false
+
+difficulty: 3
+
+captureWave: 20
+
+outline: false
+
+shownPlanets: [izanami]

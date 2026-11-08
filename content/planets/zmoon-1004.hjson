@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 1004
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 3.2892, phase 85.659 degrees.
 
 name: zmoon-1004
 localizedName: "Izanami Moon 1004"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 

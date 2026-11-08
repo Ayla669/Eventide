@@ -1,0 +1,4 @@
+type: oreBlock
+name: Swarm Corpses
+variants: 3
+itemDrop: ev-c01-swarm-pieces

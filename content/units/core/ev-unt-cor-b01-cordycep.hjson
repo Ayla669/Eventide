@@ -1,0 +1,84 @@
+type: legs
+name: Cordycep
+description: A creeping form of the umbramycete, capable of surviving independently without needing to be connected to the mycelial network. It provides protection, constructs structures, mines resources, and combats threats to the umbramycete. It also infects enemy units with spores, converting them to the allied side.
+immunities: [
+ev-status-contamined
+]
+lockLegBase: true
+legContinuousMove: true
+legCount: 5
+legLength: 18
+legSpeed: 1
+legForwardScl: 1
+legMoveSpace: 1.5
+stepSound: walkerStepTiny
+hovering: true
+groundLayer: 60
+range: 40
+maxRange: 60
+coreUnitDock: true
+controller: BuilderAI
+commands: [rebuild
+]
+buildSpeed: 1
+health: 500
+armor: 1
+mineFloor: true
+mineWalls: true
+speed: 0.8
+hitSize: 6
+isEnemy: false
+mineSpeed: 3.5
+mineTier: 4
+buildSpeed: 1.5
+drag: 0.4
+itemCapacity: 60
+alwaysUnlocked: true
+outlineRadius: 0
+range: 20
+outlineColor: 42413e
+weapons: [
+      {
+      top: false
+      range: 20
+      name: ev-unt-cor-b01-cordycep-weapon
+      outlineRadius: 0
+      targetBuildings: true
+      targetUnits: true
+      autoTarget: true
+      controllable: true
+      recoil: 0.8
+      x: -11
+      y: 0
+      shootCone: 45
+        reload: 60
+        rotate: false
+        mirror: true
+        alternate: true
+        shoot: {
+          shots: 3
+          shotDelay: 30
+        }
+        shootSound: ev-monster-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+          type: BasicBulletType
+          layer: 99
+          status: ev-status-contamined
+          statusChance: 1.0
+          statusDuration: 180
+          speed: 10
+          lifetime: 60
+          pierce: false
+          damage: 8
+          pierce: true
+          pierceCap: 2
+          width: 3
+          height: 3
+          backColor: 00E9FF
+          frontColor: 00E9FF
+          mixColorTo: 00E9FF
+          hitSound: none
+        }
+    }
+   ]

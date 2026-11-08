@@ -1,0 +1,16 @@
+type: StorageBlock
+size: 2
+scaledHealth: 80
+name: Fungal Box
+description: Stores items in larger quantities.
+itemCapacity: 250
+category: effect
+squareSprite: false
+requirements: [
+  ev-b02-hardened-chitin/40
+  ev-b03-carotenoid/20
+]
+outlineRadius: 0
+shownPlanets: [
+izanami
+]

@@ -1,0 +1,23 @@
+type: CoreBlock
+name: Core: Dark
+description: Core of the base. Armored and stores a medium amount of items.
+requirements: [
+  ev-a04-iron/1500
+  ev-a01-dark-rock/1500
+]
+isFirstTier: true
+size: 4
+squareSprite: false
+alwaysUnlocked: true
+unitType: ev-unt-cor-a01-komai
+health: 12000
+itemCapacity: 6000
+unitCapModifier: 4
+category: effect
+research: {
+  planet: izanami
+  root: true
+  name: Izanami
+  requiresUnlock: false
+}
+thrusterLength: 6.5

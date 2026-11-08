@@ -1,0 +1,42 @@
+type: UnitAssembler
+name: Automaton Foundry
+description: Creates automatons using payloads.
+size: 5
+category: units
+droneType: ev-enginner
+research: {
+  parent: ev-units-factory
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+requirements: [
+  ev-a01-dark-rock/250
+  ev-a04-iron/500
+  ev-a06-gold/100
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: ev-mec-a01-dark-automaton
+    requirements: [
+      eventide-ev-small-gear/2
+      eventide-ev-reinforcement-alloy/3
+      eventide-ev-def-a01-dark-rock-wall/2
+    ]
+    time: 1500
+  }
+]
+squareSprite: false
+consumes: {
+  power: 8
+}
+areaSize: 13
+researchCost: [
+  ev-a01-dark-rock/750
+  ev-a04-iron/1500
+  ev-a06-gold/300
+]

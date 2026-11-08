@@ -1,0 +1,10 @@
+name: Rybek Crystals
+description: "Crystals with various properties that were scattered across the surface of Izanami. They are required for avanced constructions, unfortunately, in their raw state, they are extremely limited in utility and must be refined for better applications."
+hardness: 6
+cost: 1.5
+charge: 3
+radioactivity: 2
+alwaysUnlocked: false
+color: 009C47
+research: ev-items
+shownPlanets: [izanami]

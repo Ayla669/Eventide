@@ -1,0 +1,23 @@
+type: Junction
+name: Small Gear
+description: A small version of gear for units.
+size: 2
+customShadow: true
+placeablePlayer: false
+requirements: [
+  ev-a01-dark-rock/50
+  ev-a04-iron/25
+]
+
+research: {
+  parent: ev-reinforcement-alloy
+  objectives: [
+    ev-unt-blc-a03-assembly-plant
+    ev-trt-a01-gear
+  ]
+}
+researchCost: [
+  ev-a01-dark-rock/150
+  ev-a04-iron/75
+]
+databaseTag: mounting-parts

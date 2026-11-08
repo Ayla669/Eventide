@@ -1,0 +1,286 @@
+type: payload
+flying: true
+name: Komai
+description: A small but practical core unit. It protects, builds, mines, and repairs damaged structures.
+immunities: [
+ev-status-contamined
+]
+fogRadius: 0
+health: 500
+armor: 25
+speed: 1
+hitSize: 12
+template: ErekirUnitType
+coreUnitDock: true
+controller: BuilderAI
+coreFleeRange: 200
+range: 200
+maxRange: 240
+commands: [move, mine, repair, rebuild, assist
+]
+research: {
+  parent: ev-core-units
+  }
+
+buildSpeed: 1
+itemCapacity: 120
+lowAltitude: false
+payloadCapacity: 192
+pickupUnits: true
+vulnerableWithPayloads: true
+
+mineTier: 2
+mineSpeed: 6
+mineFloor: true
+mineWalls: true
+outlineRadius: 0
+waveTrailY: -3.0
+trailColor: B8FFFF
+trailLength: 16
+engineSize: 0.8
+engines: [
+  {
+    x: 0
+    y: -15
+    radius: 3
+    rotation: -90
+  }
+    {
+    x: 6.5
+    y: -12.7
+    radius: 1.5
+    rotation: -90
+  }
+    {
+    x: -6.5
+    y: -12.7
+    radius: 1.5
+    rotation: -90
+  }
+]
+parts: [
+  {
+    type: HoverPart
+    color: B8FFFF
+    radius: 18
+    sides: 8
+    layerOffset: -3
+    x: 0
+    y: -4
+    phase: 150
+  }
+      {
+    type: FlarePart
+    x: 0
+    y: 6
+    color1: 69C97695
+    color2: 69C97695
+    spinSpeed: 0.75
+    layer: 500
+    radius: 4
+    followRotation: true
+    sides: 6
+  }
+
+    {
+    type: FlarePart
+    x: 0
+    y: 6
+    color1: 5AFA7095
+    color2: 5AFA7095
+    spinSpeed: -0.75
+    layer: 500
+    radius: 2
+    followRotation: true
+    sides: 4
+  }
+  
+        {
+    type: FlarePart
+    x: 0
+    y: 6
+    color1: 25FF4295
+    color2: 25FF4295
+    spinSpeed: 0.75
+    layer: 500
+    radius: 1
+    followRotation: true
+    sides: 4
+  }
+
+ ]
+
+weapons: [
+
+  {
+    name: ev-unt-cor-a01-komai-weapon
+
+    x: -10
+    y: 0
+
+    reload: 60
+    recoil: 1
+    rotate: false
+    shootSound: shootMissileShort
+    shootSoundVolume: 1.45
+    buildingDamageMultiplier: 0.01
+    maxRange: 5
+    under: true
+    targetBuildings: true
+    targetUnits: true
+    autoTarget: true
+    layerOffset: -1
+
+    
+    outlineRadius: 0
+        mirror: true
+        alternate: true
+        shoot: {
+          shots: 6
+          shotDelay: 15
+        }
+
+    bullet: {
+      type: MissileBulletType
+
+      speed: 4
+      damage: 60
+      lifetime: 80
+      maxRange: 5
+      layerOffset: -2
+      
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+
+      homingPower: 6
+      homingRange: 80
+
+      width: 5
+      height: 7
+      
+      healPercent: 15
+      trailLength: 30
+      trailWidth: 1
+      collidesTeam: true
+
+      trailColor: B8FFFF
+      hitEffect: hitLancer
+      hitColor: B8FFFF
+      backColor: B8FFFF
+      frontColor: FFFFFF
+    }
+    
+  }
+  
+    {
+    x: 0
+    y: 3
+
+    reload: 360
+    recoil: 0
+    rotate: false
+    shootSound: shootMissilePlasmaShort
+    chargeSound: green-laser-charge-early-short
+    shootSoundVolume: 1.45
+    buildingDamageMultiplier: 0.01
+    knockback: 0.5
+    maxRange: 5
+    under: false
+    targetBuildings: false
+    targetUnits: true
+    autoTarget: true
+    layerOffset: 900
+
+    outlineRadius: 0
+        mirror: false
+        alternate: false
+        shoot: {
+      firstShotDelay: 60
+      shots: 1
+      shotDelay: 360
+    }
+    parentizeEffects: true
+
+    bullet: {
+     chargeEffect: {
+        type: MultiEffect
+        lifetime: 60
+        effects: [
+           {
+            type: ParticleEffect
+            particles: 6
+            lightOpacity: 0
+            length: 16
+            baseLength: -16
+            lifetime: 60
+            layer: 950
+            interp: exp5
+            sizeFrom: 0.8
+            sizeTo: 0.4
+            colorFrom: 25FF4250
+            colorTo: 25FF4250
+          }
+          {
+            type: ParticleEffect
+            particles: 12
+            lightOpacity: 0
+            length: 12
+            baseLength: -12
+            lifetime: 40
+            layer: 950
+            interp: exp5
+            sizeFrom: 2
+            sizeTo: 1
+            colorFrom: 69C97650
+            colorTo: 5AFA7050
+          }
+        ]
+      }
+      type: BasicBulletType
+
+      speed: 10
+      damage: 150
+      recoil: 6
+      lifetime: 80
+      maxRange: 5
+      layerOffset: 900
+      knockback: 0.5
+      
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+      despawnEffect: massiveExplosion
+
+      homingPower: 12
+      homingRange: 80
+
+      width: 12
+      height: 18
+      trailEffect: dynamicSpikes
+      trailChance: -1
+      trailInterval: 6
+      splashDamage: 250
+      splashDamageRadius: 10
+      healPercent: 0
+      trailLength: 60
+      trailWidth: 6
+      collidesTeam: false
+      hitSound: explosionPlasmaSmall
+      despawnSound: shockBullet
+
+      trailColor: 69C976
+      hitEffect: hitLancer
+      hitColor: 69C976
+      backColor: 5AFA70
+      frontColor: FFFFFF
+      
+      lightning: 6
+      lightningDamage: 15
+      lightningLength: 6
+      lightningLengthRand: 6
+
+      lightningColor: 69C976
+    }
+   }
+]
+
+drawTeamOverlay: true

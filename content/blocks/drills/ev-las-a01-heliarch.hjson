@@ -1,0 +1,53 @@
+type: beamDrill
+name: Heliarch
+description: Extracts ores from cracks in the rocks using lasers.
+health: 500
+range: 8
+tier: 6
+size: 3
+optionalBoostIntensity: 2
+drillTime: 60
+ambientSound: loopMineBeam
+ambientSoundVolume: 0.06
+hasLiquids: true
+consumes: {
+  power: 1.3
+  liquids: {
+    liquids: [
+      ev-liq-04-mycelial-exudate/0.2
+    ]
+    optional: true
+    booster: true
+  }
+}
+liquidCapacity: 60
+itemCapacity: 30
+fogRadius: 8
+category: production
+research: {
+  parent: ev-drills
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+
+requirements: [
+  ev-a04-iron/150
+  ev-a01-dark-rock/150
+  ev-a05-lead/100
+  ev-a06-gold/50
+]
+
+researchCost: [
+  ev-a04-iron/450
+  ev-a01-dark-rock/450
+  ev-a05-lead/300
+  ev-a06-gold/150
+]

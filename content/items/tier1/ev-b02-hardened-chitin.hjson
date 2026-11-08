@@ -1,0 +1,11 @@
+name: Hardened Chitin
+description: Aged chitin, drier, tougher, and extremely dense, used in advanced manufacturing and as ammunition.
+hardness: 6
+flammability: 0
+cost: 0.3
+alwaysUnlocked: false
+color: 14223E
+research: {
+  parent: ev-b01-chitin
+}
+shownPlanets: [izanami]

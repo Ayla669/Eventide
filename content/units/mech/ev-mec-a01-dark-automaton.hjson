@@ -1,0 +1,67 @@
+type: mech
+name: Dark Automaton
+description: A basic automaton, heavy and slow, but resilient, equipped with two small gears and thick armor, it is capable of engaging enemies head-on.
+speed: 0.2
+flying: false
+health: 800
+armor: 15
+hitSize: 10
+outlineColor: 17181C
+mechLegColor: 44413c
+stepSound: mechStepSmall
+stepSoundVolume: 0.35
+
+  weapons: [
+    {
+      top: false
+      x: -6
+      name: ev-unt-weapon-small-gear
+      recoil: 2
+      shootCone: 45
+        y: 0
+        reload: 120
+        rotate: false
+        mirror: true
+        alternate: true
+        shoot: {
+          shots: 3
+          shotDelay: 25
+        }
+        shootSound: ev-gear-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+          type: BasicBulletType
+          shootEffect: shootSmall
+          smokeEffect: shootSmallSmoke
+          trailChance: -1
+          trailInterval: 10
+          trailLength: 8
+          trailWidth: 1
+          speed: 6
+          lifetime: 60
+          trailColor: A1D5CD
+          hitEffect: hitLancer
+          hitColor: A1D5CD
+          backColor: 87D4C8
+          frontColor: FFFFFF
+          damage: 80
+          pierce: true
+          pierceCap: 2
+          width: 7
+          height: 3
+        }
+    }
+]
+
+research: {
+  parent: ev-units
+  objectives: [
+    ev-unt-blc-a04-automaton-foundry
+    ev-unt-blc-a03-assembly-plant
+    ev-reinforcement-alloy
+    ev-small-gear
+  ]
+}
+researchCost: [
+]
+databaseTag: automaton-unit

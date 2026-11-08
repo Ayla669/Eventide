@@ -1,0 +1,120 @@
+type: legs
+legCount: 4
+legLength: 13
+legSpeed: 0.23
+legMoveSpace: 0.9
+lockLegBase: true
+legContinuousMove: true
+legExtension: 3
+legBaseOffset: 1
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 1
+legForwardScl: 1
+legSpeed: 0.17
+faceTarget: true
+stepSound: walkerStepTiny
+hovering: true
+groundLayer: 60
+name: Sparkwalker
+description: Fast and light, but with low health and short range, though with high damage.
+health: 350
+armor: 5
+speed: 1.5
+hitSize: 6
+isEnemy: false
+alwaysUnlocked: false
+outlineColor: 17181C
+parts: [
+      {
+    type: FlarePart
+    x: 0
+    y: 0
+    color1: 3AFF6E25
+    color2: 3AFF6E50
+    spinSpeed: 0.75
+    layer: 80
+    radius: 1
+    followRotation: true
+    sides: 6
+  }
+]
+weapons: [
+  {
+    x: 8
+    y: 0
+    mirror: false
+    name: ev-unt-weapon-pocket-welder-l
+    continuous: true
+    alwaysContinuous: true
+    ejectEffect: none
+    shootSound: beamLustre
+    shootSoundVolume: 0.6
+    shootY: 4
+    bullet: {
+      collides: true
+      collidesTiles: true
+      collidesAir: true
+      collidesGround: true
+      type: ContinuousFlameBulletType
+      colors: [
+      FF860080,
+      FF9A29B3,
+      FFAA4CCC,
+      FFC280
+      ]
+      length: 80
+      width: 1
+      drawFlare: false
+      damageInterval: 15
+      damage: 125
+      pierceArmor: false
+      pierceCap: 1
+      hitEffect: none
+      despawnEffect: smokeCloud
+    }
+  }
+  {
+    x: -8
+    y: 0
+    mirror: false
+    name: ev-unt-weapon-pocket-welder-r
+    continuous: true
+    alwaysContinuous: true
+    ejectEffect: none
+    shootSound: none
+    shootSound: none
+    shootY: 4
+    bullet: {
+      type: ContinuousFlameBulletType
+      length: 80
+      width: 1
+      colors: [
+      FF860080,
+      FF9A29B3,
+      FFAA4CCC,
+      FFC280
+      ]
+      drawFlare: false
+      damageInterval: 15
+      damage: 125
+      pierceArmor: false
+      pierceCap: 1
+      hitEffect: none
+      despawnEffect: smokeCloud
+    }
+  }
+]
+research: {
+  parent: ev-units
+  objectives: [
+    ev-unt-blc-a05-spark-foundry
+    ev-unt-blc-a03-assembly-plant
+    ev-reinforcement-alloy
+    ev-power-cell
+    ev-pocket-welder
+  ]
+}
+researchCost: [
+]
+databaseTag: spark-unit

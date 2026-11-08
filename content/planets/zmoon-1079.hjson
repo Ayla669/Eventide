@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 1079
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 3.2874, phase 175.859 degrees.
 
 name: zmoon-1079
 localizedName: "Izanami Moon 1079"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 

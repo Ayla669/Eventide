@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 0489
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 2.53, phase 289.16 degrees.
 
 name: zmoon-0489
 localizedName: "Izanami Moon 0489"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 

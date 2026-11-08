@@ -1,0 +1,146 @@
+type: GenericCrafter
+name: Radioactive Energizer
+description: Irradiates the decomposition broth using rybek crystals to isolate only the sugars, like mycelial exudate and trealose, which is used as fuel and is also an excellent conductor.
+size: 3
+liquidCapacity: 30
+craftTime: 300
+squareSprite: false
+hasPower: true
+consumes: {
+  liquids: [
+  ev-liq-02-decomposition-broth/0.2
+  ]
+  power: 3.3
+}
+
+ignoreLiquidFullness: true
+
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.09
+
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 1
+      length: 1
+      lifetime: 300
+    }
+
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 1
+      length: 1
+      lifetime: 290
+    }
+
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 1
+      length: 1
+      lifetime: 280
+    }
+
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 1
+      length: 1
+      lifetime: 270
+    }
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 1
+      length: 1
+      lifetime: 260
+    }
+  ]
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-02-decomposition-broth
+  padLeft: 3
+  padTop: 3
+  padBottom: 3
+  padRight: 3
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-04-mycelial-exudate
+  padLeft: 3
+  padTop: 3
+  padBottom: 3
+  padRight: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner
+      spinSprite: true
+      rotateSpeed: 15
+      x: 0
+      y: 0
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+   ]
+  }
+outputItems: [
+  ev-b04-trealose/6
+]
+outputLiquid: {
+  liquid: ev-liq-04-mycelial-exudate
+  amount: 0.1
+}
+category: crafting
+
+research: {
+  parent: ev-pro-a06-smasher
+  objectives: [
+    ev-a04-iron
+    ev-a01-dark-rock
+    ev-a10-silicon
+    ev-pro-a06-smasher
+    ev-liq-02-decomposition-broth
+    ev-a06-gold
+    ev-a07-rybek-crystals
+  ]
+}
+
+requirements: [
+  ev-a04-iron/150
+  ev-a01-dark-rock/100
+  ev-a10-silicon/25
+  ev-a06-gold/60
+  ev-a07-rybek-crystals/75
+]
+
+researchCost: [
+  ev-a04-iron/450
+  ev-a01-dark-rock/300
+  ev-a10-silicon/75
+  ev-a06-gold/180
+  ev-a07-rybek-crystals/225
+]
+
+
+itemCapacity: 30

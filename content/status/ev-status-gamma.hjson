@@ -1,5 +1,6 @@
-damage: 16
-speedMultiplier: 0.1
+name: Gamma
+damage: 2
+speedMultiplier: 0.3
 shownPlanets: [
 izanami
 ]
@@ -18,3 +19,4 @@ effect: {
     spin: 2
     baseRotation: 32.5
 }
+outline: false

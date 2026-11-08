@@ -1,0 +1,150 @@
+type: ContinuousLiquidTurret
+name: Welder
+description: Fires a dual beam—energized and heated with slag.
+size: 3
+heatRequirement: 6
+maxHeatEfficiency: 1.5
+category: turret
+outlineRadius: 0
+liquidConsumed: 0.05
+targetInterval: 5
+targetUnderBlocks: false
+range: 180
+targetAir: false
+squareSprite: false
+outlines: false
+
+hasPower: true
+
+consumes: {
+  power: 12
+}
+
+allowGas: true
+allowLiquid: true
+amount: 360
+
+shootY: 10
+loopSound: ev-welder-shoot
+shootSound: none
+loopSoundVolume: 0.6
+research: {
+   parent: ev-trt-a05-flamethrower
+   objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+researchCost: [
+      ev-a01-dark-rock/1125
+      ev-a04-iron/675
+      ev-a10-silicon/675
+      ev-a07-rybek-crystals/225
+      ev-a06-gold/225
+]
+
+requirements: [
+      ev-a01-dark-rock/375
+      ev-a04-iron/225
+      ev-a10-silicon/225
+      ev-a07-rybek-crystals/75
+      ev-a06-gold/75
+]
+
+
+drawer: {
+  type: drawTurret
+  basePrefix: ev-bas-a01-base-
+  drawTurret: false
+  top: none
+  parts: [
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -down-0
+      under: true
+      progress: warmup
+    },
+    {
+      type: RegionPart
+      suffix: -liquid
+      under: true
+    },
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -1
+      under: false
+      progress: warmup
+    },
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -3
+      under: false
+      progress: warmup
+      moveX: -1
+    },
+    {
+      type: RegionPart
+      mirror: false
+      suffix: -4
+      under: false
+      progress: warmup
+      moveX: 1
+    }
+  ]
+}
+ammoTypes: {
+  slag: {
+    width: 1.7
+    drawFlare: false
+    hitColor: FFC280CC
+    type: ContinuousFlameBulletType
+    damage: 33
+    length: 180
+    knockback: 0
+    pierceCap: 3
+    despawnEffect: smokeCloud
+    colors: [
+    FF860080
+    FF9A29B3
+    FFAA4CCC
+    FFC280
+    lightColor: FFC280CC
+    ]
+  }
+  ev-liq-05-liquid-rybek: {
+    width: 1.7
+    rangeChange: -90
+    drawFlare: false
+    hitColor: 00DE1ECC
+    type: ContinuousFlameBulletType
+    damage: 120
+    length: 90
+    status: ev-status-gamma
+    statusDuration: 30
+    knockback: 0
+    pierceCap: 3
+    despawnEffect: smokeCloud
+    colors: [
+    71FF8680
+    71FF86B3
+    71FF86CC
+    71FF86
+    lightColor: 71FF86CC
+    ]
+  }
+}
+liquidCapacity: 250
+ignoreLiquidFullness: false
+rotate: false
+shownPlanets: [
+  izanami
+  ]

@@ -1,0 +1,86 @@
+type: Drill
+
+name: ev-drl-a03-multi-drill
+description: "An advanced drill designed for extracting hard resources from the soil."
+
+size: 3
+
+tier: 4
+drillTime: 60
+squareSprite: false
+hardnessDrillMultiplier: 0
+
+hasPower: true
+consumesPower: true
+outputsPower: true
+
+consumes: {
+  power: 2.5
+  liquid: {
+    liquid: ev-liq-01-contamined-water
+    amount: 0.1
+    booster: true
+    optional: true
+  }
+}
+
+research: {
+  parent: ev-drl-a02-iron-drill
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+
+requirements: [
+  ev-a01-dark-rock/50
+  ev-a04-iron/125
+  ev-a06-gold/25
+  ev-a10-silicon/25
+]
+
+category: production
+alwaysUnlocked: false
+researchCost: [
+  ev-a01-dark-rock/150
+  ev-a04-iron/375
+  ev-a06-gold/75
+  ev-a10-silicon/75
+]
+
+drawRim: false
+
+outlineRadius: 0
+
+shownPlanets: [
+
+izanami
+
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: itemRegion
+      suffix: -item
+    }
+
+    {
+      type: DrawDefault
+    }
+
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotate: true
+    }
+
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

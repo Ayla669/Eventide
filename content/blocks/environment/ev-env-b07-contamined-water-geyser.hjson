@@ -1,0 +1,113 @@
+name: Contamined Water Geyser
+type: SteamVent
+blendGroup: ev-env-a08-contamined-water-over-sand
+parent: ev-env-a08-contamined-water-over-sand
+effectSpacing: 720
+effect: [ 
+  {
+    type: ParticleEffect
+    particles: 16
+    baseRotation: 90
+    cone: 11
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 24
+    baseLength: 6
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+  }
+  {
+    type: ParticleEffect
+    particles: 18
+    baseRotation: 90
+    cone: 10
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 32
+    baseLength: 8
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+    startDelay: 6
+  }
+  {
+    type: ParticleEffect
+    particles: 20
+    baseRotation: 90
+    cone: 9
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 40
+    baseLength: 10
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+    startDelay: 8
+  }
+  {
+    type: ParticleEffect
+    particles: 20
+    baseRotation: 90
+    cone: 8
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 48
+    baseLength: 12
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+    startDelay: 10
+  }
+  {
+    type: ParticleEffect
+    particles: 22
+    baseRotation: 90
+    cone: 7
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 64
+    baseLength: 16
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+    startDelay: 12
+  }
+  {
+    type: ParticleEffect
+    particles: 22
+    baseRotation: 90
+    cone: 6
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 72
+    baseLength: 18
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+    startDelay: 14
+  }
+  {
+    type: ParticleEffect
+    particles: 24
+    baseRotation: 90
+    cone: 5
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 80
+    baseLength: 20
+    colorFrom: 44BFBB
+    colorTo: 3CB0AD
+    lifetime: 180
+    useRotation: false
+    startDelay: 16
+  }
+]
+cacheLayer: water
+mapColor: 3CB0AD

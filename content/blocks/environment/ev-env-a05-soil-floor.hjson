@@ -1,0 +1,5 @@
+type: Floor
+name: Soil Floor
+variants: 2
+itemDrop: ev-a02-dark-soil
+playerUnmineable: false

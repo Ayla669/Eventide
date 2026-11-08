@@ -1,0 +1,63 @@
+type: HeatProducer
+name: Thermogen Heater
+description: Concentrates the heat from the thermogen in one direction to heat up machines that require heat.
+size: 2
+heatOutput: 9
+craftTime: 60
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-gas-01-thermogen
+      padLeft: 6
+      padTop: 6
+      padBottom: 6
+      padRight: 6
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  liquids: [
+    ev-gas-01-thermogen/0.01
+  ]
+}
+
+
+rotate: true
+ambientSound: loopSmelter
+ambientSoundVolume: 0.08
+category: crafting
+generateEffect: none
+requirements: [
+  ev-a04-iron/80
+  ev-a05-lead/40
+]
+research: {
+  parent: ev-pro-a00-thermogen-condenser
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+researchCost: [
+  ev-a04-iron/240
+  ev-a05-lead/120
+]

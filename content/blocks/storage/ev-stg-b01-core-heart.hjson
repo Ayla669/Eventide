@@ -1,0 +1,15 @@
+type: CoreBlock
+name: Core: Heart
+description: Core of the base. Armored and stores a medium amount of items.
+requirements: [
+]
+isFirstTier: true
+size: 3
+squareSprite: false
+alwaysUnlocked: false
+unitType: ev-unt-cor-b01-cordycep
+health: 5000
+itemCapacity: 5000
+unitCapModifier: 50
+category: effect
+thrusterLength: 6.5

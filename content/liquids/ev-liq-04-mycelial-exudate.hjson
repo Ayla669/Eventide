@@ -1,0 +1,22 @@
+name: Mycelial Exudate
+description: A viscous liquid with energetic properties, extracted from decomposition broth ,essentially a fuel, and highly flammable.
+boilPoint: 0.3
+color: 160041
+heatCapacity: 0
+flammability: 1.5
+gasColor: 160041
+alwaysUnlocked: false
+type: cellLiquid
+capPuddles: false
+blockReactive: false
+spreadDamage: 0
+viscosity: 0.6
+shownPlanets: [
+izanami
+]
+research: {
+  parent: ev-liq-02-decomposition-broth
+  objectives: [
+    ev-pro-a07-radioactive-energizer
+  ]
+}

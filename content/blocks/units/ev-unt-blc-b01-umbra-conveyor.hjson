@@ -1,0 +1,11 @@
+type: PayloadConveyor
+name: Umbra Conveyor
+description: Transports payload such as units forth.
+category: units
+requirements: [
+  ev-b02-hardened-chitin/15
+  ev-b03-carotenoid/8
+  ev-b04-trealose/3
+]
+canOverdrive: false
+payloadLimit: 4

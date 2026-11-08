@@ -1,0 +1,17 @@
+type: LiquidBridge
+name: High Vein
+description: A high vein that pass over other structures.
+fadeIn: false
+health: 60
+moveArrows: false
+arrowSpacing: 6
+range: 10
+hasPower: false
+category: liquid
+requirements: [
+ ev-b01-chitin/9
+]
+
+shownPlanets: [
+izanami
+]

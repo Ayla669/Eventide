@@ -1,0 +1,37 @@
+type: UnitAssembler
+name: Drone Factory
+description: Produces radar drones.
+
+size: 3
+category: units
+droneType: ev-enginner
+research: {
+  parent: ev-units-factory
+  objectives: [
+    ev-a01-dark-rock
+    ev-a04-iron
+    ev-pow-gen-a00-vaporflow
+  ]
+}
+requirements: [
+  ev-a01-dark-rock/50
+  ev-a04-iron/100
+] 
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: ev-dr-radar-drone
+    requirements: [
+    ]
+    time: 600
+  }
+]
+squareSprite: false
+consumes: {
+  power: 0.1
+}
+areaSize: 6
+researchCost: [
+  ev-a01-dark-rock/150
+  ev-a04-iron/300
+]

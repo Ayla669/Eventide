@@ -1,0 +1,181 @@
+type: mech
+name: Radar Drone
+description: A drone that scans its surrounding environment, it is fast but extremely fragile. Slows down enemies, heal allies, and emits a signal when it detects threats.
+fogRadius: 8
+hovering: true
+hoverable: true
+shadowElevation: 0.1
+mechFrontSway: 0
+mechSideSway: 0
+mechStride: 0
+drag: 0.08
+range: 24
+outlineRadius: 0
+speed: 3
+rotateSpeed: 5
+accel: 0.095
+groundLayer: 60
+health: 150
+armor: 1
+hitSize: 3
+faceTarget: true
+canDrown: false
+researchCostMultiplier: 1.5
+moveSound: loopExtract
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.5
+moveSoundPitchMax: 1
+research: {
+  parent: ev-units
+  objectives: [
+    ev-unt-blc-a00-drone-factory
+  ]
+}
+abilities: [
+  {
+    type: EnergyFieldAbility
+    blinkSize: 0.0001
+    damage: 0
+    reload: 15
+    hitUnits: true
+    hitBuildings: true
+    layer: 1
+    maxTargets: 0
+    range: 5
+    useAmmo: false
+    x: 0
+    y: 0
+    effectRadius: 5
+    color: B8FFFF50
+      colorTo: B8FFFF50
+  }
+    {
+    type: EnergyFieldAbility
+    blinkSize: 0.0001
+    damage: 0
+    reload: 30
+    healPercent: 2
+    hitUnits: true
+    hitBuildings: false
+    layer: 1
+    maxTargets: 12
+    range: 58
+    useAmmo: false
+    x: 0
+    y: 0
+    effectRadius: 0
+    status: eventide-ev-status-slow
+    color: B8FFFF50
+    colorTo: B8FFFF50
+  }
+ ]
+parts: [
+  {
+    type: HoverPart
+    color: B8FFFF
+    radius: 8
+    sides: 6
+    layerOffset: -3
+    x: 0
+    y: 0
+    phase: 150
+  }
+{
+  type: RegionPart
+  x: 0
+  y: 0
+  suffix: -radar1
+  outline: false
+  layer: 116
+
+  progress: time
+  clampProgress: false
+  moveRot: 6
+}
+{
+  type: RegionPart
+  x: 0
+  y: 0
+  suffix: -radar2
+  outline: false
+  layer: 116
+
+  progress: time
+  clampProgress: false
+  moveRot: 6
+}
+{
+  type: RegionPart
+  x: 0
+  y: 0
+  suffix: -pulse
+  outline: false
+  layer: 60
+
+  progress: reload
+  growProgress: {
+    type: reload
+    op: inv
+  }
+  clampProgress: true
+
+  xScl: 0
+  yScl: 0
+  growX: 1
+  growY: 1
+
+  color: FF000000
+  colorTo: FF0000
+}
+      {
+      type: HaloPart
+      color: B8FFFF50
+      colorTo: B8FFFF50
+
+      radius: 6.5
+      tri: true
+      sides: 3
+      haloRadius: 0
+      shapes: 8
+      hollow: true
+    }
+]
+weapons: [
+  {
+    x: 0
+    y: 0
+    top: false
+    mirror: false
+    rotate: false
+
+    controllable: false
+    autoTarget: true
+    aiControllable: true
+    ejectEffect: none
+    reload: 60
+    shootCone: 180
+    shootSound: ev-beep
+    shootSoundVolume: 1.2
+
+    bullet: {
+      type: BasicBulletType
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      trailEffect: none
+      speed: 0
+      lifetime: 0
+      rangeOverride: 64
+      damage: 0
+      collides: false
+      collidesAir: true
+      collidesGround: true
+      collidesTiles: false
+      hittable: false
+    }
+  }
+]
+useEngineElevation: false
+lowAltitude: true
+databaseTag: drone-unit

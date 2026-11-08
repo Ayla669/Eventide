@@ -1,0 +1,19 @@
+name: Thermogen
+description: An extremely hot gas coming from the depths of Izanami and expelled by geysers.
+heatCapacity: 0
+explosiveness: 2
+temperature: 1.5
+coolant: false
+gas: true
+color: 5E428E
+flammability: 0
+gasColor: F56F5E
+barColor: 6948A050
+incinerable: false
+lightColor: 63C6E350
+research: {
+  parent: ev-liquids
+  objectives: [ 
+    
+  ]
+}

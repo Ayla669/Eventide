@@ -1,0 +1,112 @@
+type: ItemTurret
+name: Thundermold
+description: Fires explosive projectiles at high speed, requires power.
+size: 3
+squareSprite: false
+health: 400
+fogRadiusMultiplier: 0.75
+reload: 10
+heatColor: cd8d4a
+coolantMultiplier: 1
+researchCostMultiplier: 0.5
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.5
+}
+hasPower: true
+consumes: {
+  power: 8
+}
+recoils: 2
+drawer: {
+  type: DrawTurret
+  basePrefix: ev-bas-b02-hardened-
+  parts: [
+    {  
+      type: RegionPart
+      suffix: -weapon-left
+      mirror: false
+      under: false
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {  
+      type: RegionPart
+      suffix: -weapon-right
+      mirror: false
+      under: false
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }  
+  ]
+}
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+category: turret
+requirements: [
+  ev-b02-hardened-chitin/250
+  ev-b03-carotenoid/200
+  ev-b04-trealose/150
+]
+shoot: {
+  type: ShootAlternate
+  spread: 10
+  shotDelay: 10
+}
+range: 400
+shootSound: shootScathe
+ammoTypes: {
+  ev-b04-trealose: {
+    hitEffect: plasticExplosion
+    despawnHit: true
+    type: BasicBulletType
+    speed: 6
+    lifetime: 60
+    damage: 30
+    pierce: true
+    pierceCap: 1
+    keepVelocity: false
+    width: 4
+    height: 4
+    sprite: large-orb
+    trailChance: -1
+    trailColor: 5000DB75
+    backColor: 4900BF75
+    frontColor: 37009775
+    trailWidth: 2.5
+    trailLength: 22
+    lightRadius: 40
+    lightOpacity: 0.7
+    lightColor: 5000DB75
+    spin: 4
+    layer: 99
+    ammoMultiplier: 2
+    fragRandomSpread: 0
+    fragSpread: 0
+    fragOnHit: true
+    fragOnAbsorb: false
+    fragBullets: 2
+    fragLifeMin: 1
+    fragLifeMax: 1
+    fragVelocityMin: 0
+    fragVelocityMax: 0
+    fragBullet: {
+      type: ExplosionBulletType
+      killShooter: false
+      splashDamageRadius: 5
+      splashDamage: 60
+      despawnSound: explosion
+      despawnHit: true
+      hitEffect: hitBulletColor
+    	collidesGround: true
+      collidesAir: true
+    }
+  }
+}
+outlineColor: 041124
+inaccuracy: 1
+rotate: false

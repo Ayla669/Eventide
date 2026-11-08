@@ -1,0 +1,132 @@
+type: HeatCrafter
+name: Peroxate Refinery
+description: It electrifies and heats the mycelial exudate to extremely high temperatures in order to purify it, transforming it into peroxate, a substance so energetic that it corrodes most materials.
+size: 3
+heatRequirement: 35
+liquidCapacity: 30
+craftTime: 600
+squareSprite: false
+hasPower: true
+consumes: {
+  liquids: [
+  ev-liq-04-mycelial-exudate/0.1
+  ]
+  power: 13
+}
+
+ignoreLiquidFullness: true
+
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.09
+
+craftEffect: {
+type: ParticleEffect
+    particles: 6
+    colorFrom: E100E9
+    colorTo: FA00FF
+    sizeFrom: 0.50
+    sizeTo: 0.1
+    lifetime: 60
+    cone: 360
+    length: 3
+    baseLength: 4
+    interp: pow2Out
+    sizeInterp: pow2
+  }
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-04-mycelial-exudate
+  padLeft: 3
+  padTop: 3
+  padBottom: 3
+  padRight: 12.5
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-06-liquid-peroxate
+  padLeft: 12.5
+  padTop: 3
+  padBottom: 3
+  padRight: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner1
+      spinSprite: true
+      rotateSpeed: 5
+      x: -3
+      y: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner2
+      spinSprite: true
+      rotateSpeed: 5
+      x: 3
+      y: -3
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner3
+      spinSprite: true
+      rotateSpeed: -5
+      x: 3
+      y: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner3
+      spinSprite: true
+      rotateSpeed: -5
+      x: -3
+      y: -3
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatInput
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+   ]
+  }
+outputLiquid: {
+  liquid: ev-liq-06-liquid-peroxate
+  amount: 0.1
+}
+category: crafting
+
+research: {
+  parent: ev-pro-a07-radioactive-energizer
+  objectives: [
+    ev-pro-a07-radioactive-energizer
+    ev-liq-04-mycelial-exudate
+  ]
+}
+
+requirements: [
+  ev-a04-iron/400
+  ev-a01-dark-rock/250
+  ev-a06-gold/100
+  ev-a07-rybek-crystals/100
+]
+
+researchCost: [
+  ev-a04-iron/1200
+  ev-a01-dark-rock/750
+  ev-a06-gold/300
+  ev-a07-rybek-crystals/300
+]

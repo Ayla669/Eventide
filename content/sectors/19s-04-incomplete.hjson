@@ -1,0 +1,21 @@
+name: Incomplete
+planet: izanami
+sector: 10
+fog: true
+
+research: {
+  parent: 19s-03-thermal-basin
+  objectives: [
+    shrimp
+  ]
+}
+
+alwaysUnlocked: false
+
+difficulty: 12
+
+captureWave: 30
+
+outline: false
+
+shownPlanets: [izanami]

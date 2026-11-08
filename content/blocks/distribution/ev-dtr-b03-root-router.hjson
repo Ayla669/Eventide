@@ -1,0 +1,12 @@
+type: Router
+name: Root Router
+description: Distributes the items in 3 directions.
+size: 1
+speed: 5
+health: 40
+itemCapacity: 3
+requirements: [
+ ev-b01-chitin/2
+]
+squareSprite: false
+category: distribution

@@ -13,7 +13,6 @@ ambientSoundVolume: 0.1
 
 ambientSoundVolume: 0.09
 outputItems: [
-  ev-dark-fungi-fiber/4
 ]
 
 category: crafting

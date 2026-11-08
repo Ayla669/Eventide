@@ -1,0 +1,11 @@
+name: Carotenoid
+description: A resource used to store the spores of the umbramycete, possessing interesting chemical properties and utilized in factories and advanced construction.
+hardness: 2
+flammability: 0.1
+cost: 0.1
+alwaysUnlocked: false
+color: 00E9FF
+research: {
+  parent: ev-b01-chitin
+}
+shownPlanets: [izanami]

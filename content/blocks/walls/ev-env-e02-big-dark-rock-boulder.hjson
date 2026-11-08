@@ -1,0 +1,6 @@
+type: Wall
+name: Big Dark Rock Boulder
+variants: 2
+size: 1
+health: 150
+squareSprite: false

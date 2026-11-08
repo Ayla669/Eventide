@@ -1,0 +1,13 @@
+research: {
+  parent: ev-research-results-1
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+shownPlanets: [
+izanami
+]
+databaseCategory: research-results

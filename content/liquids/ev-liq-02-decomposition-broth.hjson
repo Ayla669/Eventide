@@ -1,0 +1,20 @@
+name: Decomposition Broth
+description: A unit nutrient-rich broth extracted from the bodies of the swarm’s dead units.
+boilPoint: 0.8
+color: 532424
+heatCapacity: 0
+gasColor: 532424
+alwaysUnlocked: false
+capPuddles: false
+blockReactive: false
+spreadDamage: 0
+viscosity: 0.6
+shownPlanets: [
+izanami
+]
+research: {
+  parent: ev-liquids
+  objectives: [
+    ev-pro-a06-smasher
+  ]
+}

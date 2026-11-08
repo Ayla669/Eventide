@@ -1,0 +1,98 @@
+type: consumeGenerator
+name: Neurospora
+description: Breaks down trealose, releasing energy to fuel structures that require power.
+size: 3
+health: 450
+category: power
+itemDuration: 60
+powerProduction: 15
+generateEffectRange: 0
+generateEffect: {
+  type: multiEffect
+  effects: [
+  {
+    type: ParticleEffect
+    baseRotation: 90
+    rotationSpacing: 90
+    amount: 6
+    lengthOffset: 0.5
+    length: 4
+    baseLength: 20
+    particles: 6
+    useRotation: false
+    sizeFrom: 2
+    sizeTo: 1
+    lifetime: 720
+    cone: 20
+    layer: 80
+    colorFrom: 4900BF15
+    colorTo: 5000DB20
+    interp: pow2
+    sizeInterp: pow3In
+  }
+  {
+    type: ParticleEffect
+    baseRotation: 90
+    rotationSpacing: 90
+    amount: 6
+    lengthOffset: 0.5
+    length: 4
+    baseLength: 20
+    particles: 6
+    useRotation: false
+    sizeFrom: 2
+    sizeTo: 1
+    lifetime: 720
+    cone: 20
+    layer: 80
+    colorFrom: 00B5C915
+    colorTo: 00E9FF20
+    interp: pow2
+    sizeInterp: pow3In
+  }
+ ]
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+      type: DrawFrames
+      frames: 8
+      sine: true
+      interval: 4
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+  ]
+}
+
+ambientSound: ev-alive
+ambientSoundVolume: 2.5
+squareSprite: false
+consumes: {
+  itemFlammable: {
+  }
+}
+requirements: [
+  ev-b01-chitin/175
+  ev-b03-carotenoid/125
+  ev-b04-trealose/75
+]
+
+shownPlanets: [izanami
+]

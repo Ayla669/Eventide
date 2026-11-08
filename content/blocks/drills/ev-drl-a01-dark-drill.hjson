@@ -1,0 +1,67 @@
+type: Drill
+
+name: ev-drl-a01-dark-drill
+description: "A basic drill designed for extracting resources from the soil of Izanami."
+
+size: 2
+
+tier: 2
+drillTime: 240
+squareSprite: false
+hardnessDrillMultiplier: 0
+
+consumes: {
+  liquid: {
+    liquid: ev-liq-01-contamined-water
+    amount: 0.1
+    booster: true
+    optional: true
+  }
+}
+
+research: {
+  parent: ev-drills
+  objectives: [
+   ev-a01-dark-rock
+  ]
+}
+
+requirements: [
+  ev-a01-dark-rock/30
+]
+
+category: production
+alwaysUnlocked: false
+drawTeamOverlay: true
+researchCost: [
+  ev-a01-dark-rock/90
+]
+
+shownPlanets: [
+izanami
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: itemRegion
+      suffix: -item
+    }
+
+    {
+      type: DrawDefault
+    }
+
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotate: true
+    }
+
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

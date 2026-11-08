@@ -1,0 +1,216 @@
+type: ConsumeGenerator
+name: "[#55AC60]Razryarost"
+description: It violently destroys Rybek Crystals, releasing massive amounts of power. The process produces liquid rybek, which is extremely dangerous. If it is not drained frequently, it can explode.
+size: 4
+buildTime: 2000
+health: 1100
+category: power
+requirements: [
+  ev-a04-iron/400
+  ev-a01-dark-rock/250
+  ev-a10-silicon/375
+  ev-a09-graphite/250
+  ev-a11-dark-glass/125
+  ev-a06-gold/225
+  ev-a07-rybek-crystals/175
+  ev-a05-lead/300
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-pow-gen-a02-steam-generator
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+researchCost: [
+  ev-a04-iron/1200
+  ev-a01-dark-rock/750
+  ev-a10-silicon/1125
+  ev-a09-graphite/750
+  ev-a11-dark-glass/375
+  ev-a06-gold/675
+  ev-a07-rybek-crystals/525
+  ev-a05-lead/900
+]
+
+itemDuration: 30
+powerProduction: 24
+
+outlineRadius: 0
+
+generateEffect: {
+  type: MultiEffect
+  effects: [
+
+    {
+      type: WaveEffect
+      sizeFrom: 0.1
+      sizeTo: 20
+      strokeFrom: 1.1
+      strokeTo: 0.2
+      colorFrom: 55AC60
+      colorTo: 286B36
+      lifetime: 30
+    }
+    {
+    type: ParticleEffect
+    region: eventide-radio
+    baseRotation: 0
+    length: 8
+    baseLength: 12
+    particles: 12
+    useRotation: false
+    sizeFrom: 1
+    sizeTo: 0.1
+    lifetime: 240
+    cone: 1
+    layer: 80
+    colorFrom: ffffff00
+    colorTo: ffffff88
+    interp: pow2
+    sizeInterp: pow3In
+    }
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 5
+      length: 15
+      lifetime: 60
+    }
+
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 5
+      length: 15
+      lifetime: 60
+    }
+
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 5
+      length: 15
+      lifetime: 60
+    }
+
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 5
+      length: 15
+      lifetime: 60
+    }
+    {
+      type: lightningShoot
+      color: 55AC60
+      stroke: 5
+      length: 15
+      lifetime: 60
+    }
+  ]
+}
+
+ambientSound: loopPulse
+ambientSoundVolume: 0.01
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+      type: DrawPlasma
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-01-contamined-water
+  padLeft: 0.9
+  padTop: 3
+  padBottom: 3
+  padRight: 20
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: ev-liq-01-contamined-water
+  padLeft: 20
+  padTop: 3
+  padBottom: 3
+  padRight: 0.9
+    }
+    {
+      type: DrawDefault
+    }
+        {
+      type: DrawRegion
+      suffix: -spinner1
+      spinSprite: true
+      rotateSpeed: 15
+      x: 12.9
+      y: 12.9
+    }
+        {
+      type: DrawRegion
+      suffix: -spinner2
+      spinSprite: true
+      rotateSpeed: 15
+      x: 12.9
+      y: -12.9
+    }
+        {
+      type: DrawRegion
+      suffix: -spinner3
+      spinSprite: true
+      rotateSpeed: 15
+      x: -12.9
+      y: -12.9
+    }
+        {
+      type: DrawRegion
+      suffix: -spinner4
+      spinSprite: true
+      rotateSpeed: 15
+      x: -12.9
+      y: 12.9
+    }
+    {
+      type: DrawPistons
+      suffix: -part1
+      angleOffset: 0
+      sinMag: 2
+      sinScl: 2
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+   ]
+  }
+
+consumes: {
+  itemCharged: {}
+  liquid: ev-liq-01-contamined-water/0.5
+}
+hasLiquids: true
+liquidCapacity: 60
+
+shownPlanets: [
+izanami
+]
+
+warmupSpeed: 0.003
+outputLiquid: ev-liq-05-liquid-rybek/0.01
+researchCostMultiplier: 0.005
+liquidCapacity: 3
+explodeOnFull: true

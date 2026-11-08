@@ -1,0 +1,11 @@
+name: Trealose
+description: A sugar extracted from decomposition broth, used in chemical reactions to produce energy for the umbramycete.
+hardness: 0
+flammability: 1.4
+cost: 0.1
+alwaysUnlocked: false
+color: 4900BF
+research: {
+  parent: ev-b01-chitin
+}
+shownPlanets: [izanami]

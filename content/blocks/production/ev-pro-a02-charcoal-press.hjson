@@ -1,0 +1,68 @@
+type: GenericCrafter
+name: Charcoal Press
+description: Crushes charcoal at high pressures until it turns into graphite.
+size: 2
+craftTime: 180
+squareSprite: false
+consumes: {
+  items: [
+    ev-a08-charcoal/4
+  ]
+}
+
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.09
+
+researchCost: [
+  ev-a04-iron/120
+  ev-a01-dark-rock/240
+]
+
+
+craftEffect: ventSteam
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawDefault
+    }
+        {
+      type: DrawRegion
+      suffix: -spinner
+      spinSprite: true
+      rotateSpeed: 4
+    }
+  ]
+}
+
+outputItems: [
+  ev-a09-graphite/2
+]
+
+category: crafting
+
+research: {
+  parent: ev-factorys
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+    {
+      type: OnSector
+      preset: 19s-02-brood
+    }
+  ]
+}
+
+requirements: [
+  ev-a04-iron/40
+  ev-a01-dark-rock/80
+]
+
+itemCapacity: 20

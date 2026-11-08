@@ -1,0 +1,13 @@
+research: {
+  parent: ev-biological-research
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+  ]
+}
+shownPlanets: [
+izanami
+]
+databaseCategory: research-results

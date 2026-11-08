@@ -1,0 +1,17 @@
+type: LiquidRouter
+name: Vein Router
+description: Distribute the liquids equally on all sides.
+size: 1
+solid: false
+underBullets: true
+health: 25
+liquidCapacity: 25
+category: liquid
+squareSprite: false
+requirements: [
+ ev-b01-chitin/4
+]
+
+shownPlanets: [
+izanami
+]

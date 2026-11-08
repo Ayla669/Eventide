@@ -1,0 +1,4 @@
+type: oreBlock
+name: Carotenoid Bubbles
+variants: 3
+itemDrop: ev-b03-carotenoid

@@ -1,0 +1,58 @@
+type: legs
+legCount: 4
+legLength: 8
+legSpeed: 0.23
+legForwardScl: 0.56
+legMoveSpace: 0.9
+stepSound: walkerStepTiny
+hovering: true
+groundLayer: 60
+name: Felps
+description: OOOIII YOUTUBE!
+health: 60
+armor: 1
+mineFloor: true
+mineWalls: true
+speed: 1.38
+hitSize: 6
+isEnemy: false
+mineSpeed: 3.5
+mineTier: 1
+buildSpeed: 0.7
+drag: 0.4
+itemCapacity: 20
+alwaysUnlocked: true
+outlineColor: 42413e
+deathSound: nao
+outlineRadius: 0
+
+weapons: [
+  {
+    shootOnDeath: true
+    targetUnderBlocks: false
+
+    reload: 24
+    shootCone: 180
+
+    x: 0
+    shootY: 0
+    mirror: false
+
+    bullet: {
+      collidesTiles: false
+      collides: false
+      speed: 0
+
+      splashDamageRadius: 100000
+      splashDamage: 1000000
+
+      instantDisappear: true
+      killShooter: true
+
+      hittable: false
+      collidesAir: true
+      backColor: 7CFF6B
+      frontColor: C8FFC0
+    }
+  }
+]

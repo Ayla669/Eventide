@@ -1,0 +1,25 @@
+name: Petrichor
+planet: izanami
+sector: 5
+fog: true
+
+research: {
+  parent: 19s-01-rebirth
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+
+
+alwaysUnlocked: false
+
+difficulty: 3
+
+captureWave: 15
+
+outline: false
+
+shownPlanets: [izanami]

@@ -1,0 +1,74 @@
+type: ItemTurret
+name: Esporax
+description: Fires bubbles containing spores that pursue targets and have a chance to convert them to the allied team upon death.
+size: 3
+rotateSpeed: 0
+outlineRadius: 0
+outlines: false
+recoil: 0
+shootX: 0
+shootY: 0
+shootWarmupSpeed: 0.05
+minWarmup: 0.9
+outlineColor: 00000000
+warmupMaintainTime: 90
+predictTarget: true
+shootCone: 360
+reload: 60
+researchCostMultiplier: 0.5
+range: 320
+drawer: {
+  type: DrawTurret
+  basePrefix: ev-bas-b01-base-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -part1
+      progress: warmup
+      moveY: 1.5
+      moveX: -1.5
+    }
+    {
+      type: RegionPart
+      suffix: -part2
+      progress: warmup
+      moveX: 2
+      moveY: 1.5
+    }
+    {
+      type: RegionPart
+      suffix: -part3
+      progress: warmup
+      moveY: -1.5
+      moveX: 2
+    }
+  ]
+}
+shootSound: bubble1
+shoot: {
+  type: ShootBarrel
+  shots: 3
+  shotDelay: 60
+  barrels: [
+    0, 0, 0,
+    0, 0, 0,
+    0, 0, 0
+  ]
+}
+ammoTypes: {
+ev-b03-carotenoid: {
+    ammoMultiplier: 12
+    reloadMultiplier: 0.75
+    shootEffect: none
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    spawnUnit: ev-trt-b02-esporax-bubble
+  }
+}
+category: turret
+requirements: [
+ ev-b01-chitin/125
+ ev-b03-carotenoid/75
+]
+rotate: false

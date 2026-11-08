@@ -1,0 +1,44 @@
+type: BeamNode
+name: Rybek Node
+health: 40
+fogRadius: 2
+range: 12
+size: 1
+squareSprite: false
+category: power
+hasPower: true
+consumesPower: true
+outputsPower: true
+
+consumes: {
+  power: 0.6
+}
+requirements: [
+  ev-a04-iron/15
+  ev-a06-gold/10
+  ev-a07-rybek-crystals/25
+]
+
+researchCostMultiplier: 0.5
+research: {
+  parent: ev-pow-con-a01-iron-node
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+researchCost: [
+  ev-a04-iron/45
+  ev-a06-gold/30
+  ev-a07-rybek-crystals/75
+]
+laserColor1: 79DA86FF
+laserColor2: 6DFF80FF
+
+outlineRadius: 0

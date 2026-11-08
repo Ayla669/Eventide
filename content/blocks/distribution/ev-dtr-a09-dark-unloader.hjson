@@ -1,0 +1,29 @@
+type: DirectionalUnloader
+name: Dark Unloader
+description: A directional Unloader.
+size: 1
+category: distribution
+research: {
+  parent: ev-dtr-a01-dark-duct
+  objectives: [
+   ev-a01-dark-rock
+   ev-dtr-a01-dark-duct
+   ev-a04-iron
+   ev-a07-rybek-crystals
+  ]
+}
+requirements: [
+  ev-a04-iron/15
+  ev-a01-dark-rock/25
+  ev-a07-rybek-crystals/13
+]
+speed: 5
+solid: false
+underBullets: true
+regionRotated1: 1
+allowCoreUnload: true
+researchCost: [
+  ev-a04-iron/45
+  ev-a01-dark-rock/75
+  ev-a07-rybek-crystals/39
+]

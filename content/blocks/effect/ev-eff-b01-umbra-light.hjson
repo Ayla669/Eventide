@@ -1,0 +1,18 @@
+type: LightBlock
+name: Umbra light
+description: It emits light... and that’s it
+
+category: effect
+buildVisibility: shown
+outlineRadius: 0
+
+requirements: [
+ ev-b01-chitin/10
+ ev-b03-carotenoid/10
+]
+
+brightness: 1
+radius: 30
+
+consumes: {
+}

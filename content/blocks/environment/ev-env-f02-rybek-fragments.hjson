@@ -1,0 +1,5 @@
+type: oreBlock
+name: Rybek Fragments
+variants: 5
+itemDrop: ev-a07-rybek-crystals
+wallOre: true

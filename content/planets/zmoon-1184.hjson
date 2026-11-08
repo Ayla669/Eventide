@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 1184
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 3.4027, phase 301.793 degrees.
 
 name: zmoon-1184
 localizedName: "Izanami Moon 1184"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 

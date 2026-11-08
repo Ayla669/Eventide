@@ -1,0 +1,18 @@
+type: Wall
+name: Weak Gold Wall
+description: It's quicker and cheaper to build than a regular wall, but on the other hand, it's much more fragile.
+size: 1
+health: 300
+lightningChance: 0.05
+squareSprite: false
+requirements: [
+  ev-a06-gold/2
+]
+category: defense
+researchCost: [
+  ev-a06-gold/6
+]
+buildVisibility: sandboxOnly
+shownPlanets: [
+izanami
+]

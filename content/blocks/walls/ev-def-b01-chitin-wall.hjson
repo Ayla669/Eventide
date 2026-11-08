@@ -1,0 +1,14 @@
+type: Wall
+name: Chitin Wall
+description: A wall of chitin that protects the structures of the umbramycete.
+size: 1
+health: 1500
+squareSprite: false
+category: defense
+variants: 2
+shownPlanets: [
+izanami
+]
+requirements: [
+ ev-b01-chitin/3
+]

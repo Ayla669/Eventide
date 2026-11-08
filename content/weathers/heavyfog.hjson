@@ -1,0 +1,17 @@
+type: ParticleWeather
+name: Heavy Fog
+color: 21FFC5
+noiseColor: 21FFC5
+drawNoise: true
+particleRegion: particle
+useWindVector: true
+sizeMax: 120
+sizeMin: 40
+minAlpha: 0.0
+maxAlpha: 0.18
+density: 1050
+baseSpeed: 0.8
+opacityMultiplier: 0.3
+sound: wind
+soundVol: 0.3
+force: 0

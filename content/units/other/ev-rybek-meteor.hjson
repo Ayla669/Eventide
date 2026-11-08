@@ -1,0 +1,137 @@
+name: ev-rybek-meteor
+type: missile
+template: MissileUnitType
+
+speed: 9
+maxRange: 6
+lifetime: 180
+
+hitSize: 9
+health: 100
+
+outlineColor: 252525
+outlineRadius: 0
+
+engineColor: 65FF65
+trailColor: 32D632
+
+rotateSpeed: 0.28
+missileAccelTime: 45
+
+lowAltitude: true
+engineSize: 0
+engineOffset: 0
+engineLayer: 0
+trailLength: 0
+
+targetAir: false
+targetUnderBlocks: false
+targetGround: true
+
+fogRadius: 1
+
+loopSound: loopMissileTrail
+loopSoundVolume: 0.6
+deathSound: explosionNuclearSmall
+abilities: [
+  {
+    type: MoveEffectAbility
+    x: 4
+    y: 0
+    teamColor: true
+    effect: missileTrail
+    interval: 6
+  }
+  {
+    type: MoveEffectAbility
+    x: -4
+    y: 0
+    teamColor: true
+    effect: missileTrail
+    interval: 7
+  }
+  {
+    type: MoveEffectAbility
+    x: 0
+    y: 0
+    teamColor: true
+    effect: missileTrail
+    interval: 7
+  }
+    {
+    type: MoveEffectAbility
+    interval: 4
+    rotateEffect: true
+    effect: {
+      type: ParticleEffect
+      region: eventide-frag
+      lifetime: 15
+      sizeInterp: slope
+      length: 6
+      baseLength: 3
+      sizeFrom: 1
+      sizeTo: 3
+      colorFrom: 41D352FF
+      colorTo: 41D352FF
+      layer: 61.7
+      spin: 2
+      baseRotation: 32.5
+    }
+  }
+]
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+    shake: 0.5
+
+    shootOnDeath: true
+
+    bullet: {
+      type: ExplosionBulletType
+
+      damage: 150
+      splashDamage: 100
+      splashDamageRadius: 5
+
+      hitColor: 41D352FF
+
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+
+      fragBullets: 15
+      fragSpread: 30
+      fragRandomSpread: 20
+
+      fragVelocityMin: 0.8
+      fragVelocityMax: 1.2
+
+      fragBullet: {
+        type: BasicBulletType
+
+        speed: 7
+        damage: 150
+        sprite: eventide-listone
+
+        lifetime: 45
+
+        width: 4
+        height: 10
+        hitSize: 4
+
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: true
+
+        collidesAir: false
+        collidesGround: true
+
+        hitColor: 41D352FF
+        backColor: 41D352FF
+        trailColor: 41D352FF
+        frontColor: 41D352FF
+        }
+       }
+      }
+]

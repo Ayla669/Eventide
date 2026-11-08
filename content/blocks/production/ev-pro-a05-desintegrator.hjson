@@ -1,0 +1,32 @@
+type: Incinerator
+name: Desintegrator
+description: Uses power to burn items inputted into it and destroy them.
+size: 1
+squareSprite: false
+consumes: {
+  power: 0.9
+}
+category: crafting
+requirements: [
+  ev-a04-iron/25
+  ev-a10-silicon/13
+  ev-a09-graphite/8
+]
+research: {
+  parent: ev-pro-a03-silicon-casting
+  objectives: [
+   ev-a04-iron
+  ev-a10-silicon
+  ev-a09-graphite
+  ev-pro-a03-silicon-casting
+  ]
+}
+researchCost: [
+  ev-a04-iron/75
+  ev-a10-silicon/39
+  ev-a09-graphite/24
+]
+outlineRadius: 0
+shownPlanets: [
+izanami
+]

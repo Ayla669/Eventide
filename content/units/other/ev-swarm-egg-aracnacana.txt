@@ -1,0 +1,98 @@
+name: Citheronia Egg
+type: mech
+
+speed: 0
+
+hitSize: 8
+health: 25
+range: 128
+
+outlineColor: 252525
+outlineRadius: 0
+
+engineColor: FF0000
+trailColor: FF0000
+engineSize: 0
+engineOffset: 0
+engineLayer: 0
+trailLength: 0
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-liq-03-swarm-blood
+    amount: 60
+  }
+]
+
+rotateSpeed: 0.45
+
+targetAir: true
+targetUnderBlocks: false
+targetGround: true
+
+fogRadius: 6
+
+loopSound: ev-bettle-fly
+loopSoundVolume: 0.45
+deathSound: ev-monster-die1
+
+weapons: [
+  {
+    shootOnDeath: true
+    targetBuildings: true
+    targetUnits: true
+    autoTarget: true
+    range: 100
+
+    reload: 30
+    shootCone: 180
+
+    x: 0
+    shootY: 0
+    mirror: false
+    
+
+    bullet: {
+  collidesTiles: false
+  collides: false
+  speed: 0
+
+  splashDamageRadius: 1
+  splashDamage: 0
+
+  fragBullets: 6
+  fragSpread: 6
+  fragRandomSpread: 6
+
+  fragBullet: {
+    collidesTiles: false
+    collides: false
+    speed: 0
+
+    spawnUnit: ev-unt-crw-c01-citheronia
+
+    instantDisappear: true
+    hittable: false
+    collidesAir: false
+    collidesGround: false
+  }
+
+  liquid: ev-liq-01-contamined-water
+  liquidAmount: 20
+
+  instantDisappear: true
+  killShooter: true
+
+  hittable: false
+  collidesAir: true
+
+  backColor: 7CFF6B
+  frontColor: C8FFC0
+}
+}
+]
+databaseCategory: swarm-units
+shownPlanets: [ 
+izanami
+]

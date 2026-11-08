@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 1123
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 3.4087, phase 228.548 degrees.
 
 name: zmoon-1123
 localizedName: "Izanami Moon 1123"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 

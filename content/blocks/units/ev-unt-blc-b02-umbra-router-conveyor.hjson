@@ -1,0 +1,11 @@
+type: PayloadRouter
+name: Umbra Router Conveyor
+description: Distributes inputted payload to up to three output directions.
+category: units
+requirements: [
+  ev-b02-hardened-chitin/15
+  ev-b03-carotenoid/8
+  ev-b04-trealose/3
+]
+canOverdrive: false
+

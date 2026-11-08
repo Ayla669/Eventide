@@ -1,0 +1,24 @@
+name: glimmer
+color: DFFFFF
+
+permanent: true
+show: false
+
+effect: {
+  type: ParticleEffect
+  particles: 2
+  line: false
+  length: 5
+  lifetime: 18
+  interp: pow3Out
+  sizeInterp: pow3Out
+  sizeFrom: 2.5
+  sizeTo: 0
+  colorFrom: DFFFFF
+  colorTo: 477EFC
+  cone: 180
+  baseLength: 0
+  useRotation: false
+}
+
+effectChance: 1

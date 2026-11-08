@@ -1,0 +1,9 @@
+type: Sorter
+invert: true
+name: Inverted Root Sorter
+description: Works like a Duct Sorter but outputs selected items to the sides instead of straight on.
+category: distribution
+requirements: [
+  ev-b01-chitin/3
+  ev-b03-carotenoid/2
+]

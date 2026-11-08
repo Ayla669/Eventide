@@ -1,0 +1,58 @@
+type: Pump
+name: Dark Pump
+description: Slowly pumps water.
+size: 1
+category: liquid
+squareSprite: false
+research: {
+  parent: ev-liquid-distribution
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+requirements: [
+  ev-a01-dark-rock/25
+  ev-a04-iron/13
+]
+pumpAmount: 0.2
+researchCost: [
+   ev-a01-dark-rock/75
+   ev-a04-iron/39
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-liq-01-contamined-water
+      padLeft: 5
+      padTop: 5
+      padBottom: 5
+      padRight: 5
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      spinSprite: true
+      rotateSpeed: 9
+    }
+  ]
+}
+
+shownPlanets: [
+izanami
+]

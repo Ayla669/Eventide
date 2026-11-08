@@ -1,0 +1,20 @@
+type: PayloadDeconstructor
+name: Assimilator
+description: Assimilate converted enemy units to steal resources from other factions
+itemCapacity: 200
+health: 800
+size: 3
+category: units
+requirements: [
+  ev-b02-hardened-chitin/250
+  ev-b03-carotenoid/225
+  ev-b04-trealose/200
+]
+squareSprite: false
+deconstructSpeed: 1.5
+consumes: {
+  power: 6
+  liquid: ev-liq-04-mycelial-exudate/0.5
+}
+researchCostMultiplier: 0.5
+liquidCapacity: 60

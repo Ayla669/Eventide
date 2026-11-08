@@ -1,0 +1,35 @@
+type: ArmoredConveyor
+name: Trealose Wire
+description: Transfers energy when placed next to more wires and dissipates a minimal amount of power.
+conductivePower: true
+health: 64
+hasPower: true
+outputsPower: true
+liquidPressure: 0
+liquidCapacity: 0
+consumes: {
+  power: 0.01
+} 
+requirements: [
+  ev-a04-iron/6
+  ev-a06-gold/3
+  ev-b04-trealose/3
+]
+research: {
+  parent: ev-power
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+researchCost: [
+  ev-a04-iron/36
+  ev-a06-gold/18
+  ev-b04-trealose/18
+]
+category: power
+acceptsItems: false
+instantTransfer: false
+solid: false

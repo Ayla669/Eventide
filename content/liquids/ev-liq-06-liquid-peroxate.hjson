@@ -1,0 +1,26 @@
+name: Peroxate
+description: An extremely energetic and corrosive liquid, extremely dangerous.
+colorFrom: E100E9
+colorTo: FA00FF
+color: E100E9
+flammability: 1.5
+temperature: 0.5
+heatCapacity: 0.1
+viscosity: 0.9
+explosiveness: 1.5
+boilPoint: 0.9
+capPuddles: false
+blockReactive: true
+gasColor: FA00FF
+type: cellLiquid
+alwaysUnlocked: false
+effect: eventide-ev-status-peroxate-burn
+research: {
+  parent: ev-liq-04-mycelial-exudate
+  objectives: [
+    ev-pro-a08-peroxate-refinery
+  ]
+}
+shownPlanets: [
+izanami
+]

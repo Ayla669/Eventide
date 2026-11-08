@@ -1,0 +1,11 @@
+type: Wall
+name: Chair
+description: I am the storm that is approaching
+size: 1
+health: 999999
+armor: 80
+squareSprite: false
+requirements: [
+]
+category: defense
+buildVisibility: sandboxOnly

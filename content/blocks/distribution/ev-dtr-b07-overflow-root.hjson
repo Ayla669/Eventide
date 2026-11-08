@@ -1,0 +1,8 @@
+type: OverflowGate
+name: Root Overflow
+description: Outputs items to the sides if the front path is blocked.
+category: distribution
+requirements: [
+  ev-b01-chitin/5
+  ev-b03-carotenoid/3
+]

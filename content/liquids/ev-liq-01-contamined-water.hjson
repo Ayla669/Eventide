@@ -1,0 +1,18 @@
+name: Contamined Water
+description: Water that was once clean, now contaminated by various toxic minerals.
+effect: wet
+boilPoint: 0.5
+color: 21FFC5
+coolant: true
+heatCapacity: 2
+gasColor: 21FFC5E6
+alwaysUnlocked: false
+shownPlanets: [
+izanami
+]
+research: {
+  parent: ev-liquids
+  objectives: [
+    ev-liq-bmb-a01-dark-pump
+  ]
+}

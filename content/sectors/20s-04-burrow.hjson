@@ -1,0 +1,24 @@
+name: Burrow
+planet: izanami
+sector: 9
+fog: true
+
+research: {
+  parent: 19s-02-brood
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+  ]
+}
+
+alwaysUnlocked: false
+
+difficulty: 6
+
+captureWave: 25
+
+outline: false
+
+shownPlanets: [izanami]

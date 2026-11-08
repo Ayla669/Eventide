@@ -1,0 +1,32 @@
+type: LiquidRouter
+size: 2
+hasLiquids: true
+liquidCapacity: 600
+name: Liquid Tank
+description: Stores liquids and outputs them to all sides.
+category: liquid
+liquidPadding: 1.8
+researchCostMultiplier: 0.5
+requirements: [
+  ev-a04-iron/50
+  ev-a01-dark-rock/40
+  ev-a11-dark-glass/15
+]
+research: {
+  parent: ev-liq-dtr-a01-dark-pipe
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+researchCost: [
+  ev-a04-iron/150
+  ev-a01-dark-rock/120
+  ev-a11-dark-glass/45
+]
+outlineRadius: 0
+shownPlanets: [
+izanami
+]

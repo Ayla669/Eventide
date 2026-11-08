@@ -1,0 +1,117 @@
+type: legs
+name: Brachitus
+description: With an excess of blood, this creature fires it at enemies, dealing high damage.
+accel: 0.1
+health: 800
+armor: 25
+hitSize: 13
+canDrown: true
+legCount: 6
+legLength: 15
+legGroupSize: 1
+lockLegBase: true
+legContinuousMove: true
+legExtension: 3
+legBaseOffset: 1
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 1
+legForwardScl: 1
+legMoveSpace: 1
+legSpeed: 0.17
+groundLayer: 60
+legSplashDamage: 25
+allowLegStep: false
+legPhysicsLayer: false
+crushDamage: 25
+treadPullOffset: 5
+stepSound: walkerStep
+stepSoundVolume: 0.7
+stepShake: 0.1
+hovering: false
+speed: 1
+outlineColor: 17181C
+deathSound: ev-monster-die4
+
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: ev-liq-03-swarm-blood
+    amount: 45
+  }
+    {
+    type: MoveEffectAbility
+    minVelocity: 0.5
+    x: 0
+    y: -2.4
+    effect: artilleryTrailSmoke
+    teamColor: true
+    interval: 3
+  }
+]
+
+weapons: [
+    {
+      top: true
+      x: -4
+      layer: 50
+      name: ev-unt-leg-c02-brachitus-weapon
+      recoil: 2
+      under: false
+      shootCone: 45
+        y: 0
+        reload: 120
+        rotate: false
+        mirror: true
+        alternate: true
+        shoot: {
+          shots: 3
+          shotDelay: 25
+        }
+        shootSound: ev-unt-leg-c02-aragog-shoot
+        shootSoundVolume: 0.7
+        bullet: {
+          type: BasicBulletType
+          shootEffect: shootSmall
+          smokeEffect: shootSmallSmoke
+          trailChance: -1
+          trailInterval: 10
+          trailLength: 8
+          trailWidth: 1
+          speed: 6
+          splashDamage: 150
+          splashDamageRadius: 10
+          lifetime: 30
+          trailEffect: disperseTrail
+          trailColor: 77FF7B
+          hitColor: 77FF7B
+          backColor: A0FFA4
+          frontColor: FFFFFF
+          damage: 250
+          collidesAir: true
+          hitShake: 0.3
+          collides: true
+          pierce: true
+          pierceCap: 2
+          width: 7
+          height: 3
+        }
+    }
+]
+
+research: {
+  parent: ev-unt-leg-c01-aranicidae-nymph
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+  ]
+}
+
+
+databaseCategory: swarm-units
+researchCost: [
+ ev-c01-swarm-pieces/400
+]
+shownPlanets: [izanami]

@@ -1,0 +1,14 @@
+type: LiquidJunction
+name: Vein Junction
+description: One vein connects to another, transporting liquids to the other side.
+health: 25
+solid: false
+category: liquid
+squareSprite: false
+requirements: [
+ ev-b01-chitin/3
+]
+
+shownPlanets: [
+izanami
+]

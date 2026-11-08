@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 0257
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 2.1724, phase 219.05 degrees.
 
 name: zmoon-0257
 localizedName: "Izanami Moon 0257"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 

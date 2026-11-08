@@ -1,0 +1,4 @@
+type: oreBlock
+name: Chitin Fragments
+variants: 4
+itemDrop: ev-b01-chitin

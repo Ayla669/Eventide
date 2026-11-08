@@ -1,0 +1,29 @@
+type: StorageBlock
+size: 2
+scaledHealth: 80
+name: Iron Box
+description: Stores items in larger quantities.
+itemCapacity: 400
+category: effect
+squareSprite: false
+researchCostMultiplier: 0.5
+requirements: [
+  ev-a04-iron/60
+  ev-a01-dark-rock/30
+]
+research: {
+  parent: ev-dtr-a09-dark-unloader
+  objectives: [
+   ev-a04-iron
+   ev-a01-dark-rock
+   ev-dtr-a09-dark-unloader
+  ]
+}
+researchCost: [
+  ev-a04-iron/180
+  ev-a01-dark-rock/90
+]
+outlineRadius: 0
+shownPlanets: [
+izanami
+]

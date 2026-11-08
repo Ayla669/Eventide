@@ -1,0 +1,234 @@
+type: ItemTurret
+name: Oerlikon
+description: An anti-aircraft turret. It fires fragmentation rounds at targets.
+
+size: 3
+squareSprite: false
+health: 450
+fogRadiusMultiplier: 0.75
+hasPower: true
+consumes: {
+  power: 7
+}
+
+targetAir: true
+targetUnderBlocks: false
+targetGround: false
+outlineRadius: 0
+
+reload: 60
+range: 800
+
+outlines: false
+coolantMultiplier: 1
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+
+shoot: {
+  firstShotDelay: 30
+  shots: 6
+  shotDelay: 10
+}
+
+velocityRnd: 0.20
+ammoPerShot: 2
+
+recoil: 1.5
+recoilTime: 12
+cooldownTime: 35
+
+drawer: {
+  type: DrawTurret
+  basePrefix: ev-bas-a01-base-
+}
+
+category: turret
+
+research: {
+  parent: ev-trt-a01-gear
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+
+researchCost: [
+  ev-a01-dark-rock/900
+  ev-a04-iron/450
+  ev-a06-gold/225
+]
+
+requirements: [
+  ev-a01-dark-rock/300
+  ev-a04-iron/150
+  ev-a06-gold/75
+]
+
+chargeSound: ev-gear-loading
+shootSound: ev-gear-shoot
+
+smokeEffect: [
+  {
+    type: ParticleEffect
+    particles: 3
+    lifetime: 18
+    length: 5
+    cone: 35
+    sizeFrom: 2.2
+    sizeTo: 0
+    colorFrom: 8a8a8a
+    colorTo: 353535
+    offsetX: 0
+    offsetY: 0
+  }
+]
+
+ammoUseEffect: casing1
+ammoEjectBack: 1
+
+ammoTypes: {
+
+  ev-a11-dark-glass: {
+   collidesAir: true
+   collidesGround: false
+   collidesTiles: false
+   lifetime: 25
+   damage: 200
+    frontColor: ffffff
+    backColor: 6794FF
+    trailColor: 6794FF
+    trailWidth: 0.5
+    trailLength: 1
+    trailChance: -1
+    trailEffect: {
+      type: ParticleEffect
+      particles: 2
+      region: eventide-frag
+      lifetime: 8
+      length: 2.5
+      cone: 180
+      sizeFrom: 1.5
+      sizeTo: 0
+      colorFrom: A9C4FF
+      colorTo: 477EFC
+    }
+    trailChance: 1.0
+    inaccuracy: 5
+    speed: 30
+    
+    fragBullets: 5
+    fragSpread: 60
+    fragRandomSpread: 30
+
+    fragVelocityMin: 0.3
+    fragVelocityMax: 0.6
+
+    fragBullet: {
+        type: BasicBulletType
+
+        speed: 20
+        damage: 100
+
+        lifetime: 10
+
+        width: 4
+        height: 10
+        hitSize: 4
+
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: true
+
+        collidesAir: true
+        collidesGround: false
+        collidesTiles: false
+
+        hitColor: 6794FF
+        backColor: 6794FF
+        trailColor: A9C4FF
+        frontColor: FFFFFF
+        trailEffect: {
+          type: ParticleEffect
+          particles: 2
+          lifetime: 7
+          length: 2
+          cone: 180
+          sizeFrom: 1.2
+          sizeTo: 0
+          colorFrom: D4E2FF
+          colorTo: 6794FF
+        }
+        trailChance: 0.35
+        }
+       }
+     
+     ev-a10-silicon: {
+    collidesAir: true
+    collidesGround: false
+    collidesTiles: false
+    lifetime: 25
+    frontColor: FFFFFF
+    backColor: A3A3A3
+    trailColor: A3A3A3
+    trailWidth: 0.5
+    trailLength: 1
+    trailChance: -1
+    trailEffect: {
+      type: ParticleEffect
+      particles: 2
+      lifetime: 8
+      length: 2.5
+      cone: 180
+      sizeFrom: 1.5
+      sizeTo: 0
+      colorFrom: D6D6D6
+      colorTo: 858585
+    }
+    trailChance: 1.0
+    inaccuracy: 5
+
+        type: MissileBulletType
+
+        speed: 20
+        damage: 250
+        
+        collidesAir: true
+        collidesGround: false
+        collidesTiles: false
+
+        lifetime: 60
+
+        width: 6
+        height: 8
+
+        homingPower: 0.15
+        homingDelay: 5
+        homingRange: 160
+
+        splashDamage: 100
+        splashDamageRadius: 8
+
+        hitColor: A3A3A3
+        trailColor: D6D6D6
+        backColor: A3A3A3
+        frontColor: FFFFFF
+
+        hitEffect: hitBulletColor
+        despawnEffect: blastExplosion
+      
+    }
+}
+
+rotate: false
+shownPlanets: [izanami]

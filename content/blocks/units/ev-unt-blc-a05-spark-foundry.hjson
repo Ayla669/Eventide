@@ -1,0 +1,40 @@
+type: UnitAssembler
+name: Spark Foundry
+description: Creates spark units using payloads.
+size: 5
+category: units
+droneType: ev-enginner
+research: {
+  parent: ev-unt-blc-a04-automaton-foundry
+  objectives: [
+  ]
+}
+requirements: [
+  ev-a05-lead/500
+  ev-a04-iron/250
+  ev-a06-gold/100
+  ev-a01-dark-rock/50
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: ev-unt-leg-a01-sparkwalker
+    requirements: [
+      eventide-ev-pocket-welder/2
+      eventide-ev-reinforcement-alloy/3
+      eventide-ev-power-cell/1
+    ]
+    time: 2500
+  }
+]
+squareSprite: false
+consumes: {
+  power: 8
+}
+areaSize: 13
+researchCost: [
+  ev-a05-lead/1500
+  ev-a04-iron/750
+  ev-a06-gold/300
+  ev-a01-dark-rock/150
+]

@@ -1,5 +1,0 @@
-type: Floor
-name: Dark Rock
-itemDrop: ev-dark-rock
-playerUnmineable: false
-variants: 4

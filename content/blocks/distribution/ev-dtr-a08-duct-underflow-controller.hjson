@@ -1,0 +1,20 @@
+type: OverflowGate
+name: Dark Underflow Controller
+description: Works like an Overflow Controller but inverted.
+category: distribution
+invert: true
+research: {
+  parent: ev-dtr-a07-duct-overflow-controller
+  objectives: [
+   ev-a01-dark-rock
+   ev-dtr-a07-duct-overflow-controller
+  ]
+}
+requirements: [
+  ev-a01-dark-rock/2
+  ev-a04-iron/2
+]
+researchCost: [
+  ev-a01-dark-rock/6
+  ev-a04-iron/6
+]

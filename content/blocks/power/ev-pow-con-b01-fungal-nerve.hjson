@@ -1,0 +1,20 @@
+type: ArmoredConveyor
+name: Fungal Nerve
+description: Transfers energy when placed next to more nerves or structures.
+conductivePower: true
+health: 30
+hasPower: true
+outputsPower: true
+liquidPressure: 0
+liquidCapacity: 0
+consumes: {
+  power: 0.01
+} 
+requirements: [
+  ev-b01-chitin/5
+  ev-b04-trealose/3
+]
+category: power
+acceptsItems: false
+instantTransfer: false
+solid: false

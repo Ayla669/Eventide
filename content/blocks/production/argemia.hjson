@@ -1,0 +1,21 @@
+type: GenericCrafter
+name: Argemia
+description: Are you a UFO?
+buildVisibility: sandboxOnly
+size: 3
+craftTime: 180
+squareSprite: false
+consumes: {
+}
+ignoreLiquidFullness: true
+ambientSound: none
+ambientSoundVolume: 0.1
+
+ambientSoundVolume: 0.09
+outputItems: [
+  shrimp/1
+]
+
+category: crafting
+
+itemCapacity: 999999

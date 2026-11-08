@@ -1,0 +1,9 @@
+type: OverflowGate
+name: Underflow Root
+description: Works like an Overflow Controller but inverted.
+category: distribution
+invert: true
+requirements: [
+  ev-b01-chitin/5
+  ev-b03-carotenoid/3
+]

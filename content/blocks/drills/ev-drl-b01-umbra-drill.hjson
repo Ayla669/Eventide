@@ -1,0 +1,36 @@
+type: BurstDrill
+name: Umbra Drill
+description: A fungal structure that extracts minerals and other resources from the soil.
+size: 3
+category: production
+health: 120
+drillTime: 300
+ambientSound: ev-extract
+ambientSoundVolume: 2
+consumes: {
+  liquid: {
+    liquid: ev-liq-01-contamined-water
+    amount: 0.1
+    booster: true
+    optional: true
+  }
+}
+hardnessDrillMultiplier: 0
+hasPower: false
+tier: 1
+shake: 1
+itemCapacity: 30
+hasLiquids: false
+researchCostMultiplier: 0.5
+drillEffect: {
+  type: MultiEffect
+  effects: [
+    mineImpact
+    drillSteam
+  ]
+}
+requirements: [
+ ev-b01-chitin/30
+]
+squareSprite: false
+liquidCapacity: 15

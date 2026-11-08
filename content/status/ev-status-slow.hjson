@@ -1,0 +1,7 @@
+name: Slow
+damage: 0
+speedMultiplier: 0.4
+shownPlanets: [
+izanami
+]
+outline: false

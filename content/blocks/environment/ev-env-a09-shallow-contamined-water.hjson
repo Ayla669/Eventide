@@ -1,0 +1,10 @@
+type: Floor
+name: Shallow Contamined Water
+
+variants: 0
+
+liquidDrop: ev-liq-01-contamined-water
+liquidMultiplier: 1
+isLiquid: true
+
+cacheLayer: water

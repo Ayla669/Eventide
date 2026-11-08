@@ -1,0 +1,38 @@
+name: Nestmire Vent
+type: SteamVent
+blendGroup: ev-env-a19-nestmire-floor
+parent: ev-env-a19-nestmire-floor
+effectSpacing: 25
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 35
+            baseLength: 4
+            sizeFrom: 3
+            sizeTo: 5
+            colorFrom: 962A3A80
+            colorTo: 5E122F00
+            layer: 61.8
+            cone: 35
+            baseRotation: 30
+        }
+        {
+            type: ParticleEffect
+            lifetime: 180
+            sizeInterp: slope
+            length: 8
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 4
+            colorFrom: 962A3A80
+            colorTo: 5E122F00
+            layer: 61.8
+            baseRotation: 30
+        }
+    ]
+}
+

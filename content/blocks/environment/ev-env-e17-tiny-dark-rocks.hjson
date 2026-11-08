@@ -1,0 +1,4 @@
+type: Prop
+name: Tiny Dark Rocks
+variants: 4
+breakSound: rock-crush

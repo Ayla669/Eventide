@@ -1,0 +1,11 @@
+type: Junction
+name: Root Junction
+description: Makes one root pass through another, carrying the items over to the other side.
+health: 25
+size: 1
+speed: 5
+requirements: [
+ ev-b01-chitin/2
+]
+squareSprite: false
+category: distribution

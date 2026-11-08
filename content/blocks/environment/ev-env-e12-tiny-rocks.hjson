@@ -1,0 +1,4 @@
+type: Prop
+name: Tiny Rocks
+variants: 2
+breakSound: rock-crush

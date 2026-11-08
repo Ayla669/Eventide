@@ -1,0 +1,57 @@
+type: Constructor
+name: Assembly Plant
+description: 
+''' 
+  Crafts very basic parts used in the units production.
+
+  Recipes: 
+    - Reinforcement Alloy
+    - Power Cell
+    - Desintegrator
+    - Small Gear
+    - Pocket Welder
+    - Dark Rock Wall
+    - Iron Wall
+''' 
+size: 3
+category: units
+requirements: [
+  ev-a01-dark-rock/50
+  ev-a04-iron/100
+  ev-a06-gold/25
+] 
+hasPower: true
+consumes: {
+  power: 0.6
+  liquids: [
+    ev-liq-01-contamined-water/0.6
+  ]
+}
+buildSpeed: 0.5
+filter: [
+  ev-reinforcement-alloy,
+  ev-power-cell,
+  ev-pro-a05-desintegrator,
+  ev-small-gear,
+  ev-pocket-welder,
+  ev-def-a01-dark-rock-wall,
+  ev-def-a03-iron-wall
+]
+
+research: {
+  parent: ev-units-factory
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+researchCost: [
+  ev-a01-dark-rock/150
+  ev-a04-iron/300
+  ev-a06-gold/75
+]
+squareSprite: false
+conductivePower: true
+maxBlockSize: 3

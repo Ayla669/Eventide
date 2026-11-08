@@ -1,5 +1,0 @@
-type: Floor
-name: Dark Soil
-itemDrop: ev-dark-soil
-playerUnmineable: false
-variants: 3

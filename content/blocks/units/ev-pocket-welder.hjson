@@ -1,0 +1,29 @@
+type: Junction
+name: Pocket Welder
+description: A small version of welder for units.
+size: 2
+customShadow: true
+placeablePlayer: false
+requirements: [
+      ev-a01-dark-rock/40
+      ev-a04-iron/25
+      ev-a10-silicon/25
+      ev-a07-rybek-crystals/8
+      ev-a06-gold/8
+]
+
+research: {
+  parent: ev-small-gear
+  objectives: [
+    ev-unt-blc-a03-assembly-plant
+    ev-trt-a03-welder
+  ]
+}
+researchCost: [
+      ev-a01-dark-rock/125
+      ev-a04-iron/75
+      ev-a10-silicon/75
+      ev-a07-rybek-crystals/25
+      ev-a06-gold/25
+]
+databaseTag: mounting-parts

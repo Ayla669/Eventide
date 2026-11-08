@@ -1,0 +1,24 @@
+type: DuctBridge
+name: Dark Duct Bridge
+description: Acts as a bridge for crossing ducts or terrain.
+health: 135
+size: 1
+requirements: [
+  ev-a01-dark-rock/2
+  ev-a04-iron/1
+] 
+category: distribution
+research: {
+  parent: ev-dtr-a02-dark-junction
+  objectives: [
+   ev-a01-dark-rock
+   ev-dtr-a01-dark-duct
+  ]
+}
+squareSprite: false
+range: 10
+speed: 5
+researchCost: [
+  ev-a01-dark-rock/6
+  ev-a04-iron/3
+]

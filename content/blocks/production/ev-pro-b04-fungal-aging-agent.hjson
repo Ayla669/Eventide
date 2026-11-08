@@ -1,0 +1,56 @@
+type: GenericCrafter
+name: Fungal Aging Agent
+description: It ages the chitin into a more resistant and dense form, which can be used in advanced construction.
+size: 3
+craftTime: 300
+squareSprite: false
+hasPower: true
+consumes: {
+  items: [
+    ev-b01-chitin/20
+  ]
+  power: 2
+}
+
+ambientSound: ev-alive
+ambientSoundVolume: 2
+
+researchCost: [
+
+]
+
+
+craftEffect: ventSteam
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+  ]
+}
+
+outputItems: [
+  ev-b02-hardened-chitin/10
+]
+
+category: crafting
+
+requirements: [
+ ev-b01-chitin/50
+ ev-b03-carotenoid/30
+ ev-b04-trealose/20
+]
+
+itemCapacity: 40

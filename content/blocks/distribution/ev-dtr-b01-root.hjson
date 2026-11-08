@@ -1,0 +1,12 @@
+type: Duct
+name: root
+description: Umbramycete roots made to transport nutrients and resources.
+category: distribution
+alwaysUnlocked: false
+speed: 5
+health: 25
+requirements: [
+ ev-b01-chitin/1
+]
+bridgeReplacement: ev-dtr-b04-high-root-bridge
+junctionReplacement: ev-dtr-b02-root-junction

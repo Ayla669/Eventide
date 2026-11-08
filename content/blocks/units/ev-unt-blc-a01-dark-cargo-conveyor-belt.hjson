@@ -1,0 +1,23 @@
+type: PayloadConveyor
+name: Dark Cargo Conveyor Belt
+description: Transports payload such as units forth.
+category: units
+requirements: [
+  ev-a01-dark-rock/26
+  ev-a04-iron/13
+]
+research: {
+  parent: ev-item-distribution
+  objectives: [
+    {
+      type: OnSector
+      preset: 19s-04-incomplete
+    }
+  ]
+}
+researchCost: [
+  ev-a01-dark-rock/78
+  ev-a04-iron/39
+]
+canOverdrive: false
+payloadLimit: 4

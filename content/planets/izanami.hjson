@@ -10,12 +10,30 @@ radius: 1.28
 orbitRadius: 75
 orbitSpacing: 1
 
+landCloudColor: 8FB8D625
+
 atmosphereRadIn: 0
+startSector: 4
 atmosphereRadOut: 0.3
+
+rules: {
+ fog: true
+ staticFog: true
+ coreDestroyClear: true
+ onlyDepositCore: true
+}
+
+campaignRuleDefaults: {
+ fog: true
+ hideSpawns: false
+ rtsAI: true
+}
 
 drawOrbit: true
 tidalLock: true
-sectorSize: 2.9
+sectorSize: 2.999999
+
+orbitTime: 3000
 
 allowCampaignRules: true
 allowLaunchLoadout: false
@@ -24,7 +42,6 @@ allowLaunchToNumbered: false
 allowLegacyLaunchPads: false
 allowSectorInvasion: false
 allowSelfSectorLaunch: false
-allowWaves: true
 
 iconColor: 424B99
 hasAtmosphere: true
@@ -34,30 +51,28 @@ bloom: false
 showRtsAIRule: true
 prebuildBase: false
 clearSectorOnLose: true
-defaultCore: ev-core-dark
+defaultCore: ev-stg-a01-core-dark
 enemyCoreSpawnReplace: false
 updateLighting: false
 
 launchCandidates: []
 itemWhitelist: [
-  "ev-charcoal",
-  "ev-dark-glass",
-  "ev-dark-rock",
-  "ev-dark-sand",
-  "ev-dark-soil",
-  "ev-gold",
-  "ev-graphite",
-  "ev-iron",
-  "ev-lead",
-  "ev-silicon",
-  "ev-rybek-crystals",
+  "ev-a08-charcoal",
+  "ev-a11-dark-glass",
+  "ev-a01-dark-rock",
+  "ev-a03-dark-sand",
+  "ev-a02-dark-soil",
+  "ev-a06-gold",
+  "ev-a09-graphite",
+  "ev-a04-iron",
+  "ev-a05-lead",
+  "ev-a10-silicon",
+  "ev-a07-rybek-crystals",
 ]
 liquidWhitelist: [
-  "ev-contamined-water",
+  "ev-env-a10-contamined-water",
   "slag"
   ]
-
-//aparencia//
 
 mesh: [
   {

@@ -1,0 +1,6 @@
+name: Shrimp
+description: "Aliens' favorite food"
+hardness: 1
+cost: 0.5
+alwaysUnlocked: false
+color: DF7F29

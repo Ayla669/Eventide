@@ -1,0 +1,24 @@
+type: Junction
+name: Power Cell
+description: A power cell for avanced units.
+size: 2
+customShadow: true
+placeablePlayer: false
+requirements: [
+  ev-a04-iron/50
+  ev-a06-gold/25
+  ev-a07-rybek-crystals/10
+]
+
+research: {
+  parent: ev-reinforcement-alloy
+  objectives: [
+    ev-unt-blc-a03-assembly-plant
+  ]
+}
+researchCost: [
+  ev-a04-iron/150
+  ev-a06-gold/75
+  ev-a07-rybek-crystals/30
+]
+databaseTag: mounting-parts

@@ -1,0 +1,13 @@
+type: Wall
+name: Hardened Chitin Wall
+description: A wall of hardened chitin that is very resistent and protects the structures of the umbramycete.
+size: 1
+health: 3000
+squareSprite: false
+category: defense
+shownPlanets: [
+izanami
+]
+requirements: [
+ ev-b02-hardened-chitin/6
+]

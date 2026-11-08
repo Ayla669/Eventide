@@ -1,0 +1,78 @@
+type: GenericCrafter
+name: Fungal Mitochondrion
+
+description: It extracts nutrients from the decomposition broth and transforms them into energy resources.
+
+size: 3
+craftTime: 180
+squareSprite: false
+consumes: {
+  liquids: [
+  ev-liq-02-decomposition-broth/0.4
+  ]
+}
+ignoreLiquidFullness: true
+ambientSound: ev-alive
+ambientSoundVolume: 2
+researchCost: [
+
+]
+
+craftEffect: {
+type: ParticleEffect
+    particles: 6
+    colorFrom: 1B83C8
+    colorTo: 66C1FF
+    sizeFrom: 0.50
+    sizeTo: 0.1
+    lifetime: 60
+    cone: 360
+    length: 3
+    baseLength: 4
+    interp: pow2Out
+    sizeInterp: pow2
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-liq-02-decomposition-broth
+      padLeft: 1
+      padTop: 1
+      padBottom: 10
+      padRight: 1
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-liq-04-mycelial-exudate
+      padLeft: 1
+      padTop: 14
+      padBottom: 1
+      padRight: 1
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+outputLiquid: {
+  liquid: ev-liq-04-mycelial-exudate
+  amount: 0.6
+}
+outputItems: [
+  ev-b04-trealose/6
+]
+
+category: crafting
+
+requirements: [
+ ev-b01-chitin/65
+ ev-b03-carotenoid/30
+]
+itemCapacity: 48

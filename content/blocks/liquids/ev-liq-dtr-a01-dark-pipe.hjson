@@ -1,0 +1,33 @@
+type: Conduit
+name: Dark Pipe
+description: Transports liquids forward.
+category: liquid
+research: {
+  parent: ev-liq-bmb-a01-dark-pump
+  objectives: [
+   ev-a01-dark-rock
+   ev-a04-iron
+   ev-liq-bmb-a01-dark-pump
+  ]
+}
+requirements: [
+  ev-a01-dark-rock/3
+  ev-a04-iron/1
+]
+
+researchCost: [
+  ev-a01-dark-rock/9
+  ev-a04-iron/3
+]
+
+health: 35
+leaks: true
+underBullets: true
+researchCostMultiplier: 1
+liquidCapacity: 1
+junctionReplacement: ev-liq-dtr-a02-pipe-junction
+bridgeReplacement: ev-liq-dtr-a04-pipe-bridge
+
+shownPlanets: [
+izanami
+]

@@ -1,0 +1,66 @@
+type: GenericCrafter
+name: Decompositor
+
+description: Break down parts of swarm units into a nutrient-rich broth, to be more easily absorbed and processed.
+
+size: 3
+craftTime: 300
+squareSprite: false
+consumes: {
+  items: [
+    ev-c01-swarm-pieces/30
+  ]
+}
+ignoreLiquidFullness: true
+ambientSound: ev-alive
+ambientSoundVolume: 2
+researchCost: [
+
+]
+
+craftEffect: {
+type: ParticleEffect
+    particles: 6
+    colorFrom: 1B83C8
+    colorTo: 66C1FF
+    sizeFrom: 0.50
+    sizeTo: 0.1
+    lifetime: 60
+    cone: 360
+    length: 3
+    baseLength: 4
+    interp: pow2Out
+    sizeInterp: pow2
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ev-liq-02-decomposition-broth
+      padLeft: 1
+      padTop: 1
+      padBottom: 1
+      padRight: 1
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+outputLiquid: {
+  liquid: ev-liq-02-decomposition-broth
+  amount: 1
+}
+
+category: crafting
+
+requirements: [
+ ev-b01-chitin/40
+]
+itemCapacity: 60

@@ -1,0 +1,22 @@
+type: Junction
+name: Reinforcement Alloy
+description: An reinforced armor for battle units.
+size: 2
+customShadow: true
+placeablePlayer: false
+requirements: [
+  ev-a01-dark-rock/26
+  ev-a05-lead/13
+]
+
+research: {
+  parent: ev-units-factory
+  objectives: [
+    ev-unt-blc-a03-assembly-plant
+  ]
+}
+researchCost: [
+  ev-a01-dark-rock/78
+  ev-a05-lead/39
+]
+databaseTag: mounting-parts

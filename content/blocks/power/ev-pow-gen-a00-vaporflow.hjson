@@ -1,0 +1,45 @@
+type: ThermalGenerator
+name: Vaporflow
+description: Generates a bit of power when placed on top of vents.
+size: 3
+health: 250
+fogRadius: 3
+attribute: steam
+displayEfficiencyScale: 0.1111111111111111
+displayEfficiency: false
+minEfficiency: 7.6499
+powerProduction: 0.22222222
+squareSprite: false
+category: power
+research: ev-power
+buildCostMultiplier: 2
+requirements: [
+  ev-a01-dark-rock/50
+  ev-a04-iron/100
+]
+researchCost: [
+  ev-a01-dark-rock/150
+  ev-a04-iron/300
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -rotator
+      rotateSpeed: 5
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+group: power
+
+shownPlanets: [
+izanami
+]

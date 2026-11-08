@@ -1,0 +1,111 @@
+name: ev-large-rybek-meteor
+type: missile
+template: MissileUnitType
+
+speed: 6
+maxRange: 6
+lifetime: 180
+
+hitSize: 9
+health: 200
+
+outlineColor: 252525
+outlineRadius: 0
+
+engineColor: 65FF65
+trailColor: 32D632
+
+rotateSpeed: 0.28
+missileAccelTime: 45
+
+lowAltitude: true
+engineSize: 0
+engineOffset: 0
+engineLayer: 0
+trailLength: 0
+
+targetAir: false
+targetUnderBlocks: false
+targetGround: true
+
+fogRadius: 1
+
+loopSound: loopMissileTrail
+loopSoundVolume: 0.6
+deathSound: explosionNuclearSmall
+abilities: [
+  {
+    type: MoveEffectAbility
+    x: 4
+    y: 0
+    teamColor: true
+    effect: missileTrail
+    interval: 6
+  }
+  {
+    type: MoveEffectAbility
+    x: -4
+    y: 0
+    teamColor: true
+    effect: missileTrail
+    interval: 7
+  }
+  {
+    type: MoveEffectAbility
+    x: 0
+    y: 0
+    teamColor: true
+    effect: missileTrail
+    interval: 7
+  }
+    {
+    type: MoveEffectAbility
+    interval: 5
+    rotateEffect: true
+    effect: {
+      type: ParticleEffect
+      region: eventide-frag
+      lifetime: 15
+      sizeInterp: slope
+      length: 6
+      baseLength: 3
+      sizeFrom: 1
+      sizeTo: 3
+      colorFrom: 41D352FF
+      colorTo: 41D352FF
+      layer: 61.7
+      spin: 2
+      baseRotation: 32.5
+    }
+  }
+]
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+    shake: 1
+
+    shootOnDeath: true
+
+    bullet: {
+  type: ExplosionBulletType
+
+  damage: 750
+  splashDamage: 500
+  splashDamageRadius: 15
+
+  hitColor: 45FF45
+
+  hitEffect: massiveExplosion
+  despawnEffect: massiveExplosion
+
+  lightning: 8
+  lightningDamage: 80
+  lightningLength: 12
+  lightningLengthRand: 8
+
+  lightningColor: 45FF45
+}
+}
+]

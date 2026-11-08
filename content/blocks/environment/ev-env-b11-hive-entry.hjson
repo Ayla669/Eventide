@@ -1,0 +1,5 @@
+name: Hive Entry
+type: SteamVent
+blendGroup: ev-env-a17-hive-floor
+parent: ev-env-a17-hive-floor
+effect: none

@@ -1,0 +1,119 @@
+type: ItemTurret
+name: Muscaria
+description: Fires chitin at high speed at nearby threats.
+
+size: 3
+squareSprite: false
+health: 200
+
+reload: 180
+range: 300
+
+coolantMultiplier: 2.5
+outlineRadius: 0
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+
+shoot: {
+  firstShotDelay: 60
+  shots: 5
+  shotDelay: 5
+}
+
+shootX: 0
+shootY: 16
+
+velocityRnd: 0.21
+ammoPerShot: 1
+
+recoil: 1
+recoilTime: 6
+cooldownTime: 60
+
+drawer: {
+  type: DrawTurret
+  basePrefix: ev-bas-b01-umbra-
+}
+
+category: turret
+
+researchCost: [
+
+]
+
+requirements: [
+ ev-b01-chitin/75
+ ev-b03-carotenoid/45
+]
+
+chargeSound: none
+shootSound: ev-monster-shoot
+
+smokeEffect: [
+  {
+    type: ParticleEffect
+    particles: 6
+    lifetime: 24
+    length: 6
+    cone: 160
+    sizeFrom: 2.2
+    sizeTo: 0
+    colorFrom: 8a8a8a
+    colorTo: 353535
+    offsetX: 1.5
+    offsetY: 0
+  }
+]
+
+ammoTypes: {
+
+  ev-b01-chitin: {
+    frontColor: 00B5C9
+    backColor: 00B5C9
+    trailChance: -1
+    trailColor: 00B5C9
+    trailWidth: 1.5
+    trailLength: 15
+    trailEffect: {
+      type: ParticleEffect
+      particles: 2
+      lifetime: 16
+      length: 3
+      cone: 25
+      sizeFrom: 2.0
+      sizeTo: 0.2
+      colorFrom: 00B5C9
+      colorTo: 00B5C9
+    }
+    trailChance: 0.22
+
+    type: BasicBulletType
+
+    speed: 15
+    width: 5
+    height: 5
+    lifetime: 20
+
+    damage: 60
+
+    pierce: false
+
+    hitEffect: flakExplosion
+    
+    reloadMultiplier: 2
+
+    inaccuracy: 1
+
+    ammoMultiplier: 2
+  }
+}
+
+outlines: false
+
+rotate: false
+shownPlanets: [izanami]

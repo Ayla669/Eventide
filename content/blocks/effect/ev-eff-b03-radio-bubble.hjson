@@ -1,0 +1,23 @@
+type: ShockMine
+  name: Radio Bubble
+  description: Explodes when enemies step on it, dealing damage and applying the gamma effect.
+  hasShadow: false
+  health: 25
+  damage: 3
+  tileDamage: 12
+  length: 5
+  tendrils: 1
+  category: effect
+  bullet: {
+    type: ExplosionBulletType
+    splashDamage: 2
+    splashDamageRadius: 4
+    killShooter: true
+    status: ev-status-gamma
+    statusDuration: 180
+  }
+  requirements: [
+   ev-b01-chitin/25
+   ev-a07-rybek-crystals/13
+  ]
+researchCostMultiplier: 0.5

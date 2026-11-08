@@ -1,0 +1,12 @@
+type: RainWeather
+name: Meteor Shower
+color: 41D352FF
+padding: 50
+sizeMax: 2
+sizeMin: 1
+density: 9000
+sound: meteor-shower
+soundVol: 1
+yspeed: 8
+xspeed: 6
+drawParticles: false

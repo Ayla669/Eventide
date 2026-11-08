@@ -1,0 +1,13 @@
+research: {
+  parent: ev-lore
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+  ]
+}
+shownPlanets: [
+izanami
+]
+databaseCategory: research-results

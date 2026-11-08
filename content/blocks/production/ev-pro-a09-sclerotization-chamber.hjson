@@ -1,0 +1,96 @@
+type: GenericCrafter
+name: Sclerotization Chamber
+description: Forces the sclerotization process to make the chitin harder and more resistant.
+size: 3
+liquidCapacity: 30
+craftTime: 300
+squareSprite: false
+hasPower: true
+consumes: {
+  items: [
+  ev-b01-chitin/4
+  ]
+  liquids: [
+  ev-liq-06-liquid-peroxate/0.05
+  ]
+  power: 6
+}
+
+ignoreLiquidFullness: true
+
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.09
+
+craftEffect: ventSteam
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner1
+      spinSprite: true
+      rotateSpeed: 3
+      x: 0
+      y: 0
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner2
+      spinSprite: true
+      rotateSpeed: 6
+      x: 0
+      y: 0
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner3
+      spinSprite: true
+      rotateSpeed: 9
+      x: 0
+      y: 0
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      blending: additive
+      color: d76a6a80
+    }
+   ]
+  }
+  
+outputItems: [
+  ev-b02-hardened-chitin/2
+]
+
+category: crafting
+
+research: {
+  parent: ev-pro-a08-peroxate-refinery
+  objectives: [
+    ev-pro-a08-peroxate-refinery
+    ev-liq-06-liquid-peroxate
+    ev-b01-chitin
+  ]
+}
+
+requirements: [
+  ev-a04-iron/250
+  ev-a05-lead/150
+  ev-a01-dark-rock/300
+  ev-a06-gold/100
+]
+
+researchCost: [
+  ev-a04-iron/750
+  ev-a05-lead/450
+  ev-a01-dark-rock/900
+  ev-a06-gold/300
+]

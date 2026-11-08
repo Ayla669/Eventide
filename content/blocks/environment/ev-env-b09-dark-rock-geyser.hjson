@@ -1,0 +1,153 @@
+name: Dark Rock Geyser
+type: SteamVent
+blendGroup: ev-env-a18-hardened-dark-rock
+parent: ev-env-a18-hardened-dark-rock
+effectSpacing: 450
+shake: 3
+effect: [ 
+   {
+      type: WaveEffect
+      sizeFrom: 0.1
+      sizeTo: 20
+      strokeFrom: 1.1
+      strokeTo: 0.2
+      colorFrom: 5E428E25
+      colorTo: 7B43DD25
+      lifetime: 120
+   }
+  {
+    type: ParticleEffect
+    particles: 16
+    baseRotation: 90
+    cone: 11
+    length: 35
+    baseLength: 4
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 893
+    useRotation: false
+  }
+  {
+    type: ParticleEffect
+    particles: 18
+    baseRotation: 90
+    cone: 10
+    length: 45
+    baseLength: 8
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 894
+    useRotation: false
+    startDelay: 6
+  }
+  {
+    type: ParticleEffect
+    particles: 20
+    baseRotation: 90
+    cone: 9
+    length: 55
+    baseLength: 12
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 895
+    useRotation: false
+    startDelay: 8
+  }
+  {
+    type: ParticleEffect
+    particles: 20
+    baseRotation: 90
+    cone: 8
+    length: 65
+    baseLength: 16
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 896
+    useRotation: false
+    startDelay: 10
+  }
+  {
+    type: ParticleEffect
+    particles: 22
+    baseRotation: 90
+    cone: 7
+    length: 75
+    baseLength: 20
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 897
+    useRotation: false
+    startDelay: 12
+  }
+  {
+    type: ParticleEffect
+    particles: 22
+    baseRotation: 90
+    cone: 6
+    length: 85
+    baseLength: 24
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 898
+    useRotation: false
+    startDelay: 14
+  }
+  {
+    type: ParticleEffect
+    particles: 24
+    baseRotation: 90
+    cone: 5
+    length: 95
+    baseLength: 28
+    sizeFrom: 3
+    sizeTo: 5
+    colorFrom: 5E428E25
+    colorTo: 7B43DD25
+    lifetime: 899
+    useRotation: false
+    startDelay: 16
+  }
+  {
+            type: ParticleEffect
+            lifetime: 895
+            sizeInterp: slope
+            length: 35
+            baseLength: 4
+            sizeFrom: 3
+            sizeTo: 5
+            colorFrom: 424B9980
+            colorTo: 7B43DD25
+            layer: 61.8
+            cone: 35
+            baseRotation: 30
+        }
+        {
+            type: ParticleEffect
+            lifetime: 895
+            sizeInterp: slope
+            length: 8
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 4
+            colorFrom: 424B9980
+            colorTo: 7B43DD25
+            layer: 61.8
+            baseRotation: 30
+        }
+]
+mapColor: 325B78
+attributes: {
+   thermogen: 0.111111111111111
+}

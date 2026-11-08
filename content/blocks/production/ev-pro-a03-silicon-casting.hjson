@@ -1,0 +1,129 @@
+type: HeatCrafter
+name: Silicon Casting
+description: Melts graphite, sand, and iron into silicon. Produces slag as a by-product.
+size: 2
+liquidCapacity: 30
+craftTime: 300
+heatRequirement: 6
+squareSprite: false
+consumes: {
+  items: [
+    ev-a09-graphite/2
+    ev-a04-iron/2
+    ev-a03-dark-sand/2
+  ]
+}
+
+ignoreLiquidFullness: true
+
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.09
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 12
+  colorFrom: fca67b
+  colorTo: c27954
+  sizeFrom: 0.95
+  sizeTo: 0.2
+  lifetime: 30
+  cone: 360
+  length: 6
+  baseLength: 8
+  interp: pow2Out
+  sizeInterp: pow2
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+  type: DrawLiquidTile
+  drawLiquid: slag
+  padLeft: 1
+  padTop: 1
+  padBottom: 1
+  padRight: 1
+}
+    {
+      type: DrawRegion
+      suffix: -spinner1
+      spinSprite: true
+      rotateSpeed: 9
+      x: 2
+      y: -6.8
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner2
+      spinSprite: true
+      rotateSpeed: 9
+      x: -2
+      y: -6.8
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner3
+      spinSprite: true
+      rotateSpeed: 9
+      x: -2
+      y: 6.8
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner4
+      spinSprite: true
+      rotateSpeed: 9
+      x: 2
+      y: 6.8
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatInput
+    }
+  ]
+}
+
+outputItems: [
+  ev-a10-silicon/3
+]
+outputLiquid: {
+  liquid: slag
+  amount: 0.05
+}
+category: crafting
+
+research: {
+  parent: ev-pro-a01-soil-filter
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-02-brood
+    }
+    {
+      type: OnSector
+      preset: 19s-03-thermal-basin
+    }
+  ]
+}
+
+requirements: [
+  ev-a04-iron/75
+  ev-a01-dark-rock/75
+  ev-a07-rybek-crystals/25
+]
+
+researchCost: [
+  ev-a04-iron/225
+  ev-a01-dark-rock/225
+  ev-a07-rybek-crystals/75
+]
+
+
+itemCapacity: 30

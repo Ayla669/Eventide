@@ -1,0 +1,13 @@
+type: DuctBridge
+name: High Root
+description: A root that can grow over other roots or structures.
+health: 65
+size: 1
+requirements: [
+ ev-b01-chitin/8
+] 
+category: distribution
+
+squareSprite: false
+range: 5
+speed: 5

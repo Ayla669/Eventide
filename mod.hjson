@@ -4,7 +4,7 @@ author: "[#FC00EB[]]Aira <愛蘭>"
 
 displayName: "[#21FFC5[]]Eventide"
 
-subtitle: "[#424B99[]] An undead world..."
+subtitle: "[#424B99[]] This Planet is Mine..."
 
 description:
 '''
@@ -14,30 +14,9 @@ description:
 
 Arachnophobia warning for sensitive individuals.
 
-[#83C0E4[]]Eventide is available in the following languages:
-
--English
--Português Brasileiro
--Italiano
--Deutsch
--Русский
--Français
--Español
--日本語
--简体中文
-
 If you would like to contribute to the mod in any way, join our Discord server.
-
-Contributors:
-
--Collaris
--C.A.S.E.
--Mike
--Sailor
--Capibi
--Solario
 '''
 
-version: "[cyan] It's still a demo."
+version: "[cyan] 0.1"
 
 minGameVersion: 160

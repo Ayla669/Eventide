@@ -1,0 +1,11 @@
+name: Swarm Pieces
+description: Body parts from swarm units have various uses, depending on what you wish to do with them.
+hardness: 1
+flammability: 0.1
+cost: 0.1
+alwaysUnlocked: false
+color: 004A07
+research: {
+  parent: ev-items
+}
+shownPlanets: [izanami]

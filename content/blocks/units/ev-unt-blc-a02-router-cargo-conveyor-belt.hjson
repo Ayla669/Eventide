@@ -1,0 +1,21 @@
+type: PayloadRouter
+name: Router Cargo Conveyor Belt
+description: Transports payload such as units forth.
+category: units
+requirements: [
+  ev-a01-dark-rock/26
+  ev-a04-iron/13
+]
+research: {
+  parent: ev-unt-blc-a01-dark-cargo-conveyor-belt
+  objectives: [
+    ev-a01-dark-rock
+    ev-a04-iron
+  ]
+}
+researchCost: [
+  ev-a01-dark-rock/78
+  ev-a04-iron/39
+]
+canOverdrive: false
+payloadLimit: 4

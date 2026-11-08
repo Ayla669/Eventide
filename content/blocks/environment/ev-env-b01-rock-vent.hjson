@@ -1,0 +1,41 @@
+name: Rock Vent
+type: SteamVent
+blendGroup: ev-env-a03-rock-floor
+parent: ev-env-a03-rock-floor
+effectSpacing: 25
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 35
+            baseLength: 4
+            sizeFrom: 3
+            sizeTo: 5
+            colorFrom: E6E6E680
+            colorTo: E6E6E600
+            layer: 61.8
+            cone: 35
+            baseRotation: 30
+        }
+        {
+            type: ParticleEffect
+            lifetime: 180
+            sizeInterp: slope
+            length: 8
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 4
+            colorFrom: E6E6E680
+            colorTo: E6E6E600
+            layer: 61.8
+            baseRotation: 30
+        }
+    ]
+}
+attributes: {
+   steam: 1
+}
+

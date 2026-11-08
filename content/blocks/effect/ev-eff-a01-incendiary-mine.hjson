@@ -1,0 +1,43 @@
+type: ShockMine
+  name: Incendiary Mine
+  description: Explodes upon detecting a nearby enemy, setting them on fire
+  hasShadow: false
+  health: 50
+  damage: 50
+  tileDamage: 12
+  length: 12
+  tendrils: 1
+  category: effect
+  bullet: {
+    type: ExplosionBulletType
+    splashDamage: 50
+    splashDamageRadius: 12
+    killShooter: true
+    status: burning
+    statusDuration: 180
+  }
+  research: {
+  parent: ev-effect
+  objectives: [
+    {
+      type: SectorComplete
+      preset: 19s-01-rebirth
+    }
+    {
+      type: OnSector
+      preset: 19s-02-brood
+    }
+  ]
+}
+
+researchCost: [
+  ev-a01-dark-rock/75
+  ev-a04-iron/75
+  ev-a08-charcoal/75
+]
+
+requirements: [
+  ev-a01-dark-rock/25
+  ev-a04-iron/25
+  ev-a08-charcoal/25
+]

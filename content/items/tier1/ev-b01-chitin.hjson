@@ -1,0 +1,13 @@
+name: Chitin
+description: Nutrients hardened and compacted into a tough membrane, used in construction, in factories, and also as ammunition.
+hardness: 3
+flammability: 0
+cost: 0.1
+alwaysUnlocked: false
+color: 163A7C
+research: {
+  parent: ev-items
+}
+shownPlanets: [
+izanami
+]

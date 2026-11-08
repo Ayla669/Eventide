@@ -1,6 +1,3 @@
-// Izanami asteroid-ring body 0544
-// Z-prefix keeps this body after Izanami in alphabetical content loading.
-// Ring position: radius 2.3202, phase 5.405 degrees.
 
 name: zmoon-0544
 localizedName: "Izanami Moon 0544"
@@ -58,5 +55,4 @@ clearSectorOnLose: true
 updateLighting: false
 
 launchCandidates: []
-itemWhitelist: []
 
