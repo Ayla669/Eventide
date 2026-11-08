@@ -1,5 +1,5 @@
 ![Eventide Banner](eventide_banner.png)
-[![Badge Discord]]
+[Discord]
 
 ### A world that died, but never stopped living...
 
@@ -36,4 +36,4 @@ If you would like to contribute to the mod, join our Discord server via the invi
 
 <!----------------------------------[ Links ]--------------------------------->
 
-[Badge Discord]: https://discord.gg/tUsg6tjQdY(Click%20Me!)
+[Discord]: https://discord.gg/tUsg6tjQdY(Click%20Me!)
