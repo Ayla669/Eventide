@@ -1,5 +1,5 @@
 ![Eventide Banner](eventide_banner.png)
-[![Badge Discord]][Discord]
+[![Badge Discord]]
 
 ### A world that died, but never stopped living...
 
