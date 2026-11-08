@@ -1,25 +1,13 @@
 ![Eventide Banner](eventide_banner.png)
-[Eventide Discord Server](https://discord.gg/tUsg6tjQdY)
+[![Badge Discord]][Discord]
 
-# Eventide
+### A world that died, but never stopped living...
 
-A Mindustry mod adding a new planet, Izanami, with its own technology, resources, creatures and factions.
-
-### A world that died, but never stopped living.
-
-Izanami was once a world full of life.
-
-After a catastrophic collision with a dwarf exoplanet, nearly all life on the planet was lost.
-
-Now, only a dark and hostile world remains.
-
-Radioactive Rybek crystals, strange organisms and the remnants of its former ecosystem have taken over the planet.
-
-But Izanami is not truly dead.
+Izanami is a cold, dark, and desolate world, full of dangers, but know that it is not evil, it is merely defending itself against those who have invaded it...
 
 ## Overview
 
-- A completely new planet: Izanami.
+- New planet: Izanami.
 - New items, liquids, blocks, turrets, units and enemies.
 - A unique technological progression built around Izanami's resources.
 - A new campaign with sectors made specifically for the planet.
@@ -29,62 +17,24 @@ But Izanami is not truly dead.
 ## Mechanics
 
 - **Power consumption:** Every electronic machine requires energy, with consumption varying according to its function and complexity. Even power nodes consume energy.
-- **No energy storage:** Power cannot simply be stored for later use. Energy must be continuously generated and distributed throughout your infrastructure.
-- **The Swarm:** Izanami's enemies can attack in enormous numbers simultaneously, creating battles centered around overwhelming waves of creatures rather than only individual powerful enemies.
-- **Unique factions:** Izanami will feature complete factions of its own, each with their own technology, structures and gameplay.
 
-## Demo
+- **No energy storage:** Power cannot simply be stored for later use. Energy must be continuously generated and distributed throughout your infrastructure. (but I plan to add this in the endgame)
 
-**Eventide is currently in demo development.**
+- **The Swarm:** A gigantic hive mind that dwells in the depths of Izanami, representing the final remnants of animal life on the planet and serving as its "antibodies"
 
-This release represents only a portion of what is planned for the mod.
+- **Umbramycete:** Practically a walking tumor, it crawls and grows across the surface of Izanami, attempting to consume everything in its path.
 
-The future of Eventide will include:
+## Still in development!
 
-- New turrets.
-- New defenses and walls.
-- New drills.
-- New units.
-- New mechanics.
-- Official Eventide music.
-- The complete campaign.
-- New resources, items and liquids.
-- New generators and factories.
-- Much more content and technology for Izanami.
+Eventide is only at the beginning of its story, there is a lot of content planned to be added in the future. 
 
-A major goal for the full version is to give each faction on Izanami its own complete set of content, allowing players to use them in custom maps.
+- A full campaign
+- The Swarm and the Umbramycete, each with their own research trees
+- New units, mechanics, and everything else you can imagine
 
-Planned playable factions include:
+If you would like to contribute to the mod, join our Discord server via the invitation link above.
 
-- **Sharded** — planned to be fully developed.
-- **The Swarm**
-- **Black Fungus**
+<!----------------------------------[ Links ]--------------------------------->
 
-The goal is to make each faction feel like its own complete side of the planet, rather than simply being another variation of the existing Mindustry factions.
-
-## Languages
-
-Eventide is available in multiple languages!
-
-- English
-- Brazilian Portuguese
-- Italian
-- German
-- Russian
-- French
-- Spanish
-- Japanese
-- Simplified Chinese
-
-## Contributors
-
-- Collaris
-- C.A.S.E.
-- Mike
-- Sailor
-- Capibi
-- Solario
-
-Want to follow the development, report bugs, suggest ideas or simply talk about Eventide?
-
-[Join the Eventide Discord](https://discord.gg/tUsg6tjQdY)
+[Badge Discord]: https://img.shields.io/discord/1119997279651233822?style=for-the-badge&label=Discord%20(Click%20Me!)
+[Discord]: https://discord.gg/tUsg6tjQdY
