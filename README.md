@@ -1,5 +1,5 @@
 ![Eventide Banner](eventide_banner.png)
-[![Badge Discord]][Discord]
+[![Discord]
 
 ### A world that died, but never stopped living...
 
@@ -34,7 +34,6 @@ Eventide is only at the beginning of its story, there is a lot of content planne
 
 If you would like to contribute to the mod, join our Discord server via the invitation link above.
 
-<!----------------------------------[ Links ]--------------------------------->
+<!----------------------------------[ Links ]----------------------------->
 
-[Badge Discord]: https://img.shields.io/discord/1119997279651233822?style=for-the-badge&label=Discord%20(Click%20Me!)
 [Discord]: https://discord.gg/tUsg6tjQdY
