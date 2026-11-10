@@ -240,7 +240,7 @@ weapons: [
 
       speed: 10
       damage: 150
-      recoil: 6
+      recoil: 18
       lifetime: 80
       maxRange: 5
       layerOffset: 900

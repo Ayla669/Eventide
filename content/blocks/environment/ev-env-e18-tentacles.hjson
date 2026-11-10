@@ -1,0 +1,15 @@
+type: SeaBush
+name: Tentacles
+
+lobesMin: 2
+lobesMax: 5
+magMin: 2
+magMax: 8
+origin: 0.3
+spread: 40
+sclMin: 60
+sclMax: 100
+botAngle: 60
+timeRange: 40
+
+breakSound: plantBreak

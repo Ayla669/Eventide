@@ -1,87 +1,74 @@
-let contaminado = null;
-let procurouStatus = false;
+let contaminationStatus = null;
+let statusResolved = false;
 
-const processadas = new Set();
-const timesDosProjeteis = new Map();
+const processedUnits = new Set();
+const projectileTeams = new Map();
 
+// Resolve the status effect once
+Events.on(ClientLoadEvent, () => {
+    Vars.content.statusEffects().each(status => {
+        if (status.name === "eventide-ev-status-contamined") {
+            contaminationStatus = status;
+            statusResolved = true;
+        }
+    });
+});
+
+// Fallback lookup in case ClientLoadEvent already fired
 Events.run(Trigger.update, () => {
-
-    if (!procurouStatus) {
+    if (!statusResolved) {
         Vars.content.statusEffects().each(status => {
-            if (status.name == "eventide-ev-status-contamined") {
-                contaminado = status;
+            if (status.name === "eventide-ev-status-contamined") {
+                contaminationStatus = status;
+                statusResolved = true;
             }
         });
-
-        if (contaminado != null) {
-            procurouStatus = true;
-            print("[Eventide] STATUS ENCONTRADO: " + contaminado.name);
-        }
-
         return;
     }
 
-    if (Vars.net.client()) return;
+    if (Vars.net.client() || contaminationStatus == null) return;
 
-    Groups.unit.each(unidade => {
+    // Clean up entries for units that no longer exist (prevents unbounded growth)
+    if (processedUnits.size > 64) {
+        processedUnits.forEach(id => {
+            if (Groups.unit.getByID(id) == null) {
+                processedUnits.delete(id);
+                projectileTeams.delete(id);
+            }
+        });
+    }
 
-        if (!unidade.hasEffect(contaminado)) return;
-        if (unidade.health > 10) return;
+    Groups.unit.each(unit => {
+        if (!unit.hasEffect(contaminationStatus)) return;
+        if (unit.health > 10) return;
+        if (processedUnits.has(unit.id)) return;
 
-        const idUnidade = unidade.id;
+        const team = projectileTeams.get(unit.id);
+        if (team == null) return;
 
-        if (processadas.has(idUnidade)) return;
-
-        const timeClone = timesDosProjeteis.get(idUnidade);
-
-        if (timeClone == null) {
-            print("[Eventide] SEM TIME REGISTRADO: " + idUnidade);
-            return;
-        }
-
-        const clone = unidade.type.spawn(
-            timeClone,
-            unidade.x,
-            unidade.y,
-            unidade.rotation
-        );
-
-        if (clone == null) {
-            print("[Eventide] ERRO: clone nao criado!");
-            return;
-        }
+        const clone = unit.type.spawn(team, unit.x, unit.y, unit.rotation);
+        if (clone == null) return;
 
         clone.clearStatuses();
         clone.health = clone.maxHealth;
 
-        processadas.add(idUnidade);
-        timesDosProjeteis.delete(idUnidade);
+        processedUnits.add(unit.id);
+        projectileTeams.delete(unit.id);
 
-        print("[Eventide] CLONE CRIADO!");
-        print("[Eventide] TIPO: " + clone.type.name);
-        print("[Eventide] TIME: " + clone.team.name);
-        print("[Eventide] VIDA: " + clone.health + "/" + clone.maxHealth);
-        print("[Eventide] CONTAMINADO: " +
-              clone.hasEffect(contaminado));
+        // Remove the original unit so we don't get double entities
+        unit.destroy();
     });
 });
 
-Events.on(UnitDamageEvent, evento => {
+// Record which team applied the contamination
+Events.on(UnitDamageEvent, event => {
+    if (Vars.net.client() || contaminationStatus == null) return;
 
-    if (Vars.net.client()) return;
-    if (contaminado == null) return;
+    const unit = event.unit;
+    const bullet = event.bullet;
 
-    const unidade = evento.unit;
-    const projetil = evento.bullet;
+    if (unit == null || bullet == null || bullet.type == null) return;
+    if (bullet.type.status !== contaminationStatus) return;
 
-    if (unidade == null || projetil == null) return;
-    if (projetil.type == null) return;
-
-    if (projetil.type.status != contaminado) return;
-
-    timesDosProjeteis.set(unidade.id, projetil.team);
-
-    print("[Eventide] TIME REGISTRADO!");
-    print("[Eventide] UNIDADE ID: " + unidade.id);
-    print("[Eventide] TIME DO PROJETIL: " + projetil.team.name);
+    projectileTeams.set(unit.id, bullet.team);
 });

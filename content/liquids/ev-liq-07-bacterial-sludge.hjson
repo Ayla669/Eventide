@@ -1,0 +1,17 @@
+flammability: 0
+temperature: 0.3
+heatCapacity: 0
+viscosity: 0.6
+explosiveness: 0
+boilPoint: 1.5
+gasColor: FF6C0090
+type: cellLiquid
+capPuddles: false
+spreadTarget: ev-liq-01-contamined-water
+blockReactive: false
+colorFrom: FF6C00
+colorTo: FF781A
+color: FF6C00
+shownPlanets: [
+izanami
+]

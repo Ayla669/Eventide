@@ -1,0 +1,11 @@
+type: Floor
+name: Bacterial Sludge
+
+variants: 3
+speedMultiplier: 0.15
+
+liquidDrop: ev-liq-07-bacterial-sludge
+liquidMultiplier: 1
+isLiquid: true
+damageTaken: 0.1
+cacheLayer: slag

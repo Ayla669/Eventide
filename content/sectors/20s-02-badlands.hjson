@@ -1,6 +1,6 @@
 name: Badlands
 planet: izanami
-sector: 80
+sector: 13
 fog: true
 
 research: {

@@ -1,6 +1,6 @@
 name: Carapace
 planet: izanami
-sector: 7
+sector: 34
 fog: true
 
 research: {

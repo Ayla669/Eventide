@@ -10,10 +10,8 @@ radius: 1.28
 orbitRadius: 75
 orbitSpacing: 1
 
-landCloudColor: 8FB8D625
-
 atmosphereRadIn: 0
-startSector: 4
+startSector: 52
 atmosphereRadOut: 0.3
 
 rules: {
@@ -43,9 +41,7 @@ allowLegacyLaunchPads: false
 allowSectorInvasion: false
 allowSelfSectorLaunch: false
 
-iconColor: 424B99
 hasAtmosphere: true
-atmosphereColor: 5E96C7
 bloom: false
 
 showRtsAIRule: true
@@ -153,6 +149,46 @@ mesh: [
     persistence: 0.6
     scale: 8
     mag: 0.35
+  },
+  {
+    type: MatMesh
+    mesh: {
+      type: NoiseMesh
+      seed: 84
+      divisions: 6
+      radius: 1.22
+      octaves: 3
+      persistence: 0.55
+      scale: 0.000001
+      mag: 0
+      color1: B1FFE8
+      color2: 28FFC5
+      colorOct: 3
+      colorPersistence: 0.55
+      colorScale: 0.60
+      colorThreshold: 0.54
+    }
+    mat: [0, 0.18, 0]
+  },
+  {
+    type: MatMesh
+    mesh: {
+      type: NoiseMesh
+      seed: 94
+      divisions: 6
+      radius: 1.22
+      octaves: 3
+      persistence: 0.55
+      scale: 0.000001
+      mag: 0
+      color1: B1FFE8
+      color2: 28FFC5
+      colorOct: 3
+      colorPersistence: 0.55
+      colorScale: 0.60
+      colorThreshold: 0.54
+    }
+    mat: [0, -0.18, 0]
   }
 ]
 
@@ -194,6 +230,9 @@ cloudMesh: [
     thresh: 0.6
   }
 ]
+atmosphereColor: 5E96C7
+landCloudColor: 8FB8D625
+iconColor: 424B99
 
 generator: {
   octaves: 4

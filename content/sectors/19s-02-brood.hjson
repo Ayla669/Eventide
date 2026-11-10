@@ -1,6 +1,6 @@
 name: Brood
 planet: izanami
-sector: 6
+sector: 14
 fog: true
 
 research: {
