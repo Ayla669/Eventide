@@ -36,5 +36,4 @@ If you would like to contribute to the mod, join our Discord server via the invi
 
 <!----------------------------------[ Links ]--------------------------------->
 
-[Badge Discord]: https://img.shields.io/discord/1119997279651233822?style=for-the-badge&label=Discord%20(Click%20Me!)
 [Discord]: https://discord.gg/tUsg6tjQdY
