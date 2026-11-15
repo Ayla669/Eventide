@@ -8,7 +8,7 @@ maxRange: 6
 lifetime: 220
 
 hitSize: 8
-health: 25
+health: 100
 
 outlineColor: 252525
 outlineRadius: 0
@@ -54,8 +54,8 @@ weapons: [
     bullet: {
       type: ExplosionBulletType
 
-      damage: 66
-      splashDamage: 66
+      damage: 100
+      splashDamage: 100
       splashDamageRadius: 12
 
       hitColor: FF0000

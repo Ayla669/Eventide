@@ -1,6 +1,6 @@
 name: Thermal Basin
 planet: izanami
-sector: 40
+sector: 171
 fog: true
 
 research: {

@@ -70,19 +70,19 @@ ammoTypes: {
     pierce: true
     pierceCap: 1
     keepVelocity: false
-    width: 4
-    height: 4
-    sprite: large-orb
+    width: 12
+    height: 12
+    trailEffect: dynamicSpikes
+    sprite: eventide-flash
     trailChance: -1
-    trailColor: 5000DB75
-    backColor: 4900BF75
-    frontColor: 37009775
-    trailWidth: 2.5
-    trailLength: 22
-    lightRadius: 40
+    trailColor: 5000DB
+    backColor: 4900BF
+    frontColor: 370097
+    trailWidth: 0.5
+    trailLength: 11
+    lightRadius: 16
     lightOpacity: 0.7
     lightColor: 5000DB75
-    spin: 4
     layer: 99
     ammoMultiplier: 2
     fragRandomSpread: 0
@@ -102,6 +102,11 @@ ammoTypes: {
       despawnSound: explosion
       despawnHit: true
       hitEffect: hitBulletColor
+      lightning: 3
+      lightningDamage: 5
+      lightningLength: 8
+
+      lightningColor: 5000DB25
     	collidesGround: true
       collidesAir: true
     }

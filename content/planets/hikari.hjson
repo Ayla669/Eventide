@@ -1,0 +1,30 @@
+name: Hikari
+localizedName: hikari
+parent: amaterasu
+radius: 1.8
+bloom: true
+accessible: false
+visible: true
+orbitRadius: 12
+orbitSpacing: 2
+orbitTime: 300
+drawOrbit: false
+
+lightColor: D0FBFF
+
+mesh: {
+  type: SunMesh
+  divisions: 3
+  octaves: 4
+  persistence: 0.4
+  scl: 1.2
+  pow: 1
+  mag: 0.7
+  colorScale: 1.1
+  colors: [
+    D0FBFF
+    BBFAFF
+    A4F8FF
+    9AF8FF
+  ]
+}

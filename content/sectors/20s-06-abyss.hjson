@@ -1,6 +1,6 @@
 name: Abyss
 planet: izanami
-sector: 41
+sector: 172
 fog: true
 
 research: {

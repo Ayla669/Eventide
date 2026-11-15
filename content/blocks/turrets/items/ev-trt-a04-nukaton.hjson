@@ -78,7 +78,7 @@ range: 800
 shootY: 0
 shake: 4
 
-ammoPerShot: 15
+ammoPerShot: 40
 maxAmmo: 60
 
 ammoTypes: {

@@ -36,7 +36,7 @@ shoot: {
 }
 
 velocityRnd: 0.20
-ammoPerShot: 2
+ammoPerShot: 6
 
 recoil: 1.5
 recoilTime: 12

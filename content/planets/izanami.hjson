@@ -3,33 +3,36 @@ alwaysUnlocked: true
 accessible: true
 visible: true
 
-parent: sun
-solarSystem: sun
+parent: amaterasu
+solarSystem: amaterasu
 
-radius: 1.28
+radius: 1
 orbitRadius: 75
 orbitSpacing: 1
 
 atmosphereRadIn: 0
-startSector: 52
+startSector: 160
 atmosphereRadOut: 0.3
 
 rules: {
- fog: true
- staticFog: true
- coreDestroyClear: true
- onlyDepositCore: true
+  fog: true
+  staticFog: true
+  coreDestroyClear: true
+  onlyDepositCore: true
+
+  lighting: true
+  ambientLight: 0c0c3294
 }
 
 campaignRuleDefaults: {
- fog: true
- hideSpawns: false
- rtsAI: true
+  fog: true
+  hideSpawns: false
+  rtsAI: true
 }
 
 drawOrbit: true
 tidalLock: true
-sectorSize: 2.999999
+sectorSize: 3
 
 orbitTime: 3000
 
@@ -68,7 +71,7 @@ itemWhitelist: [
 liquidWhitelist: [
   "ev-env-a10-contamined-water",
   "slag"
-  ]
+]
 
 mesh: [
   {
@@ -76,7 +79,7 @@ mesh: [
     planet: izanami
     divisions: 6
     seed: 94
-    radius: 1.30
+    radius: 1.02
 
     color1: 11132F
     color2: 25245C
@@ -87,12 +90,12 @@ mesh: [
     mag: 0.35
   }
   
-    {
+  {
     type: NoiseMesh
     planet: izanami
     divisions: 6
     seed: 65
-    radius: 1.30
+    radius: 1.02
 
     color1: 262626
     color2: 26262600
@@ -103,12 +106,12 @@ mesh: [
     mag: 0.35
   }
   
-    {
+  {
     type: NoiseMesh
     planet: izanami
     divisions: 6
     seed: 278
-    radius: 1.28
+    radius: 1.01
 
     color1: 00FFBB
     color2: 00FFBB00
@@ -119,12 +122,12 @@ mesh: [
     mag: 0.35
   }
   
-        {
+  {
     type: NoiseMesh
     planet: izanami
     divisions: 4
     seed: 129
-    radius: 1.28
+    radius: 1.01
 
     color1: 2E5C6B
     color2: 223D54
@@ -135,15 +138,15 @@ mesh: [
     mag: 0.35
   }
   
-      {
+  {
     type: NoiseMesh
     planet: izanami
     divisions: 4
     seed: 686
-    radius: 1.28
+    radius: 1.01
 
-    color1: FF6C00
-    color2: FF781A
+    color1: 91866C
+    color2: 91866C
 
     octaves: 3
     persistence: 0.6
@@ -156,10 +159,10 @@ mesh: [
       type: NoiseMesh
       seed: 84
       divisions: 6
-      radius: 1.22
+      radius: 0.95
       octaves: 3
       persistence: 0.55
-      scale: 0.000001
+      scale: 0.000003
       mag: 0
       color1: B1FFE8
       color2: 28FFC5
@@ -168,7 +171,7 @@ mesh: [
       colorScale: 0.60
       colorThreshold: 0.54
     }
-    mat: [0, 0.18, 0]
+    mat: [0, 0.14, 0]
   },
   {
     type: MatMesh
@@ -176,10 +179,10 @@ mesh: [
       type: NoiseMesh
       seed: 94
       divisions: 6
-      radius: 1.22
+      radius: 0.95
       octaves: 3
       persistence: 0.55
-      scale: 0.000001
+      scale: 0.000003
       mag: 0
       color1: B1FFE8
       color2: 28FFC5
@@ -188,7 +191,7 @@ mesh: [
       colorScale: 0.60
       colorThreshold: 0.54
     }
-    mat: [0, -0.18, 0]
+    mat: [0, -0.14, 0]
   }
 ]
 
@@ -238,8 +241,8 @@ generator: {
   octaves: 4
   persistence: 0.52
   scale: 12
-mag: 1.5
-thresh: 1.0
+  mag: 1.5
+  thresh: 1.0
   min: 220
   max: 600
   radMin: 220

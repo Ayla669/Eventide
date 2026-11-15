@@ -107,6 +107,7 @@ outputLiquid: {
   liquid: ev-liq-06-liquid-peroxate
   amount: 0.1
 }
+liquidOutputDirections: [4]
 category: crafting
 
 research: {

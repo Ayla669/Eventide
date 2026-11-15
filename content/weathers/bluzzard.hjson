@@ -1,0 +1,14 @@
+type: ParticleWeather
+color: B1FFE8
+noiseColor: D2FFF1
+drawNoise: true
+particleRegion: particle
+useWindVector: true
+sizeMax: 6
+sizeMin: 3
+baseSpeed: 12
+density: 750
+opacityMultiplier: 0.6
+sound: windHowl
+soundVol: 0.8
+speedMultiplier: 0.15

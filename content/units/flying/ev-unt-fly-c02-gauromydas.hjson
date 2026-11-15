@@ -19,7 +19,7 @@ trailLength: 0
 outlineRadius: 0
 drag: 0.08
 accel: 0.09
-health: 600
+health: 800
 armor: 15
 speed: 3
 hitSize: 8

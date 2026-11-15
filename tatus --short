@@ -1,0 +1,42 @@
+ bundles/bundle.properties           |   84 [32m+[m[31m-[m
+ bundles/bundle_pt_BR.properties     |   35 [32m+[m[31m-[m
+ ...-pro-a08-peroxate-refinery.hjson |    1 [32m+[m
+ .../items/ev-trt-a01-gear.hjson     |   19 [32m+[m[31m-[m
+ .../items/ev-trt-a02-oerlikon.hjson |    2 [32m+[m[31m-[m
+ .../items/ev-trt-a04-nukaton.hjson  |    2 [32m+[m[31m-[m
+ .../ev-trt-b03-thundermold.hjson    |   25 [32m+[m[31m-[m
+ content/planets/izanami.hjson       |   67 [32m+[m[31m-[m
+ content/planets/ring.hjson          | 2466 [32m+++++[m[31m-----[m
+ .../sectors/19s-01-rebirth.hjson    |    2 [32m+[m[31m-[m
+ content/sectors/19s-02-brood.hjson  |    2 [32m+[m[31m-[m
+ .../19s-03-thermal-basin.hjson      |    2 [32m+[m[31m-[m
+ .../sectors/19s-04-incomplete.hjson |    2 [32m+[m[31m-[m
+ .../sectors/20s-01-petrichor.hjson  |    2 [32m+[m[31m-[m
+ .../sectors/20s-03-carapace.hjson   |    2 [32m+[m[31m-[m
+ content/sectors/20s-04-burrow.hjson |    2 [32m+[m[31m-[m
+ .../sectors/20s-05-fumarole.hjson   |    2 [32m+[m[31m-[m
+ content/sectors/20s-06-abyss.hjson  |    2 [32m+[m[31m-[m
+ .../core/ev-unt-cor-a01-komai.hjson |   15 [32m+[m[31m-[m
+ .../ev-unt-fly-c02-gauromydas.hjson |    2 [32m+[m[31m-[m
+ .../ev-unt-leg-c03-aragog.hjson     |    8 [32m+[m[31m-[m
+ .../ev-unt-fly-c01-beetle.hjson     |    6 [32m+[m[31m-[m
+ maps/19s-03-thermal-basin.msav      |  Bin [31m24260[m -> [32m18276[m bytes
+ mod.hjson                           |    2 [32m+[m[31m-[m
+ scripts/main.js                     |    3 [32m+[m[31m-[m
+ ...v-dtr-a01-dark-duct-bottom-0.png |  Bin [31m184[m -> [32m238[m bytes
+ ...v-dtr-a01-dark-duct-bottom-1.png |  Bin [31m337[m -> [32m465[m bytes
+ ...v-dtr-a01-dark-duct-bottom-2.png |  Bin [31m231[m -> [32m364[m bytes
+ ...v-dtr-a01-dark-duct-bottom-3.png |  Bin [31m279[m -> [32m584[m bytes
+ ...v-dtr-a01-dark-duct-bottom-4.png |  Bin [31m257[m -> [32m411[m bytes
+ .../ev-dtr-a01-dark-duct-bottom.png |  Bin [31m184[m -> [32m238[m bytes
+ .../ev-dtr-a01-dark-duct-top-0.png  |  Bin [31m303[m -> [32m575[m bytes
+ .../ev-dtr-a01-dark-duct-top-1.png  |  Bin [31m525[m -> [32m642[m bytes
+ .../ev-dtr-a01-dark-duct-top-2.png  |  Bin [31m338[m -> [32m614[m bytes
+ .../ev-dtr-a01-dark-duct-top-3.png  |  Bin [31m379[m -> [32m651[m bytes
+ .../ev-dtr-a01-dark-duct-top-4.png  |  Bin [31m345[m -> [32m599[m bytes
+ ...-liq-dtr-a01-dark-pipe-top-0.png |  Bin [31m482[m -> [32m543[m bytes
+ ...-liq-dtr-a01-dark-pipe-top-1.png |  Bin [31m467[m -> [32m748[m bytes
+ ...-liq-dtr-a01-dark-pipe-top-2.png |  Bin [31m471[m -> [32m671[m bytes
+ ...-liq-dtr-a01-dark-pipe-top-3.png |  Bin [31m568[m -> [32m583[m bytes
+ ...-liq-dtr-a01-dark-pipe-top-4.png |  Bin [31m449[m -> [32m608[m bytes
+ 41 files changed, 1398 insertions(+), 1357 deletions(-)
